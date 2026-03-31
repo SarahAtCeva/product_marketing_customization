@@ -1,0 +1,42 @@
+{
+  "seo_improvement_ratio": 0.75,
+  "channel_alignment_grade": "B",
+  "grounding_alignment_score": 8,
+  "channel_alignment_why_2_lines": [
+    "Le contenu est clair, rassurant et orienté conversion, adapté aux acheteurs particuliers.",
+    "Quelques formulations auraient pu mieux intégrer le ton et compliance stricts du canal animal_health_reseller."
+  ],
+  "general_remarks": [
+    "Évitez d'indiquer une efficacité en % qui est interdite par la compliance.",
+    "Le champ META Description pourrait mentionner la sécurité et précautions obligatoires.",
+    "Renforcez la présence des mots-clés priorisés sans surcharger le texte.",
+    "Respect strict des avertissements obligatoires dans toutes les descriptions.",
+    "Formulez les bénéfices avec des termes d'aide/soutien, pas de termes absolus.",
+    "Clarifiez les durées et conditions d'utilisation avec précisions mesurées."
+  ],
+  "per_field_remarks": {
+    "Titre produit": "Titre complet et clair incluant diffuseur et recharge.",
+    "Titre court du produit (60 caractères max)": "Court et efficace, facilite la lecture courte.",
+    "Slug": "Slug SEO-friendly incluant mots-clés principaux.",
+    "META Title": "Optimisé mais manque mention du fabricant.",
+    "META Description": "Bonne synthèse mais oublie avertissements légaux.",
+    "Description courte (...) 175 caractères": "Correct, conservé identique à l'original.",
+    "Description du produit unique/site 400 caractères": "Claire mais pourrait mieux mentionner la sécurité.",
+    "Description courte 600 caractères": "Bien structuré et clair sur action et public.",
+    "Description longue": "Très détaillée et conforme, bien référencée.",
+    "Conseils d'utilisation uniques (SEO)": "Très bien conservée, claire et complète.",
+    "Mots clés": "Amélioration visible, mots-clés bien ciblés.",
+    "Argu 1": "Conforme et bien formulé selon compliance.",
+    "Argu 2": "Description technique sans claims absolus.",
+    "Argu 3": "Mention effet sans propriété interdite.",
+    "Argu 4": "Bon argument scientifique mais éviter 'conçu'.",
+    "Argu 5": "Information utile et conforme."
+  },
+  "score_breakdown": {
+    "title_and_meta": 0.8,
+    "keyword_usage": 0.7,
+    "clarity_and_readability": 0.9,
+    "compliance_safety": 0.7,
+    "channel_fit": 0.8
+  }
+}

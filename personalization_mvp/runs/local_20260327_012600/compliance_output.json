@@ -1,0 +1,45 @@
+{
+  "allowed_claims": [
+    "soutient la gestion du stress chez le chat",
+    "aide à réduire les signes de stress tels que le marquage urinaire et les griffades",
+    "contribue à apaiser le chat dans des situations stressantes",
+    "favorise le bien-être émotionnel du chat",
+    "peut aider à diminuer les manifestations comportementales liées au stress",
+    "formulé pour reproduire une phéromone faciale apaisante du chat",
+    "action continue pendant environ 30 jours",
+    "facile à utiliser",
+    "sans effet sédatif ni tranquillisant",
+    "convient aux chatons et chats adultes de toute taille",
+    "utilisable en prévention avant un événement stressant"
+  ],
+  "forbidden_claims": [
+    "guérit l'arthrose",
+    "traite les infections",
+    "élimine le stress de façon immédiate",
+    "efficacité garantie à 100%",
+    "effet miracle",
+    "sans risque",
+    "cliniquement prouvé sans certification vérifiable",
+    "guérit le marquage urinaire",
+    "calme le chat de façon permanente",
+    "remplace un traitement vétérinaire",
+    "effet sédatif ou tranquillisant"
+  ],
+  "mandatory_mentions": [
+    "CONSERVER HORS DE LA PORTÉE DES ENFANTS.",
+    "Lire l’étiquette avant utilisation.",
+    "Peut être mortel en cas d'ingestion et de pénétration dans les voies respiratoires.",
+    "EN CAS D’INGESTION : Appeler immédiatement un CENTRE ANTIPOISON, un médecin.",
+    "Feliway Classic n’est pas un médicament vétérinaire.",
+    "Si le chat présente des signes de pathologie, demandez conseil à un vétérinaire."
+  ],
+  "species_restrictions": [
+    "Produit réservé à l'espèce chat."
+  ],
+  "regulatory_notes": [
+    "Produit non médicament vétérinaire, catégorie complémentaire ou produit de bien-être animal soumis à réglementation spécifique.",
+    "Les allégations doivent éviter toute promesse thérapeutique ou curative.",
+    "Les mentions relatives à l'efficacité doivent être formulées avec prudence et sans garantie absolue.",
+    "Respecter les indications d'usage et les précautions d'emploi fournies par le fabricant."
+  ]
+}

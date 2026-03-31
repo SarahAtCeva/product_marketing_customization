@@ -1,0 +1,54 @@
+{
+  "generated_fields": {
+    "Titre produit": "Feliway Classic - Anti-stress pour chat - Pack économique 3 recharges",
+    "Titre court du produit (60 caractères max)": "Feliway Classic anti-stress chat pack économique",
+    "Slug": "feliway-classic-anti-stress-chat-pack-economique",
+    "META Title": "Feliway Classic anti-stress pour chat - Pack recharges",
+    "META Description": "Feliway Classic aide à apaiser le stress de votre chat grâce à une phéromone naturelle. Profitez du pack économique de 3 recharges pour un environnement serein. Commandez dès maintenant.",
+    "Mots clés": "Feliway, anti-stress chat, phéromones apaisantes, diffuseur chat, bien-être chat",
+    "Description du produit unique/site 400 caractères": "Feliway Classic est une solution anti-stress pour chats, reproduisant les phéromones faciales apaisantes naturelles. Ce pack économique de 3 recharges (3x48 ml) aide à réduire le marquage urinaire, les griffades et les réactions de peur liées aux changements d'environnement, favorisant un sentiment de calme et de sécurité chez le chaton et l'adulte.",
+    "Description courte 600 caractères": "Feliway Classic contient un analogue synthétique des phéromones faciales du chat, reconnu pour apaiser et sécuriser l'animal. Adapté aux chats de toute taille, ce pack de 3 recharges pour diffuseur agit efficacement contre les signes de stress tels que le marquage urinaire et les griffades. Facile à utiliser, il contribue à rétablir le bien-être du chat lors d'événements perturbants comme un déménagement ou l'arrivée d'un nouveau membre. Produit fabriqué en France, sans effet sédatif ni tranquillisant.",
+    "Description longue": "Feliway Classic est conçu pour réduire les manifestations de stress chez le chaton et le chat adulte, notamment le marquage urinaire et les griffades, ainsi que les réactions liées à des événements perturbants tels que l'adoption, un déménagement, des bruits inhabituels, ou l'arrivée d'un nouveau membre dans le foyer.\n\nLe produit reproduit un analogue structural des phéromones faciales naturelles du chat, messages apaisants invisibles et inodores, uniquement perçus par les chats. Cette reproduction aide l'animal à retrouver un sentiment de calme et de confiance dans son environnement.\n\nChaque recharge a une durée d'action d'environ 30 jours, à adapter selon la ventilation et la taille de la pièce (jusqu'à 70 m²). Le diffuseur doit être branché en continu et remplacé après 6 mois ou 6 recharges. Pour anticiper un stress, il est conseillé de brancher le diffuseur au moins 48 heures avant l'événement.\n\nFeliway Classic est fabriqué en France, sans additifs, non inflammable et n'est pas un médicament vétérinaire. En cas de signes pathologiques, consultez un vétérinaire. Conserver hors de portée des enfants et respecter les consignes de sécurité indiquées sur l'étiquette.\n\nSon efficacité est scientifiquement démontrée pour réduire les griffades, le marquage urinaire et les symptômes de stress, contribuant ainsi au bien-être global du chat.",
+    "Argu 1": "Réduit efficacement les principaux signes de stress chez le chat : marquage urinaire, griffades et réactions de peur.",
+    "Argu 2": "Formule basée sur un analogue synthétique des phéromones faciales naturelles du chat, scientifiquement validée.",
+    "Argu 3": "Durée d'action d'environ 30 jours par recharge, avec un usage simple et adapté à toute taille de pièce jusqu'à 70 m².",
+    "Argu 4": "Produit développé et fabriqué en France, garantissant qualité et conformité aux normes vétérinaires.",
+    "Argu 5": "Solution non médicamenteuse, sans effet sédatif, respectant la santé et le bien-être du chat.",
+    "Description courte (...) 175 caractères": "FELIWAY Classic - Anti-stress pour chat - Pack économique 3 recharges pour diffuseur - (3x30 jours) - Fabriqué en France",
+    "Conseils d'utilisation uniques (SEO)": "Mode demploi du diffuseur et de la recharge Feliway Classic\n\nLe diffuseur Feliway Classic reste efficace pendant environ 30 jours. Toutefois, sa durée daction peut être réduite en fonction de la localisation ou des courants dair dans la pièce (aération, ventilation excessive).\nLa recharge doit être utilisée en fonction de la cause du stress. Le diffuseur doit être remplacé après 6 mois dutilisation ou après avoir utilisé 6 recharges.\n\nPour une gestion efficace du stress à la maison :\n- Branchez le diffuseur Feliway Classic dans la pièce où le chat passe le plus de temps.\n- Le diffuseur doit être allumé 24h/24 pour un résultat optimal. Il est conçu pour des pièces allant jusquà 70 m².\n- Si un événement stressant peut être anticipé, il est recommandé de brancher le diffuseur au moins 48h avant."
+  },
+  "descriptions_self_check": {
+    "char_counts": {
+      "Description du produit unique/site 400 caractères": 399,
+      "Description courte 600 caractères": 596,
+      "Description longue": 1969,
+      "Arguments de vente uniques (USPs) 3 à 5": [
+        104,
+        124,
+        144,
+        123,
+        123
+      ]
+    },
+    "spec_compliance": {
+      "Description du produit unique/site 400 caractères": true,
+      "Description courte 600 caractères": true,
+      "Description longue": true,
+      "Arguments de vente uniques (USPs) 3 à 5": true
+    },
+    "regulatory_consistency": true,
+    "channel_fit": true,
+    "hallucination_risk": "Aucun risque d'invention de faits, tous les éléments sont strictement issus des données fournies."
+  },
+  "seo_validation": {
+    "is_valid": false,
+    "errors": [
+      {
+        "field": "META Description",
+        "rule": "max_chars",
+        "message": "Expected <= 160 chars, got 186."
+      }
+    ],
+    "warnings": []
+  }
+}

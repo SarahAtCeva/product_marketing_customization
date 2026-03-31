@@ -1,0 +1,73 @@
+{
+  "generated_fields": {
+    "Titre produit": "Feliway Classic - Anti-stress pour chat - Flacon 48 ml - Recharge 30 jours",
+    "Titre court du produit (60 caractères max)": "Feliway Classic - Anti-stress chat recharge",
+    "Slug": "feliway-classic-anti-stress-chat-recharge",
+    "META Title": "Feliway Classic - Anti-stress chat - Recharge 30 jours",
+    "META Description": "Feliway Classic réduit le stress chez le chat en limitant marquage urinaire et griffades. Utilisez la recharge avec un diffuseur pour un environnement apaisant et calme.",
+    "Mots clés": "Feliway, chat, anti-stress, phéromones, recharge diffuseur, apaisant chat, marquage urinaire, griffades chat, bien-être félin, gestion stress chat",
+    "Description du produit unique/site 400 caractères": "Feliway Classic est une recharge 48 ml pour diffuseur, formulée pour reproduire les phéromones faciales du chat. Usage réservé aux chats (chatons et adultes) : elle soutient la gestion du stress et aide à réduire le marquage urinaire et à contribuer à diminuer les griffades, notamment lors de changements (déménagement, bruits, arrivée d’un nouveau membre).",
+    "Description courte 600 caractères": "Feliway Classic (recharge 48 ml) est une solution pour diffuseur formulée pour reproduire les phéromones faciales du chat, un message naturel apaisant uniquement perçu par les chats. Usage réservé aux chats (chatons et adultes) : elle soutient la gestion du stress, aide à réduire le marquage urinaire et contribue à diminuer les griffades, lors de déménagement, adoption, bruits, séparations ou arrivée d’un nouveau membre. Action continue d’environ 30 jours (variable selon ventilation).",
+    "Description longue": "Feliway Classic est une recharge 48 ml pour diffuseur, formulée pour reproduire les phéromones faciales du chat, un message naturel apaisant uniquement perçu par les chats. Usage réservé aux chats (chatons et adultes), elle soutient la gestion du stress et aide à réduire certaines manifestations comme le marquage urinaire et les griffades, notamment lors de changements de l’environnement (déménagement, adoption, bruits, arrivée d’un nouveau membre, séparations).\n\nUtilisation\n• Brancher le diffuseur dans la pièce où le chat passe le plus de temps.\n• Laisser le diffuseur branché 24h/24.\n• Une recharge agit environ 30 jours ; la durée peut varier selon la localisation et la ventilation/aération.\n• Remplacer le diffuseur tous les 6 mois ou après 6 recharges.\n• Si l’événement stressant peut être anticipé, brancher le diffuseur au moins 48 h avant.\n• Le diffuseur convient pour des pièces jusqu’à 70 m².\n\nFormule\nComposition : 2% de fraction d’analogue structural des phéromones faciales de chat, excipients q.s.p. 100 g.\n\nInformations importantes\nFeliway Classic n’est pas un médicament vétérinaire. Si le chat présente des signes de pathologie, demandez conseil à un vétérinaire.\n\nPrécautions d’utilisation\nCONSERVER HORS DE LA PORTÉE DES ENFANTS. Lire l’étiquette avant utilisation. Peut être mortel en cas d'ingestion et de pénétration dans les voies respiratoires. EN CAS D’INGESTION : Appeler immédiatement un CENTRE ANTIPOISON, un médecin.",
+    "Argu 1": "Formulé pour reproduire les phéromones faciales du chat, uniquement perçues par les chats",
+    "Argu 2": "Soutient la gestion du stress et aide à réduire le marquage urinaire",
+    "Argu 3": "Contribue à diminuer les griffades sur le mobilier",
+    "Argu 4": "Action continue d’environ 30 jours (variable selon ventilation et localisation)",
+    "Argu 5": "Développé et fabriqué en France",
+    "Description courte (...) 175 caractères": "FELIWAY Classic - Anti-stress pour chat - 1 recharge pour diffuseur - 30 jours - Fabriqué en France",
+    "Conseils d'utilisation uniques (SEO)": "Mode demploi du diffuseur et de la recharge Feliway Classic\n\nLe diffuseur Feliway Classic reste efficace pendant environ 30 jours. Toutefois, sa durée daction peut être réduite en fonction de la localisation ou des courants dair dans la pièce (aération, ventilation excessive).\nLa recharge doit être utilisée en fonction de la cause du stress. Le diffuseur doit être remplacé après 6 mois dutilisation ou après avoir utilisé 6 recharges.\n\nPour une gestion efficace du stress à la maison :\n- Branchez le diffuseur Feliway Classic dans la pièce où le chat passe le plus de temps.\n- Le diffuseur doit être allumé 24h/24 pour un résultat optimal. Il est conçu pour des pièces allant jusquà 70 m².\n- Si un événement stressant peut être anticipé, il est recommandé de brancher le diffuseur au moins 48h avant."
+  },
+  "descriptions_self_check": {
+    "char_counts": {
+      "Description du produit unique/site 400 caractères": 387,
+      "Description courte 600 caractères": 564,
+      "Description longue": 1544,
+      "Arguments de vente uniques (USPs) 3 à 5": [
+        90,
+        59,
+        46,
+        77,
+        28
+      ]
+    },
+    "spec_compliance": {
+      "top_level_keys_exact": true,
+      "description_400_min_max_ok": true,
+      "description_600_min_max_ok": true,
+      "description_long_min_max_ok": true,
+      "usps_count_ok": true,
+      "usps_chars_each_ok": true,
+      "language_fr": true
+    },
+    "regulatory_consistency": {
+      "allowed_claims_only": true,
+      "forbidden_claims_avoided": true,
+      "mandatory_mentions_included_in_long": true,
+      "species_restriction_respected": true
+    },
+    "channel_fit": {
+      "tone_veterinary_reassuring_factual": true,
+      "buyer_motivations_addressed": [
+        "sécurité",
+        "efficacité",
+        "rapport qualité-prix"
+      ],
+      "usage_guidance_included": true
+    },
+    "hallucination_risk": {
+      "risk_level": "low",
+      "notes": "Aucune donnée non fournie (certifications, garanties, effets immédiats) n’a été ajoutée ; les mentions obligatoires et limites d’allégations ont été respectées."
+    }
+  },
+  "seo_validation": {
+    "is_valid": false,
+    "errors": [
+      {
+        "field": "META Description",
+        "rule": "max_chars",
+        "message": "Expected <= 160 chars, got 169."
+      }
+    ],
+    "warnings": []
+  }
+}

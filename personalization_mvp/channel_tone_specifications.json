@@ -1,0 +1,165 @@
+{
+  "version": "1.1.0",
+  "purpose": "Channel and expertise conditioning for animal-health product rewriting",
+  "field_specifications_source": "field_specifications.json",
+  "default_profiles": {
+    "channel": "animal_health_reseller",
+    "expertise": "veterinary_expert"
+  },
+  "channels": {
+    "animal_health_reseller": {
+      "label": "Animal Health Reseller",
+      "language": "fr",
+      "audience": "Pet owners buying from a reseller ecommerce site",
+      "content_objective": "Clear, compliant, conversion-oriented product pages",
+      "seo_rules": {
+        "keyword_density": "natural",
+        "prioritize_terms": [
+          "species",
+          "benefit",
+          "product type",
+          "brand"
+        ],
+        "avoid_keyword_stuffing": true
+      },
+      "compliance_rules": {
+        "avoid_absolute_claims": true,
+        "avoid_cure_claims": true,
+        "prefer_support_language": true,
+        "must_respect_input_warnings": true,
+        "do_not_invent_scientific_facts": true
+      },
+      "style_rules": {
+        "clarity": "high",
+        "readability": "scan-friendly",
+        "tone": "reassuring and factual",
+        "sentence_length": "short_to_medium"
+      }
+    },
+    "la_compagnie_des_animaux": {
+      "label": "La Compagnie des Animaux",
+      "language": "fr",
+      "audience": "Pet owners seeking veterinary-guided products with strong value for money",
+      "content_objective": "Trust-first, compliant product pages that combine veterinary clarity, practical usage, and conversion",
+      "output_behavior": {
+        "prefer_practical_usage_guidance": true,
+        "favor_reassurance_over_hype": true,
+        "allow_soft_cta": true
+      },
+      "seo_rules": {
+        "keyword_density": "natural",
+        "prioritize_terms": [
+          "species",
+          "main benefit",
+          "product type",
+          "brand",
+          "usage context"
+        ],
+        "avoid_keyword_stuffing": true
+      },
+      "compliance_rules": {
+        "avoid_absolute_claims": true,
+        "avoid_cure_claims": true,
+        "prefer_support_language": true,
+        "must_respect_input_warnings": true,
+        "do_not_invent_scientific_facts": true
+      },
+      "style_rules": {
+        "clarity": "high",
+        "readability": "scan-friendly",
+        "tone": "veterinary, reassuring, and factual",
+        "sentence_length": "short_to_medium"
+      }
+    },
+    "amazon_animal_health": {
+      "label": "Amazon Animal Health",
+      "language": "fr",
+      "audience": "Marketplace shoppers",
+      "content_objective": "Fast-scanning, compliant marketplace listings",
+      "output_behavior": {
+        "prefer_bullet_style_arguments": true,
+        "ignore_website_meta_fields_when_not_applicable": true
+      },
+      "seo_rules": {
+        "use_marketplace_search_terms": true,
+        "avoid_redundant_repetition": true
+      },
+      "compliance_rules": {
+        "avoid_medical_overclaims": true,
+        "avoid_restricted_health_claims": true,
+        "do_not_invent_scientific_facts": true
+      },
+      "style_rules": {
+        "clarity": "high",
+        "readability": "very high",
+        "tone": "benefit-led and factual"
+      }
+    }
+  },
+  "expertise_profiles": {
+    "veterinary_expert": {
+      "label": "Veterinary Expert",
+      "goal": "High-trust clinical clarity without overclaiming",
+      "tone": {
+        "formality": "medium-high",
+        "voice": "professional",
+        "confidence": "measured"
+      },
+      "writing_rules": {
+        "prefer_terms": [
+          "soutient",
+          "aide à",
+          "contribue à"
+        ],
+        "avoid_terms": [
+          "guérit",
+          "traitement garanti",
+          "résultat immédiat"
+        ],
+        "evidence_handling": "cite or preserve provided evidence only",
+        "risk_language": "explicit when warnings exist"
+      }
+    },
+    "retail_educator": {
+      "label": "Retail Educator",
+      "goal": "Explain benefits simply for non-expert pet owners",
+      "tone": {
+        "formality": "medium",
+        "voice": "pedagogical",
+        "confidence": "balanced"
+      },
+      "writing_rules": {
+        "prefer_terms": [
+          "simple",
+          "quotidien",
+          "facile à utiliser"
+        ],
+        "avoid_jargon": true,
+        "evidence_handling": "summarize simply from provided facts",
+        "risk_language": "clear and concise"
+      }
+    },
+    "conversion_copywriter": {
+      "label": "Conversion Copywriter",
+      "goal": "Maximize clarity and purchase intent while staying compliant",
+      "tone": {
+        "formality": "medium",
+        "voice": "persuasive but factual",
+        "confidence": "high but compliant"
+      },
+      "writing_rules": {
+        "prefer_terms": [
+          "bénéfice concret",
+          "routine",
+          "pratique"
+        ],
+        "avoid_terms": [
+          "miracle",
+          "100% garanti"
+        ],
+        "cta_style": "soft",
+        "risk_language": "never omitted"
+      }
+    }
+  }
+}

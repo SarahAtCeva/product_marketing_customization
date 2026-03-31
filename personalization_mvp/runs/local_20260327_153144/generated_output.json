@@ -1,0 +1,74 @@
+{
+  "generated_fields": {
+    "Titre produit": "Feliway Classic - Anti-stress chat - Diffuseur + recharge - Kit complet 30 jours",
+    "Titre court du produit (60 caractères max)": "Feliway Classic - Diffuseur anti-stress chat",
+    "Slug": "feliway-classic-anti-stress-chat-diffuseur-recharge-kit-30-jours",
+    "META Title": "Feliway Classic - Diffuseur anti-stress chat - Kit 30 jours",
+    "META Description": "Feliway Classic aide à apaiser votre chat à la maison et à réduire les signes de stress. Diffuseur + recharge pour une diffusion continue 30 jours. Découvrez-le.",
+    "Mots clés": "feliway classic, anti-stress chat, diffuseur pheromones, pheromones chat, chat anxieux, marquage urinaire, griffades mobilier, apaisant chat, bien etre chat, peur en interieur, kit diffuseur, recharge diffuseur",
+    "Description du produit unique/site 400 caractères": "FELIWAY Classic D+R (diffuseur électrique + recharge 48 ml) aide à réduire les manifestations de stress chez le chaton et le chat adulte à la maison (marquage urinaire, griffades, réactions de peur), en diffusant en continu un analogue synthétique de phéromone faciale féline. Diffusion jour et nuit, jusqu’à 70 m², environ 30 jours.",
+    "Description courte 600 caractères": "FELIWAY Classic D+R est un kit complet (diffuseur électrique + recharge 48 ml) destiné au chaton et au chat adulte pour aider à réduire les manifestations de stress à la maison (marquage urinaire, griffades, réactions de peur). Il diffuse un analogue synthétique de phéromone faciale féline, présenté comme inodore et perçu uniquement par les chats. Diffusion continue jour et nuit, jusqu’à 70 m², pour une durée d’action d’environ 30 jours (variable selon les courants d’air). N’a pas d’effet sédatif et n’est pas un tranquillisant.",
+    "Description longue": "FELIWAY Classic D+R (diffuseur électrique + recharge 48 ml) est destiné au chaton et au chat adulte pour aider à réduire les manifestations de stress à la maison, notamment le marquage urinaire, les griffades sur le mobilier et les réactions de peur en intérieur.\n\nPrincipe\nLe produit diffuse un analogue synthétique de phéromone faciale féline, présenté comme un « message apaisant » inodore et perçu uniquement par les chats, afin de contribuer à rassurer le chat dans son environnement.\n\nQuand l’utiliser\nEn cas de marquage urinaire ou de griffades, et lors de changements ou événements perturbants à la maison (adoption, déménagement, bruits, arrivée d’un nouveau membre dans le foyer, séparation, changement de routine).\n\nMode d’emploi et durée\nBrancher le diffuseur dans la pièce où le chat passe le plus de temps et le laisser branché jour et nuit. Le diffuseur convient pour des pièces jusqu’à 70 m². La durée d’action est d’environ 30 jours, pouvant varier selon la localisation et les flux d’air (aération/ventilation). Si l’événement stressant est anticipable, brancher au moins 48 h avant. Le diffuseur doit être remplacé après 6 mois d’utilisation ou 6 recharges.\n\nComposition\nFraction d’analogue structural des phéromones faciales de chat : 2% ; excipients q.s.p. 100 g ; sans additifs nutritionnels.\n\nPrécautions d'utilisation\nCONSERVER HORS DE LA PORTÉE DES ENFANTS. Lire l’étiquette avant utilisation. Peut être mortel en cas d'ingestion et de pénétration dans les voies respiratoires. EN CAS D’INGESTION : Appeler immédiatement un CENTRE ANTIPOISON, un médecin.\nFeliway Classic n’est pas un médicament vétérinaire. Si le chat présente des signes de pathologie, demandez conseil à un vétérinaire.",
+    "Argu 1": "Aide à réduire les signes de stress du chat à la maison (marquage urinaire, griffades, réactions de peur).",
+    "Argu 2": "Diffuse en continu un analogue synthétique de phéromone faciale féline, présenté comme inodore et perçu uniquement par les chats.",
+    "Argu 3": "Diffusion jour et nuit : environ 30 jours par recharge (variable selon les courants d’air).",
+    "Argu 4": "Convient pour des pièces jusqu’à 70 m².",
+    "Argu 5": "Développé et fabriqué en France (Made in France).",
+    "Description courte (...) 175 caractères": "FELIWAY Classic - Anti-stress pour chat - Kit complet (diffuseur + recharge) - 30 jours - Fabriqué en France",
+    "Conseils d'utilisation uniques (SEO)": "Mode demploi du diffuseur et de la recharge Feliway Classic\n\nLe diffuseur Feliway Classic reste efficace pendant environ 30 jours. Toutefois, sa durée daction peut être réduite en fonction de la localisation ou des courants dair dans la pièce (aération, ventilation excessive).\nLa recharge doit être utilisée en fonction de la cause du stress. Le diffuseur doit être remplacé après 6 mois dutilisation ou après avoir utilisé 6 recharges.\n\nPour une gestion efficace du stress à la maison :\n- Branchez le diffuseur Feliway Classic dans la pièce où le chat passe le plus de temps.\n- Le diffuseur doit être allumé 24h/24 pour un résultat optimal. Il est conçu pour des pièces allant jusquà 70 m².\n- Si un événement stressant peut être anticipé, il est recommandé de brancher le diffuseur au moins 48h avant."
+  },
+  "descriptions_self_check": {
+    "char_counts": {
+      "Description du produit unique/site 400 caractères": 367,
+      "Description courte 600 caractères": 591,
+      "Description longue": 1924,
+      "Arguments de vente uniques (USPs) 3 à 5": [
+        104,
+        139,
+        86,
+        35,
+        52
+      ]
+    },
+    "spec_compliance": {
+      "top_level_keys_exact": true,
+      "description_400_within_200_400": true,
+      "description_600_within_300_600": true,
+      "description_long_within_400_2000": true,
+      "usps_count_3_5": true,
+      "usps_each_max_150": true,
+      "language_fr": true
+    },
+    "regulatory_consistency": {
+      "allowed_claims_only": true,
+      "no_forbidden_medical_claims": true,
+      "mandatory_mentions_included": true,
+      "species_restriction_respected": true,
+      "no_absolute_guarantees": true
+    },
+    "channel_fit": {
+      "amazon_animal_health_style": true,
+      "benefit_led_and_factual": true,
+      "motivations_addressed": [
+        "sécurité",
+        "efficacité",
+        "rapport qualité-prix"
+      ]
+    },
+    "hallucination_risk": {
+      "risk_level": "low",
+      "notes": "Allégations limitées aux éléments fournis (durée ~30 jours, jusqu’à 70 m², non sédatif, non médicament, composition 2%). Aucune allégation chiffrée d’études reprise."
+    }
+  },
+  "seo_validation": {
+    "is_valid": false,
+    "errors": [
+      {
+        "field": "META Description",
+        "rule": "max_chars",
+        "message": "Expected <= 160 chars, got 161."
+      }
+    ],
+    "warnings": []
+  }
+}

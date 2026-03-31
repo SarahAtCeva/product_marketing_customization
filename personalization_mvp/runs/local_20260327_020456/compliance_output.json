@@ -1,0 +1,52 @@
+{
+  "allowed_claims": [
+    "soutient la réduction des signes de stress chez le chat",
+    "aide à diminuer le marquage urinaire et les griffades",
+    "contribue à apaiser le chat en cas de changement d'environnement",
+    "favorise le bien-être émotionnel du chat",
+    "peut aider à réduire les manifestations de stress telles que vomissements, diarrhées et miaulements",
+    "conçu pour diffuser un analogue synthétique de phéromones faciales apaisantes",
+    "formulé pour une utilisation en diffuseur dans un environnement domestique jusqu'à 70 m²",
+    "action continue pendant environ 30 jours",
+    "facile à utiliser",
+    "sans effet sédatif ni tranquillisant",
+    "adapté aux chatons et chats adultes de toute taille",
+    "fabriqué en France"
+  ],
+  "forbidden_claims": [
+    "guérit le stress chez le chat",
+    "traite les troubles du comportement",
+    "élimine le marquage urinaire",
+    "garanti 100% efficace",
+    "effet immédiat",
+    "miracle",
+    "sans risque",
+    "cliniquement prouvé sans certification vérifiable",
+    "médicament vétérinaire",
+    "remplace un traitement vétérinaire",
+    "soigne les pathologies",
+    "prévention ou traitement de maladies"
+  ],
+  "mandatory_mentions": [
+    "CONSERVER HORS DE LA PORTÉE DES ENFANTS.",
+    "Lire l’étiquette avant utilisation.",
+    "Peut être mortel en cas d'ingestion et de pénétration dans les voies respiratoires.",
+    "EN CAS D’INGESTION : Appeler immédiatement un CENTRE ANTIPOISON, un médecin.",
+    "Feliway Classic n’est pas un médicament vétérinaire.",
+    "Si le chat présente des signes de pathologie, demandez conseil à un vétérinaire."
+  ],
+  "species_restrictions": [
+    "Usage réservé aux chats.",
+    "Ne pas utiliser chez d'autres espèces animales."
+  ],
+  "regulatory_notes": [
+    "Produit non médicamenteux, classé comme produit vétérinaire à base de phéromones synthétiques.",
+    "Ne peut pas être présenté comme un médicament ou un traitement curatif.",
+    "Les allégations doivent rester dans le cadre d'un soutien comportemental et non thérapeutique.",
+    "Respecter les mentions légales et précautions d'emploi obligatoires.",
+    "Ne pas faire de promesses de guérison ou d'efficacité garantie.",
+    "Les données scientifiques citées doivent être présentées de manière factuelle sans surpromesse.",
+    "Le diffuseur doit être utilisé conformément aux instructions pour garantir la sécurité et l'efficacité.",
+    "Ne pas substituer à un avis ou traitement vétérinaire en cas de maladie."
+  ]
+}

@@ -1,0 +1,127 @@
+{
+  "version": "1.0.0",
+  "description": "Field constraints for all generated product content fields",
+  "fields": {
+    "Titre produit": {
+      "label": "Titre produit",
+      "description": "Titre complet du produit, doit commencer par le nom de marque , mentionne la durée d'action si présente.",
+      "min_chars": 10,
+      "max_chars": 120,
+      "required": true,
+      "rules": ["Doit commencer par le nom de marque", "Inclure espèce et bénéfice principal si possible"]
+    },
+    "Titre court du produit (60 caractères max)": {
+      "label": "Titre court",
+      "description": "Titre court sans volume ni poids.",
+      "min_chars": 5,
+      "max_chars": 60,
+      "required": true,
+      "rules": ["Ne pas mentionner le volume/poids (ml, g, kg)", "Nom de marque inclus", "Concis et mémorisable"]
+    },
+    "Slug": {
+      "label": "Slug URL",
+      "description": "Identifiant URL du produit en minuscules avec tirets.",
+      "min_chars": 5,
+      "max_chars": 120,
+      "required": false,
+      "rules": ["Minuscules uniquement", "Tirets entre mots", "Pas d'accents"]
+    },
+    "META Title": {
+      "label": "META Title",
+      "description": "Balise title SEO optimisée.",
+      "min_chars": 30,
+      "max_chars": 70,
+      "required": true,
+      "rules": ["Inclure marque et mot-clé principal", "Lisible et naturel", "Pas de keyword stuffing"]
+    },
+    "META Description": {
+      "label": "META Description",
+      "description": "Description méta pour les moteurs de recherche, minimum 2 phrases.",
+      "min_chars": 100,
+      "max_chars": 160,
+      "required": true,
+      "rules": ["Minimum 2 phrases complètes", "Inclure appel à l'action doux", "Pas d'allégations médicales"]
+    },
+    "Description courte (...) 175 caractères": {
+      "label": "Description courte (175 caractères)",
+      "description": "Description courte pour les aperçus de recherche sur le site.",
+      "min_chars": 50,
+      "max_chars": 175,
+      "required": true,
+      "rules": ["Résumé du bénéfice principal", "Factuel et rassurant"]
+    },
+    "Description du produit unique/site 400 caractères": {
+      "label": "Description 400 caractères",
+      "description": "Description unique pour la fiche produit e-commerce.",
+      "min_chars": 200,
+      "max_chars": 400,
+      "required": true,
+      "rules": ["Description unique", "Bénéfices et usage clairs", "Pas de copie de la fiche technique"]
+    },
+    "Description courte 600 caractères": {
+      "label": "Description courte 600 caractères",
+      "description": "Description de taille moyenne pour pages catégories ou résumés.",
+      "min_chars": 300,
+      "max_chars": 600,
+      "required": true,
+      "rules": ["Détaille les bénéfices", "Inclure espèce cible", "Structure claire"]
+    },
+    "Description longue": {
+      "label": "Description longue",
+      "description": "Description complète pour la fiche produit.",
+      "min_chars": 400,
+      "max_chars": 2000,
+      "required": true,
+      "rules": ["Description complète", "Peut inclure composition simplifiée, usage, bénéfices , expliquer le mode d'action", "Structure avec sections si nécessaire","Eviter la redondance"]
+    },
+    "Conseils d'utilisation uniques (SEO)": {
+      "label": "Conseils d'utilisation SEO",
+      "description": "Conseils d'utilisation uniques optimisés SEO.",
+      "min_chars": 100,
+      "max_chars": 1000,
+      "required": false,
+      "rules": ["Unique par produit", "SEO-friendly", "Pratique et précis"]
+    },
+    "Mots clés": {
+      "label": "Mots clés",
+      "description": "Liste de mots-clés séparés par des virgules.",
+      "required": true,
+      "rules": ["Minimum 5 mots-clés", "Séparés par des virgules", "Maximum 5 mots par expression"]
+    },
+    "Argu 1": {
+      "label": "Argument de vente 1",
+      "description": "Premier argument de vente (USP).",
+      "min_chars": 10,
+      "max_chars": 200,
+      "required": true
+    },
+    "Argu 2": {
+      "label": "Argument de vente 2",
+      "description": "Deuxième argument de vente (USP).",
+      "min_chars": 10,
+      "max_chars": 200,
+      "required": true
+    },
+    "Argu 3": {
+      "label": "Argument de vente 3",
+      "description": "Troisième argument de vente (USP).",
+      "min_chars": 10,
+      "max_chars": 200,
+      "required": true
+    },
+    "Argu 4": {
+      "label": "Argument de vente 4",
+      "description": "Quatrième argument de vente (USP, optionnel).",
+      "min_chars": 10,
+      "max_chars": 200,
+      "required": false
+    },
+    "Argu 5": {
+      "label": "Argument de vente 5",
+      "description": "Cinquième argument de vente (USP, optionnel).",
+      "min_chars": 10,
+      "max_chars": 200,
+      "required": false
+    }
+  }
+}

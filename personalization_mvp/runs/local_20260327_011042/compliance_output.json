@@ -1,0 +1,46 @@
+{
+  "allowed_claims": [
+    "soutient la gestion du stress chez le chat",
+    "aide à réduire les signes de stress tels que le marquage urinaire et les griffades",
+    "contribue à apaiser le chat en reproduisant une phéromone faciale synthétique",
+    "favorise un environnement calme et sécurisant pour le chat",
+    "peut aider à diminuer les réactions de peur liées aux changements d'environnement",
+    "formulé pour une diffusion continue pendant environ 30 jours par recharge",
+    "conçu pour une utilisation dans des pièces jusqu'à 70 m²",
+    "facile à utiliser avec un diffuseur électrique",
+    "n'a pas d'effet sédatif ni tranquillisant",
+    "produit développé et fabriqué en France"
+  ],
+  "forbidden_claims": [
+    "guérit l'arthrose",
+    "traite les infections",
+    "élimine les parasites",
+    "100% efficace",
+    "garanti sans risque",
+    "effet immédiat",
+    "miracle",
+    "cliniquement prouvé sans certification vérifiable",
+    "guérit les troubles du comportement",
+    "arrête définitivement le marquage urinaire",
+    "supprime totalement le stress",
+    "effet sédatif",
+    "tranquillisant"
+  ],
+  "mandatory_mentions": [
+    "CONSERVER HORS DE LA PORTÉE DES ENFANTS. Lire l’étiquette avant utilisation.",
+    "Peut être mortel en cas d'ingestion et de pénétration dans les voies respiratoires.",
+    "EN CAS D’INGESTION : Appeler immédiatement un CENTRE ANTIPOISON, un médecin.",
+    "Feliway Classic n’est pas un médicament vétérinaire.",
+    "Si le chat présente des signes de pathologie, demandez conseil à un vétérinaire."
+  ],
+  "species_restrictions": [
+    "Usage réservé aux chats."
+  ],
+  "regulatory_notes": [
+    "Produit non médicamenteux, complémentaire aux traitements vétérinaires.",
+    "Ne peut être présenté comme un médicament vétérinaire ou un traitement curatif.",
+    "Les allégations doivent rester dans le cadre d'une aide à la gestion du stress et ne pas promettre de guérison.",
+    "Respecter les mentions légales et précautions d'emploi obligatoires.",
+    "Ne pas faire de promesses d'efficacité absolue ou immédiate sans preuve certifiée."
+  ]
+}

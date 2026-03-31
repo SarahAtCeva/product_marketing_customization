@@ -1,0 +1,70 @@
+{
+  "generated_fields": {
+    "Titre produit": "Feliway Classic - Anti-stress pour chat - Pack économique 3 recharges",
+    "Titre court du produit (60 caractères max)": "Feliway Classic anti-stress chat pack 3 recharges",
+    "Slug": "feliway-classic-anti-stress-chat-pack-3-recharges",
+    "META Title": "Feliway Classic anti-stress chat - Pack 3 recharges efficace",
+    "META Description": "Feliway Classic réduit les signes de stress chez le chat, comme le marquage urinaire et les griffades. Ce pack économique offre une action continue d'environ 30 jours par recharge. Essayez-le pour apaiser votre chat naturellement.",
+    "Mots clés": "Feliway, anti-stress chat, phéromones apaisantes, diffuseur chat, bien-être félin",
+    "Description du produit unique/site 400 caractères": "Feliway Classic est un diffuseur anti-stress réservé au chat, formulé pour reproduire une phéromone faciale apaisante et aider à réduire les signes de stress comme le marquage urinaire et les griffades. Action continue d’environ 30 jours, sans effet sédatif ni tranquillisant, développé et fabriqué en France.",
+    "Description courte 600 caractères": "Feliway Classic (recharges pour diffuseur) soutient la gestion du stress chez le chaton et le chat adulte de toute taille, en aidant à réduire des signes tels que le marquage urinaire et les griffades. Il reproduit un analogue de phéromone faciale féline (2%) et s’utilise en continu, jour et nuit, dans la pièce où le chat passe le plus de temps. Chaque recharge agit environ 30 jours (variable selon aération/flux d’air). Sans effet sédatif ni tranquillisant, développé et fabriqué en France.",
+    "Description longue": "Feliway Classic est une solution de bien-être réservée à l’espèce chat, conçue pour soutenir la gestion du stress et aider à réduire des manifestations comportementales liées au stress, notamment le marquage urinaire et les griffades.\n\nQuand l’utiliser ?\nIl est indiqué pour les chatons et les chats adultes de toute taille confrontés à des situations stressantes : déménagement, changement d’environnement, arrivée d’un nouveau membre dans le foyer, bruits forts/événements perturbants, transport/voyage, ou en cas de marquage urinaire et de griffades.\n\nComment ça fonctionne ?\nLe diffuseur et la recharge Feliway Classic reproduisent un message apaisant via un analogue synthétique de la phéromone faciale féline, perçue uniquement par les chats.\n\nMode d’emploi et durée\nBrancher le diffuseur dans la pièce où le chat passe le plus de temps et le laisser branché jour et nuit. Chaque recharge a une action d’environ 30 jours, pouvant être plus courte selon la localisation et les flux d’air (aération, ventilation excessive). En prévention, il est conseillé de brancher le diffuseur au moins 48 h avant l’événement. Le diffuseur doit être remplacé après 6 mois d’utilisation ou 6 recharges. Le diffuseur convient pour des pièces jusqu’à 70 m².\n\nFormule\nFraction d’analogue structural des phéromones faciales de chat : 2%. Excipients q.s.p. 100 g. Sans additifs.\n\nMentions et précautions\nCONSERVER HORS DE LA PORTÉE DES ENFANTS. Lire l’étiquette avant utilisation. Peut être mortel en cas d'ingestion et de pénétration dans les voies respiratoires. EN CAS D’INGESTION : Appeler immédiatement un CENTRE ANTIPOISON, un médecin. Feliway Classic n’est pas un médicament vétérinaire. Si le chat présente des signes de pathologie, demandez conseil à un vétérinaire.",
+    "Argu 1": "Aide à réduire les signes de stress (marquage urinaire, griffades) chez le chat",
+    "Argu 2": "Action continue d’environ 30 jours par recharge (variable selon aération/flux d’air)",
+    "Argu 3": "Sans effet sédatif ni tranquillisant",
+    "Argu 4": "Convient aux chatons et aux chats adultes de toute taille",
+    "Argu 5": "Développé et fabriqué en France",
+    "Description courte (...) 175 caractères": "FELIWAY Classic - Anti-stress pour chat - Pack économique 3 recharges pour diffuseur - (3x30 jours) - Fabriqué en France",
+    "Conseils d'utilisation uniques (SEO)": "Mode demploi du diffuseur et de la recharge Feliway Classic\n\nLe diffuseur Feliway Classic reste efficace pendant environ 30 jours. Toutefois, sa durée daction peut être réduite en fonction de la localisation ou des courants dair dans la pièce (aération, ventilation excessive).\nLa recharge doit être utilisée en fonction de la cause du stress. Le diffuseur doit être remplacé après 6 mois dutilisation ou après avoir utilisé 6 recharges.\n\nPour une gestion efficace du stress à la maison :\n- Branchez le diffuseur Feliway Classic dans la pièce où le chat passe le plus de temps.\n- Le diffuseur doit être allumé 24h/24 pour un résultat optimal. Il est conçu pour des pièces allant jusquà 70 m².\n- Si un événement stressant peut être anticipé, il est recommandé de brancher le diffuseur au moins 48h avant."
+  },
+  "descriptions_self_check": {
+    "char_counts": {
+      "Description du produit unique/site 400 caractères": 340,
+      "Description courte 600 caractères": 539,
+      "Description longue": 1935
+    },
+    "spec_compliance": {
+      "json_only": true,
+      "keys_match_requested": true,
+      "description_400_within_limits": true,
+      "description_600_within_limits": true,
+      "description_long_within_limits": true,
+      "usps_count_between_3_and_5": true,
+      "usps_each_under_150_chars": true
+    },
+    "regulatory_consistency": {
+      "allowed_claims_only": true,
+      "no_forbidden_claims": true,
+      "species_restriction_respected": true,
+      "mandatory_mentions_included_in_long_description": true,
+      "efficacy_numbers_avoided": true
+    },
+    "channel_fit": {
+      "tone_reassuring_factual": true,
+      "buyer_motivations_addressed": [
+        "sécurité",
+        "efficacité",
+        "rapport qualité-prix"
+      ],
+      "usage_instructions_clear": true
+    },
+    "hallucination_risk": {
+      "overall": "low",
+      "notes": [
+        "Aucune donnée non fournie (prix, formats alternatifs, compatibilités) n’a été ajoutée.",
+        "Les mentions obligatoires sont reprises textuellement dans la description longue."
+      ]
+    }
+  },
+  "seo_validation": {
+    "is_valid": false,
+    "errors": [
+      {
+        "field": "META Description",
+        "rule": "max_chars",
+        "message": "Expected <= 160 chars, got 230."
+      }
+    ],
+    "warnings": []
+  }
+}

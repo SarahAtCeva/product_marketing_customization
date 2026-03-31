@@ -1,0 +1,43 @@
+{
+  "version": "1.0.0",
+  "purpose": "Specifications for generating product description content fields",
+  "language": "fr",
+  "compliance_rules": [
+    "Ne jamais inventer d'ingrédients, taux d'efficacité, certifications ou durées",
+    "Respecter les mentions légales et contre-indications du produit",
+    "Éviter les allégations médicales non conformes (guérit, 100%, garanti, immédiat)",
+    "Ton professionnel, factuel et rassurant",
+    "Ne pas copier les exemples fournis mot pour mot — les utiliser comme modèles de structure et de ton uniquement"
+  ],
+  "fields": {
+    "Description du produit unique/site 400 caractères": {
+      "max_chars": 400,
+      "min_chars": 200,
+      "purpose": "Description courte et unique pour la fiche produit e-commerce. Doit capter l'attention et résumer le bénéfice principal.",
+      "structure": "1 à 2 phrases présentant le produit et son usage principal, adaptées à l'espèce cible.",
+      "tone": "Factuel, rassurant, orienté bénéfice"
+    },
+    "Description courte 600 caractères": {
+      "max_chars": 600,
+      "min_chars": 300,
+      "purpose": "Description de taille moyenne pour les pages catégories ou résumés produits ne dépassant pas les 600 caractères",
+      "structure": "2 à 3 phrases incluant le bénéfice principal, l'espèce cible et les points clés du produit.",
+      "tone": "Clair, professionnel,convaincant"
+    },
+    "Description longue": {
+      "max_chars": 2000,
+      "min_chars": 400,
+      "purpose": "Description complète pour la fiche produit. Doit inclure bénéfices, usage , le principe d'innovation et éventuellement composition simplifiée , le layout des sous paragraphes doit etre fluide",
+      "structure": "Suis les exemples fournis en terme de layout",
+      "tone": "Informatif, non redondant , rassurant, expert mais accessible"
+    },
+    "Arguments de vente uniques (USPs) 3 à 5": {
+      "count_min": 3,
+      "count_max": 5,
+      "chars_per_arg_max": 150,
+      "purpose": "Points de différenciation clés pour convaincre l'acheteur.",
+      "structure": "Reformule professionellement et adéquatement les arguments du produit si déjà existants , sinon les inférer depuis les infos produits ",
+      "tone": "Direct, percutant, orienté bénéfice"
+    }
+  }
+}

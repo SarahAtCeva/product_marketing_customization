@@ -1,0 +1,42 @@
+{
+  "seo_improvement_ratio": 0.68,
+  "channel_alignment_grade": "B",
+  "grounding_alignment_score": 8.8,
+  "channel_alignment_why_2_lines": [
+    "Ton global rassurant et factuel, avec bénéfices formulés en « aide à / contribue à » et des infos pratiques (70 m², 30 jours, 48 h).",
+    "Quelques points restent perfectibles pour le canal : titre/slug un peu lourds et mentions « Fabriqué en France » conservées sans appui dans le brief."
+  ],
+  "general_remarks": [
+    "Raccourcir le Slug (et éventuellement le Titre produit) en gardant l’ordre SEO prioritaire : Chat + diffuseur + anti-stress + Feliway Optimum + 48 ml/kit 30 j.",
+    "Harmoniser la capitalisation de la marque (FELIWAY vs Feliway) et éviter les symboles « ?? » dans les arguments pour une page plus professionnelle.",
+    "Retirer ou sourcer « Fabriqué en France » : ce point n’est pas étayé par le product_brief/formulation_analysis et expose à une allégation non fondée.",
+    "Dans la description 400 caractères, ajouter 1–2 usages clés manquants (ex. léchage excessif/perte d’appétit si liés au stress, consultation/hospitalisation) sans dépasser le format.",
+    "En SEO, corriger les mots-clés sans accents (pheromones/serenite) en versions FR avec accents pour coller aux requêtes naturelles (« phéromones », « sérénité »).",
+    "Vérifier les contraintes de longueur META Title/META Description et du « titre court 60 caractères » (risque de dépassement) pour maximiser le CTR et éviter la troncature."
+  ],
+  "per_field_remarks": {
+    "Titre produit": "Plus précis sur le format (diffuseur + recharge 48 ml) et l’usage anti-stress, mais formulation un peu longue et « Étui » peu recherché SEO.",
+    "Titre court du produit (60 caractères max)": "Clair et orienté espèce/bénéfice, mais la longueur max 60 caractères est à revalider pour conformité.",
+    "Slug": "Très descriptif mais trop long; à raccourcir pour lisibilité et performance SEO sans perdre « feliway-optimum-diffuseur-chat ».",
+    "META Title": "Bon compromis mots-clés + kit 30 jours, mais vérifier la longueur et éviter la répétition « diffuseur anti-stress chat ».",
+    "META Description": "Bien cadrée (« aider à réduire ») et conforme, avec CTA soft; ajouter éventuellement 70 m² ou 30 jours si place.",
+    "Description courte (...) 175 caractères": "Texte inchangé contenant « Fabriqué en France » non étayé par le brief → allégation potentiellement non fondée.",
+    "Description du produit unique/site 400 caractères": "Bonne synthèse factuelle (FPhC, stress, exemples, 70 m²) mais liste d’indications un peu réduite vs brief (manque appétit/léchage/consultation).",
+    "Description courte 600 caractères": "Très alignée brief (situations, 48 h avant, jour/nuit, 30 jours, 70 m²) et bien formulée sans surpromesse.",
+    "Description longue": "Excellente reprise des usages + composition 2% + mentions de sécurité obligatoires et statut non-médicament; dense mais conforme et bien cadré.",
+    "Conseils d'utilisation uniques (SEO)": "Contenu inchangé et pertinent (70 m², 48 h, 30 jours, remplacement), mais pourrait rappeler « non médicament »/signes de pathologie selon gabarit.",
+    "Mots clés": "Couverture sémantique améliorée (déménagement, travaux, cohabitation) mais enlever les variantes sans accents et éviter le léger bourrage.",
+    "Argu 1": "Allégation bien sécurisée (« aider à réduire ») et plus ancrée sur FPhC, mais moins concrète que l’ancienne liste de signes.",
+    "Argu 2": "Factuel et utile (70 m², jour/nuit) et remplace avantageusement la claim « scientifiquement démontrée ».",
+    "Argu 3": "Conforme et précis (48 ml, ~30 jours indicatif), bon remplacement du « 93% » non vérifiable.",
+    "Argu 4": "Usage 48 h avant bien ancré dans le brief, formulation claire et orientée pratique.",
+    "Argu 5": "Contenu inchangé et acceptable, mais supprimer les symboles « ?? » et préciser éventuellement « installation simple »."
+  },
+  "score_breakdown": {
+    "title_and_meta": 0.8,
+    "keyword_usage": 0.7,
+    "clarity_and_readability": 0.72,
+    "compliance_safety": 0.9,
+    "channel_fit": 0.78
+  }
+}

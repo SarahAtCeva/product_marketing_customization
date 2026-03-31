@@ -1,0 +1,20 @@
+{
+  "pipeline_version": "mvp_v1",
+  "source": {
+    "csv": "/home/u991938/Sarah/personalization_mvp/runs/local_20260327_132232/Matrice produit IA(Feuil1) (2).csv",
+    "index": 1,
+    "channel": "amazon_animal_health",
+    "expertise": "veterinary_expert",
+    "generation_model": "gpt-5.2",
+    "reasoning_model": "gpt-5.2",
+    "audit_model": "gpt-5.2"
+  },
+  "artifacts": {
+    "input": "/home/u991938/Sarah/personalization_mvp/runs/local_20260327_132232/input_product_index.json",
+    "analysis": "/home/u991938/Sarah/personalization_mvp/runs/local_20260327_132232/analysis_output.json",
+    "generated": "/home/u991938/Sarah/personalization_mvp/runs/local_20260327_132232/generated_output.json",
+    "diff": "/home/u991938/Sarah/personalization_mvp/runs/local_20260327_132232/diff_output.json",
+    "judge": "/home/u991938/Sarah/personalization_mvp/runs/local_20260327_132232/judge_output.json",
+    "retry": "/home/u991938/Sarah/personalization_mvp/runs/local_20260327_132232/retry_output.json"
+  }
+}

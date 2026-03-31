@@ -1,0 +1,44 @@
+{
+  "allowed_claims": [
+    "soutient la réduction des signes de stress chez le chat",
+    "aide à diminuer le marquage urinaire et les griffades",
+    "contribue à apaiser le chat en cas de changements dans son environnement",
+    "favorise un sentiment de sécurité et de bien-être chez le chat",
+    "peut aider à calmer les réactions de peur liées au stress",
+    "formulé pour une diffusion continue pendant environ 30 jours",
+    "conçu pour une utilisation chez les chats de toute taille, chatons et adultes",
+    "efficacité scientifiquement démontrée dans la réduction des manifestations de stress",
+    "facile à utiliser via un diffuseur électrique",
+    "produit non médicamenteux reproduisant un analogue de phéromone faciale féline"
+  ],
+  "forbidden_claims": [
+    "guérit le stress chez le chat",
+    "traite les troubles comportementaux",
+    "élimine le marquage urinaire",
+    "garanti 100% efficace",
+    "effet immédiat",
+    "miracle anti-stress",
+    "sans risque pour tous les chats",
+    "cliniquement prouvé sans réserve",
+    "effet sédatif ou tranquillisant",
+    "remplace un traitement vétérinaire"
+  ],
+  "mandatory_mentions": [
+    "CONSERVER HORS DE LA PORTÉE DES ENFANTS. Lire l’étiquette avant utilisation.",
+    "Peut être mortel en cas d'ingestion et de pénétration dans les voies respiratoires.",
+    "EN CAS D’INGESTION : Appeler immédiatement un CENTRE ANTIPOISON, un médecin.",
+    "Feliway Classic n’est pas un médicament vétérinaire.",
+    "Si le chat présente des signes de pathologie, demandez conseil à un vétérinaire."
+  ],
+  "species_restrictions": [
+    "Usage réservé aux chats.",
+    "Ne pas utiliser chez d’autres espèces."
+  ],
+  "regulatory_notes": [
+    "Produit non médicamenteux, complément d’ambiance à base d’analogue de phéromone faciale féline.",
+    "Ne remplace pas un médicament vétérinaire.",
+    "Conforme à la réglementation française et européenne applicable aux produits de bien-être animal non-médicamenteux.",
+    "Mentionner clairement que le produit n’est pas un médicament vétérinaire.",
+    "Respecter les avertissements de sécurité et contre-indications indiqués sur l’étiquette."
+  ]
+}

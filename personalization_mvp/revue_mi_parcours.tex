@@ -1,0 +1,596 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel}
+\usepackage{geometry}
+\usepackage{booktabs}
+\usepackage{hyperref}
+\usepackage{amsmath}
+\usepackage{microtype}
+\usepackage{listings}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{tikz}
+\usepackage{tcolorbox}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{enumitem}
+\usepackage{mdframed}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\usepackage{multicol}
+
+\usetikzlibrary{arrows.meta, shapes.geometric, positioning, fit, backgrounds}
+
+\geometry{margin=2.5cm, top=3cm, bottom=3cm}
+
+% ---------- couleurs projet ----------
+\definecolor{brandblue}{RGB}{30, 90, 160}
+\definecolor{brandgray}{RGB}{240, 242, 246}
+\definecolor{warnred}{RGB}{200, 50, 50}
+\definecolor{okgreen}{RGB}{34, 139, 80}
+\definecolor{codebg}{RGB}{248, 248, 252}
+\definecolor{accentorange}{RGB}{220, 120, 30}
+
+% ---------- en-têtes ----------
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{\small\textcolor{brandblue}{IA Personnalisation Produit — MVP}}
+\lhead{\small\textcolor{gray}{Revue de mi-parcours}}
+\rfoot{\small\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+
+% ---------- titres de sections ----------
+\titleformat{\section}{\large\bfseries\color{brandblue}}{}{0em}{\thesection\quad}[\titlerule]
+\titleformat{\subsection}{\normalsize\bfseries\color{brandblue!80!black}}{}{0em}{\thesubsection\quad}
+
+% ---------- boîtes ----------
+\tcbuselibrary{skins, breakable}
+
+\newtcolorbox{infobox}[1]{
+  colback=brandgray, colframe=brandblue,
+  fonttitle=\bfseries\small, title=#1,
+  left=4pt, right=4pt, top=4pt, bottom=4pt,
+  breakable
+}
+
+\newtcolorbox{warnbox}[1]{
+  colback=warnred!6, colframe=warnred,
+  fonttitle=\bfseries\small\color{warnred}, title=#1,
+  left=4pt, right=4pt, top=4pt, bottom=4pt,
+  breakable
+}
+
+\newtcolorbox{okbox}[1]{
+  colback=okgreen!6, colframe=okgreen,
+  fonttitle=\bfseries\small\color{okgreen}, title=#1,
+  left=4pt, right=4pt, top=4pt, bottom=4pt,
+  breakable
+}
+
+% ---------- style listings ----------
+\lstset{
+  backgroundcolor=\color{codebg},
+  basicstyle=\ttfamily\small,
+  breaklines=true,
+  frame=single,
+  framerule=0.4pt,
+  rulecolor=\color{brandblue!40},
+  keywordstyle=\color{brandblue}\bfseries,
+  stringstyle=\color{okgreen},
+  commentstyle=\color{gray}\itshape,
+  numbers=left,
+  numberstyle=\tiny\color{gray},
+  numbersep=8pt,
+  xleftmargin=12pt,
+  tabsize=2,
+  showstringspaces=false
+}
+
+% ---------- commandes utiles ----------
+\newcommand{\badge}[2]{%
+  \colorbox{#1}{\textcolor{white}{\footnotesize\textbf{~#2~}}}%
+}
+
+% ======================================================
+\title{%
+  \vspace{-1cm}
+  \textbf{\color{brandblue}Revue de mi-parcours}\\[4pt]
+  \large IA de personnalisation produit — MVP\\[6pt]
+  \normalsize\textcolor{gray}{Génération de contenus sous contraintes réglementaires}
+}
+\author{}
+\date{\textcolor{gray}{\small Mars 2026}}
+% ======================================================
+
+\begin{document}
+
+\maketitle
+\thispagestyle{fancy}
+
+\tableofcontents
+\vspace{1em}
+
+% ======================================================
+\section{Résumé exécutif}
+
+\begin{infobox}{En un coup d'œil}
+Ce projet automatise la génération de contenus produits pour la santé animale dans un cadre réglementé.
+Le MVP repose sur un pipeline \textbf{contrôlé, structuré et traçable} capable de produire des contenus
+conformes, cohérents avec le produit et adaptés au canal de distribution.
+\end{infobox}
+
+\vspace{0.5em}
+
+\begin{center}
+\begin{tabular}{lll}
+\toprule
+\textbf{Dimension} & \textbf{État} & \textbf{Note} \\
+\midrule
+Fonctionnalité de base   & \badge{okgreen}{OK}      & Pipeline bout-en-bout opérationnel \\
+Conformité réglementaire & \badge{okgreen}{OK}      & Pare-feu sémantique + règles déterministes \\
+Traçabilité              & \badge{okgreen}{OK}      & Logs JSON complets par exécution \\
+Passage à l'échelle      & \badge{accentorange}{En cours} & Batch et multi-retry à implémenter \\
+Validation humaine       & \badge{accentorange}{Partiel}  & Interface à industrialiser \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+% ======================================================
+\section{Problématique}
+
+\subsection{Contraintes métier}
+
+Les produits de santé animale sont soumis à des restrictions strictes sur les allégations,
+définies par les réglementations européennes (directive 2001/82/CE, règlement 2019/6) et les
+recommandations DGCCRF pour les compléments alimentaires vétérinaires.
+
+\begin{center}
+\renewcommand{\arraystretch}{1.3}
+\begin{tabularx}{\linewidth}{>{\bfseries}lX}
+\toprule
+Statut & Exemples d'allégations \\
+\midrule
+\badge{warnred}{Interdit} &
+  \textit{guérit}, \textit{traite}, \textit{élimine}, \textit{garanti},
+  \textit{médicament}, \textit{thérapeutique} \\
+\badge{okgreen}{Autorisé} &
+  \textit{aide à}, \textit{soutient}, \textit{contribue à}, \textit{favorise},
+  \textit{participe au bien-être de} \\
+\badge{accentorange}{Conditionnel} &
+  \textit{réduit} (si données cliniques disponibles et citées),
+  allégations nutritionnelles validées \\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+\subsection{Tension structurelle}
+
+Un LLM non contraint optimise naturellement la \textit{persuasion}, au détriment de la
+\textit{précision réglementaire}. Cette tension est fondamentale :
+
+\begin{multicols}{2}
+\begin{warnbox}{Texte marketing non contraint}
+\small
+\textit{« Ce complément \textbf{guérit} efficacement les troubles digestifs de votre chat et
+\textbf{élimine garantie} les inconforts intestinaux. »}
+\end{warnbox}
+
+\columnbreak
+
+\begin{okbox}{Texte conforme généré}
+\small
+\textit{« Ce complément \textbf{aide à soutenir} l'équilibre de la flore intestinale et
+\textbf{contribue au confort digestif} de votre chat. »}
+\end{okbox}
+\end{multicols}
+
+\subsection{Objectif}
+
+Générer automatiquement des contenus :
+
+\begin{itemize}[leftmargin=1.5em]
+  \item \textbf{conformes réglementairement} — aucune allégation interdite, longueurs
+        respectées, mentions légales présentes ;
+  \item \textbf{fidèles au produit} — basés sur la fiche technique officielle du produit ;
+  \item \textbf{adaptés au canal} — ton et format différenciés (e-commerce, vétérinaire,
+        distribution spécialisée).
+\end{itemize}
+
+% ======================================================
+\section{Approche}
+
+Le principe central est de \textbf{contrôler l'espace de génération en amont} plutôt que de
+corriger a posteriori. Chaque étape produit des artefacts vérifiables et versionnés.
+
+\subsection{Pipeline général}
+
+\begin{center}
+\begin{tikzpicture}[
+  node distance=1.1cm and 0.4cm,
+  box/.style={
+    rectangle, rounded corners=4pt,
+    minimum width=2.2cm, minimum height=0.8cm,
+    text centered, font=\small\bfseries,
+    draw, thick
+  },
+  step/.style={box, fill=brandblue!15, draw=brandblue},
+  judge/.style={box, fill=accentorange!20, draw=accentorange},
+  human/.style={box, fill=okgreen!15, draw=okgreen},
+  arr/.style={-{Stealth[length=5pt]}, thick, brandblue},
+  retarr/.style={-{Stealth[length=5pt]}, thick, warnred, dashed}
+]
+
+\node[step]  (ext)  {extract};
+\node[step, right=of ext]  (ana)  {analyze};
+\node[step, right=of ana]  (gen)  {generate};
+\node[judge, right=of gen] (jud)  {judge};
+\node[step, right=of jud]  (val)  {validate};
+\node[human, right=of val] (hum)  {human-in\\-the-loop};
+
+\draw[arr] (ext) -- (ana);
+\draw[arr] (ana) -- (gen);
+\draw[arr] (gen) -- (jud);
+\draw[arr] (jud) -- (val);
+\draw[arr] (val) -- (hum);
+
+% boucle retry
+\draw[retarr] (jud.south) -- ++(0,-0.6) -| (gen.south)
+  node[midway, below, font=\footnotesize\color{warnred}] {retry si non-conforme};
+
+% annotations
+\node[font=\tiny, text=gray, above=0.1cm of ext] {CSV produit};
+\node[font=\tiny, text=gray, above=0.1cm of ana] {brief + contraintes};
+\node[font=\tiny, text=gray, above=0.1cm of gen] {contenus bruts};
+\node[font=\tiny, text=gray, above=0.1cm of jud] {scores};
+\node[font=\tiny, text=gray, above=0.1cm of val] {rapport};
+\node[font=\tiny, text=gray, above=0.1cm of hum] {décision finale};
+
+\end{tikzpicture}
+\end{center}
+
+\subsection{Principe de contrôle en amont}
+
+\[
+\underbrace{\text{extract} \to \text{analyze}}_{\text{grounding}} \to
+\underbrace{\text{generate}}_{\text{génération contrainte}} \to
+\underbrace{\text{judge} \to \text{validate}}_{\text{double vérification}} \to
+\underbrace{\text{human}}_{\text{supervision}}
+\]
+
+Le \textit{grounding} est l'étape clé : il transforme une fiche technique brute en un ensemble
+de contraintes explicites qui guident (et limitent) la génération.
+
+% ======================================================
+\section{Description du système}
+
+\subsection{Extraction (\texttt{extract.py})}
+
+Lecture et normalisation du fichier source CSV. Chaque ligne correspond à un produit ;
+les colonnes sont standardisées en un objet produit unifié.
+
+\begin{lstlisting}[language=Python, caption={Exemple de sortie extract}]
+{
+  "product_id": "CAT-CALM-001",
+  "name": "ZenCat Relax",
+  "species": "chat",
+  "category": "complement_comportement",
+  "active_ingredients": ["Valériane", "L-Tryptophane", "Magnésium"],
+  "form": "comprimé",
+  "dosage": "1 comprimé / 10 kg / jour"
+}
+\end{lstlisting}
+
+\subsection{Analyse et grounding (\texttt{analyze.py})}
+
+Construction d'un \textbf{brief produit structuré} et d'un ensemble de contraintes de conformité
+à partir des données extraites. Cette étape est le cœur du contrôle réglementaire.
+
+\begin{lstlisting}[language=Python, caption={Brief de conformité produit}]
+{
+  "product_id": "CAT-CALM-001",
+  "allowed_claims": [
+    "aide à réduire le stress situationnel",
+    "contribue au calme naturel",
+    "soutient l'équilibre émotionnel"
+  ],
+  "forbidden_claims": [
+    "guérit l'anxiété",
+    "traite les troubles comportementaux",
+    "sédatif garanti"
+  ],
+  "mandatory_mentions": [
+    "complément alimentaire",
+    "ne se substitue pas à un traitement vétérinaire"
+  ],
+  "channel_tone": {
+    "ecommerce": "chaleureux, bénéfices consommateur",
+    "veterinaire": "factuel, ingrédients actifs mis en avant"
+  }
+}
+\end{lstlisting}
+
+\begin{infobox}{Pare-feu sémantique}
+Le brief de conformité agit comme un \textbf{contexte de contraintes injecté dans chaque prompt}.
+Le modèle ne peut pas ignorer les contraintes sans produire un résultat explicitement incohérent,
+ce qui facilite leur détection au stade de l'évaluation.
+\end{infobox}
+
+\subsection{Génération (\texttt{generate.py})}
+
+Production des contenus pour chaque canal et format :
+
+\begin{center}
+\renewcommand{\arraystretch}{1.3}
+\begin{tabular}{lll}
+\toprule
+\textbf{Format} & \textbf{Longueur cible} & \textbf{Usage} \\
+\midrule
+Description courte  & 150–250 car. & Listing, résumé \\
+Description moyenne & 400–600 car. & Fiche produit principale \\
+Description longue  & 800–1200 car. & Page détaillée, blog \\
+SEO title           & 50–60 car.   & Balise \texttt{<title>} \\
+Meta description    & 150–160 car. & Balise \texttt{<meta>} \\
+Arguments commerciaux & 3–5 puces  & Vendeur, distributeur \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\subsection{Évaluation (\texttt{judge.py})}
+
+Un LLM juge évalue chaque contenu généré selon trois axes, avec un score normalisé et
+une justification structurée :
+
+\begin{center}
+\renewcommand{\arraystretch}{1.3}
+\begin{tabular}{llp{7cm}}
+\toprule
+\textbf{Axe} & \textbf{Score} & \textbf{Critères} \\
+\midrule
+Conformité réglementaire & 0–10 &
+  Absence d'allégations interdites, présence des mentions obligatoires \\
+Qualité SEO & 0–10 &
+  Densité de mots-clés, longueur, structure, lisibilité \\
+Cohérence produit & 0–10 &
+  Fidélité aux ingrédients, à l'espèce cible, aux bénéfices documentés \\
+\midrule
+\textbf{Score global} & \textbf{0–10} & Moyenne pondérée (conformité $\times$ 2) \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\noindent Un seuil de validation est fixé : \textbf{conformité $\geq$ 8 et score global $\geq$ 7}.
+Tout contenu en dessous déclenche une boucle de correction.
+
+\subsection{Correction (\texttt{retry.py})}
+
+La correction est \textbf{ciblée} : seuls les axes dont le score est insuffisant sont re-générés.
+Le prompt de correction injecte explicitement les éléments défaillants identifiés par le juge.
+
+\begin{lstlisting}[language=Python, caption={Payload de correction ciblée}]
+{
+  "content_id": "desc_courte",
+  "failed_axes": ["conformite"],
+  "feedback": "Allégation interdite détectée : 'réduit les crises d'anxiété'.
+    Remplacer par une formulation du type 'aide à apaiser'.",
+  "original_text": "..."
+}
+\end{lstlisting}
+
+\subsection{Validation déterministe}
+
+En complément de l'évaluation LLM, des règles déterministes garantissent un dernier
+niveau de vérification non probabiliste :
+
+\begin{itemize}[leftmargin=1.5em]
+  \item \textbf{Regex} — liste noire de termes interdits (mise à jour manuelle) ;
+  \item \textbf{Longueur} — contrôle des bornes min/max par format ;
+  \item \textbf{SEO} — vérification de la densité de mots-clés cibles ;
+  \item \textbf{Mentions légales} — présence obligatoire des disclaimers.
+\end{itemize}
+
+\begin{warnbox}{Complémentarité des approches}
+L'évaluation LLM capte les violations sémantiques subtiles ; la validation déterministe
+garantit les invariants non ambigus. Les deux couches sont nécessaires : ni l'une ni l'autre
+n'est suffisante seule.
+\end{warnbox}
+
+\subsection{Human-in-the-loop}
+
+Dans un contexte réglementé, la validation humaine est une exigence, non une option.
+Elle s'insère après la validation déterministe et avant toute publication.
+
+\begin{center}
+\begin{tikzpicture}[
+  node distance=0.8cm,
+  box/.style={rectangle, rounded corners=3pt, draw, thick,
+              minimum width=3cm, minimum height=0.7cm,
+              font=\small, text centered},
+  dec/.style={diamond, draw, thick, fill=brandgray,
+              font=\small, text centered, aspect=3,
+              minimum width=3.5cm},
+  arr/.style={-{Stealth[length=4pt]}, thick}
+]
+\node[box, fill=brandblue!15, draw=brandblue] (gen) {Contenu généré + scores};
+\node[dec, below=of gen] (rev) {Révision humaine};
+\node[box, fill=okgreen!15, draw=okgreen, below left=0.8cm and 1cm of rev]  (ok)  {Validé → export};
+\node[box, fill=accentorange!15, draw=accentorange, below=0.8cm of rev]     (mod) {Modifié → export};
+\node[box, fill=warnred!15, draw=warnred, below right=0.8cm and 1cm of rev] (rej) {Rejeté → feedback};
+
+\draw[arr] (gen) -- (rev);
+\draw[arr] (rev) -- node[left,font=\tiny]{valide} (ok);
+\draw[arr] (rev) -- node[right,font=\tiny]{modifie} (mod);
+\draw[arr] (rev) -- node[right,font=\tiny]{rejette} (rej);
+
+\draw[arr, dashed, warnred] (rej.east) -- ++(1.2,0) |- (gen.east)
+  node[midway, right, font=\tiny\color{warnred}] {amélioration continue};
+\end{tikzpicture}
+\end{center}
+
+Les retours humains (modifications, rejets, commentaires) constituent un corpus d'apprentissage
+pour l'amélioration continue des prompts et des critères de jugement.
+
+% ======================================================
+\section{Implémentation}
+
+\subsection{Structure des modules}
+
+\begin{center}
+\renewcommand{\arraystretch}{1.3}
+\begin{tabular}{lll}
+\toprule
+\textbf{Module} & \textbf{Responsabilité} & \textbf{Entrée / Sortie} \\
+\midrule
+\texttt{extract.py}  & Ingestion et normalisation & CSV $\to$ \texttt{Product} \\
+\texttt{analyze.py}  & Grounding réglementaire    & \texttt{Product} $\to$ \texttt{Brief} \\
+\texttt{generate.py} & Génération LLM             & \texttt{Brief} $\to$ \texttt{ContentSet} \\
+\texttt{judge.py}    & Évaluation multi-axes      & \texttt{ContentSet} $\to$ \texttt{Scores} \\
+\texttt{retry.py}    & Correction ciblée          & \texttt{ContentSet} + \texttt{Scores} $\to$ \texttt{ContentSet} \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\subsection{Traçabilité}
+
+Chaque exécution produit un fichier de log JSON structuré, horodaté et versionné :
+
+\begin{lstlisting}[language=Python, caption={Structure d'un log d'exécution}]
+{
+  "run_id": "2026-03-27T09:14:22Z_CAT-CALM-001",
+  "product_id": "CAT-CALM-001",
+  "pipeline_version": "0.4.1",
+  "steps": {
+    "extract":  { "status": "ok", "duration_ms": 12 },
+    "analyze":  { "status": "ok", "duration_ms": 1840, "model": "claude-sonnet-4-6" },
+    "generate": { "status": "ok", "duration_ms": 4320, "tokens_used": 1247 },
+    "judge":    { "status": "ok", "scores": { "conformite": 9.1,
+                                               "seo": 7.8, "coherence": 8.5 } },
+    "retry":    { "triggered": false },
+    "validate": { "status": "ok", "regex_hits": 0 }
+  },
+  "prompts": { "analyze": "...", "generate": "...", "judge": "..." }
+}
+\end{lstlisting}
+
+La conservation des prompts dans les logs est essentielle pour la reproductibilité et
+l'amélioration itérative des templates.
+
+\subsection{Stack technique}
+
+\begin{multicols}{2}
+\begin{itemize}[leftmargin=1em, itemsep=2pt]
+  \item Python 3.11
+  \item Claude API (Anthropic SDK)
+  \item Pydantic — validation des schémas
+  \item \texttt{re} — validation déterministe
+  \item JSON Lines — logs structurés
+  \item pytest — tests unitaires des règles
+\end{itemize}
+\end{multicols}
+
+% ======================================================
+\section{Limites actuelles}
+
+\begin{warnbox}{Limites identifiées}
+\begin{enumerate}[leftmargin=1.5em, itemsep=4pt]
+  \item \textbf{Pas de batch} — le pipeline traite un produit à la fois ;
+        les CSV de plusieurs centaines de références ne sont pas gérables efficacement.
+  \item \textbf{Un seul cycle de correction} — si le premier retry ne suffit pas,
+        le contenu est marqué comme non résolu sans nouvelle tentative.
+  \item \textbf{Dépendance stricte au CSV} — tout changement de format de la source
+        peut casser le pipeline sans message d'erreur explicite.
+  \item \textbf{Cohérence globale non garantie} — deux descriptions générées
+        indépendamment pour le même produit peuvent présenter des contradictions
+        de ton ou de formulation.
+  \item \textbf{Coût LLM non optimisé} — chaque étape (analyze, generate, judge)
+        effectue des appels indépendants ; le caching de contexte n'est pas exploité.
+\end{enumerate}
+\end{warnbox}
+
+% ======================================================
+\section{Prochaines étapes}
+
+\begin{center}
+\renewcommand{\arraystretch}{1.3}
+\begin{tabularx}{\linewidth}{clXl}
+\toprule
+\textbf{Priorité} & \textbf{Fonctionnalité} & \textbf{Description} & \textbf{Horizon} \\
+\midrule
+P1 & Batch processing &
+  Traitement parallèle de N produits avec gestion des erreurs par produit &
+  T+1 mois \\
+P1 & Multi-retry avec convergence &
+  Boucle de correction avec seuil de sortie configurable (max 3 cycles) &
+  T+1 mois \\
+P2 & Validation humaine industrialisée &
+  Interface légère (web ou CLI) pour review, modification et feedback &
+  T+2 mois \\
+P2 & Cohérence inter-descriptions &
+  Prompt de cohérence qui prend en entrée l'ensemble des variantes &
+  T+2 mois \\
+P3 & Optimisation des coûts &
+  Prompt caching, modèles légers pour les étapes déterministes &
+  T+3 mois \\
+P3 & Monitoring en production &
+  Dashboard des scores, alertes sur dérives de conformité &
+  T+3 mois \\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+% ======================================================
+\section{Conclusion}
+
+\begin{okbox}{Bilan}
+Le MVP démontre la \textbf{faisabilité d'une génération contrôlée sous contraintes
+réglementaires strictes}. Le système est fonctionnel, traçable et modulaire.
+
+Les prochaines étapes prioritaires sont le \textbf{batch} et la \textbf{boucle de convergence},
+qui sont les conditions nécessaires à un déploiement industriel.
+\end{okbox}
+
+\vspace{0.5em}
+
+La principale valeur architecturale du MVP est la séparation claire entre :
+\begin{itemize}[leftmargin=1.5em]
+  \item le \textit{grounding} (ce que le modèle \textbf{peut} dire),
+  \item la \textit{génération} (ce que le modèle \textbf{dit}),
+  \item et la \textit{vérification} (ce que le modèle \textbf{a dit est-il conforme}).
+\end{itemize}
+
+Cette séparation est ce qui rend le système \textbf{auditable} — une exigence non négociable
+dans un secteur réglementé.
+
+% ======================================================
+\appendix
+\section{Exemple de sortie complète}
+
+\begin{lstlisting}[caption={ContentSet — ZenCat Relax, canal e-commerce}]
+{
+  "product_id": "CAT-CALM-001",
+  "channel": "ecommerce",
+  "desc_courte": "ZenCat Relax aide votre chat à traverser sereinement
+    les situations stressantes du quotidien grâce à une formule naturelle
+    à base de Valériane et L-Tryptophane. Complément alimentaire.",
+  "desc_moyenne": "ZenCat Relax est un complément alimentaire formulé
+    pour soutenir l'équilibre émotionnel des chats adultes. Sa composition
+    associe la Valériane, traditionnellement reconnue pour contribuer
+    au calme naturel, le L-Tryptophane, précurseur de la sérotonine,
+    et le Magnésium. Idéal avant un déménagement, une visite vétérinaire
+    ou l'arrivée d'un nouvel animal. Ne se substitue pas à un traitement
+    vétérinaire.",
+  "seo_title": "ZenCat Relax — complément calme et bien-être chat",
+  "meta_desc": "Aidez votre chat à rester serein face au stress avec
+    ZenCat Relax, complément naturel à la Valériane. Sans ordonnance.",
+  "arguments": [
+    "Formule naturelle : Valériane, L-Tryptophane, Magnésium",
+    "Aide à apaiser les comportements liés au stress situationnel",
+    "Palatabilité optimisée — acceptation facilitée",
+    "Fabriqué en France, contrôle qualité renforcé"
+  ],
+  "scores": { "conformite": 9.4, "seo": 8.1, "coherence": 9.0 }
+}
+\end{lstlisting}
+
+\end{document}

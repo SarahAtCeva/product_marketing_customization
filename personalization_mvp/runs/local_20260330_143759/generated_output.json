@@ -1,0 +1,71 @@
+{
+  "generated_fields": {
+    "Titre produit": "Feliway Classic - Anti-stress chat - Kit diffuseur + recharge 48 ml",
+    "Titre court du produit (60 caractères max)": "Feliway Classic - Diffuseur anti-stress chat",
+    "Slug": "feliway-classic-anti-stress-chat-kit-diffuseur-recharge-48ml",
+    "META Title": "Feliway Classic - Diffuseur anti-stress chat - Kit 30 jours",
+    "META Description": "Feliway Classic aide à réduire les signes de stress du chat à la maison et à l’apaiser. Kit diffuseur + recharge, action env. 30 jours. Découvrez-le.",
+    "Mots clés": "feliway classic, anti-stress chat, diffuseur chat, pheromones chat, apaisant chat, marquage urinaire, griffades chat, bien-etre chat, stress demenagement, adaptation chaton, chat anxieux, kit diffuseur",
+    "Description du produit unique/site 400 caractères": "FELIWAY Classic D+R est un kit diffuseur + recharge 48 ml pour chaton et chat adulte, qui diffuse un analogue synthétique de phéromone faciale féline pour aider à réduire les manifestations de stress à la maison. Il contribue à apaiser lors de changements (adoption, déménagement, bruits, nouveaux arrivants) et peut aider à limiter marquage urinaire et griffades liés au stress.",
+    "Description courte 600 caractères": "FELIWAY Classic D+R (diffuseur + recharge 48 ml) est destiné au chat et diffuse un analogue de phéromone faciale féline (2%) pour contribuer à apaiser et aider à réduire certaines manifestations de stress à la maison, comme le marquage urinaire ou les griffades liés au stress. À utiliser en continu (jour et nuit) dans la pièce où le chat passe le plus de temps. Une recharge agit environ 30 jours (variable selon l’aération) et convient pour des pièces jusqu’à 70 m². Sans effet sédatif (non tranquillisant).",
+    "Description longue": "FELIWAY Classic D+R est un kit diffuseur + recharge (48 ml) destiné au chaton et au chat adulte. Il diffuse un analogue synthétique de phéromone faciale féline, un « message » perçu uniquement par les chats, pour contribuer à apaiser et aider à réduire certaines manifestations de stress à la maison.\n\nSituations concernées : changements dans le foyer (adoption, déménagement, arrivée d’un nouveau membre, bruits), réactions de peur à l’intérieur, séparations ou événement perturbant. Il peut aussi aider à limiter le marquage urinaire et les griffades sur le mobilier lorsqu’ils sont liés au stress.\n\nMode d’emploi : brancher le diffuseur dans la pièce où le chat passe le plus de temps et le laisser fonctionner jour et nuit. Si l’événement stressant est anticipable, le brancher au moins 48 h avant. Convient pour des pièces jusqu’à 70 m².\n\nDurée et entretien : une recharge a une durée d’action d’environ 30 jours, pouvant varier selon l’aération et les flux d’air. Le diffuseur doit être remplacé après 6 mois d’utilisation ou 6 recharges.\n\nInformations importantes : sans effet sédatif (non tranquillisant). Made in France.\n\nPrécautions d'utilisation : CONSERVER HORS DE LA PORTÉE DES ENFANTS. Lire létiquette avant utilisation. Peut être mortel en cas d'ingestion et de pénétration dans les voies respiratoires. EN CAS DINGESTION : Appeler immédiatement un CENTRE ANTIPOISON, un médecin. Feliway Classic nest pas un médicament vétérinaire. Si le chat présente des signes de pathologie, demandez conseil à un vétérinaire.",
+    "Argu 1": "Kit complet diffuseur + recharge 48 ml, conçu pour le chat",
+    "Argu 2": "Aide à réduire les manifestations de stress à la maison (marquage urinaire et griffades liés au stress)",
+    "Argu 3": "Sans effet sédatif : non tranquillisant",
+    "Argu 4": "Une recharge : environ 30 jours d’action (variable selon l’aération) et jusqu’à 70 m²",
+    "Argu 5": "Made in France",
+    "Description courte (...) 175 caractères": "FELIWAY Classic - Anti-stress pour chat - Kit complet (diffuseur + recharge) - 30 jours - Fabriqué en France",
+    "Conseils d'utilisation uniques (SEO)": "Mode demploi du diffuseur et de la recharge Feliway Classic\n\nLe diffuseur Feliway Classic reste efficace pendant environ 30 jours. Toutefois, sa durée daction peut être réduite en fonction de la localisation ou des courants dair dans la pièce (aération, ventilation excessive).\nLa recharge doit être utilisée en fonction de la cause du stress. Le diffuseur doit être remplacé après 6 mois dutilisation ou après avoir utilisé 6 recharges.\n\nPour une gestion efficace du stress à la maison :\n- Branchez le diffuseur Feliway Classic dans la pièce où le chat passe le plus de temps.\n- Le diffuseur doit être allumé 24h/24 pour un résultat optimal. Il est conçu pour des pièces allant jusquà 70 m².\n- Si un événement stressant peut être anticipé, il est recommandé de brancher le diffuseur au moins 48h avant."
+  },
+  "descriptions_self_check": {
+    "char_counts": {
+      "Description du produit unique/site 400 caractères": 389,
+      "Description courte 600 caractères": 584,
+      "Description longue": 1707,
+      "Arguments de vente uniques (USPs) 3 à 5": [
+        61,
+        95,
+        39,
+        77,
+        13
+      ]
+    },
+    "spec_compliance": {
+      "top_level_keys_exact": true,
+      "description_400_within_limits": true,
+      "description_600_within_limits": true,
+      "description_long_within_limits": true,
+      "usps_count_within_limits": true,
+      "usps_each_within_char_limit": true,
+      "language_fr": true
+    },
+    "regulatory_consistency": {
+      "allowed_claims_only": true,
+      "no_forbidden_absolute_or_quantified_marketing_claims": true,
+      "mandatory_mentions_included_verbatim": true,
+      "species_restriction_respected": true,
+      "non_medicinal_status_stated": true
+    },
+    "channel_fit": {
+      "tone_reassuring_factual": true,
+      "motivations_addressed": [
+        "sécurité",
+        "efficacité",
+        "rapport qualité-prix"
+      ],
+      "veterinary_expert_style": true
+    },
+    "hallucination_risk": {
+      "risk_level": "low",
+      "notes": [
+        "Aucune allégation chiffrée d’efficacité (%, délais) reprise.",
+        "Aucune information non fournie (excipients détaillés, stockage, autres espèces, contre-indications) ajoutée."
+      ]
+    }
+  },
+  "seo_validation": {
+    "is_valid": true,
+    "errors": [],
+    "warnings": []
+  }
+}

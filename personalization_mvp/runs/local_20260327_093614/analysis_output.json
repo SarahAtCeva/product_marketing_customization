@@ -1,0 +1,130 @@
+{
+  "brief": {
+    "product_summary": "Feliway Classic est un diffuseur pour chat qui reproduit une phéromone faciale synthétique apaisante, aidant à réduire les signes de stress tels que le marquage urinaire et les griffades.",
+    "target_species": [
+      "chat"
+    ],
+    "target_profile": "Chats de toute taille, chatons et chats adultes, confrontés à des situations stressantes.",
+    "primary_benefit": "Réduction des manifestations de stress chez le chat, notamment marquage urinaire et griffades.",
+    "secondary_benefits": [
+      "Aide à apaiser le chat lors d'événements perturbants (déménagement, adoption, bruits, arrivée d'un nouveau membre)",
+      "Facilite l'adaptation à un nouvel environnement",
+      "N'a pas d'effet sédatif ni tranquillisant",
+      "Facile à utiliser avec une action d'environ 30 jours par recharge"
+    ],
+    "use_cases": [
+      "Un chat qui urine en dehors de sa litière ou fait des griffades sur les meubles",
+      "Lors d'un déménagement ou changement d'environnement",
+      "À l'arrivée d'un nouveau membre dans la famille (humain ou animal)",
+      "En cas de bruits inhabituels ou perturbants dans la maison",
+      "Pour apaiser un chat stressé lors d'un voyage ou transport",
+      "Pour réduire les réactions de peur et d'anxiété chez le chat"
+    ],
+    "key_differentiator": "Produit non médicamenteux, reproduisant une phéromone faciale naturelle du chat, avec efficacité scientifiquement démontrée et fabriqué en France.",
+    "tone_angle": "reassuring",
+    "data_gaps": [
+      "Durée précise d'utilisation recommandée selon le type de stress",
+      "Informations sur les effets secondaires éventuels",
+      "Détails sur la composition exacte des excipients",
+      "Précisions sur l'efficacité chez les chats multi-chats ou en milieu extérieur"
+    ],
+    "buyer_questions": [
+      {
+        "priority": 1,
+        "question": "Ce produit est-il efficace pour réduire le marquage urinaire de mon chat ?",
+        "answered": true,
+        "answer_summary": "Oui, il aide à réduire le marquage urinaire avec une amélioration notable dès la première semaine et 90% d'amélioration à un mois."
+      },
+      {
+        "priority": 2,
+        "question": "Comment utiliser le diffuseur et combien de temps dure une recharge ?",
+        "answered": true,
+        "answer_summary": "Le diffuseur doit être branché dans la pièce où le chat passe le plus de temps, allumé 24h/24, avec une durée d'action d'environ 30 jours par recharge."
+      },
+      {
+        "priority": 3,
+        "question": "Ce produit est-il un médicament vétérinaire ?",
+        "answered": true,
+        "answer_summary": "Non, Feliway Classic n'est pas un médicament vétérinaire."
+      },
+      {
+        "priority": 4,
+        "question": "Le produit est-il sûr pour mon chat et ma famille ?",
+        "answered": true,
+        "answer_summary": "Il faut conserver hors de portée des enfants, car il peut être mortel en cas d'ingestion ou pénétration dans les voies respiratoires."
+      },
+      {
+        "priority": 5,
+        "question": "Puis-je utiliser ce produit pour un chaton ?",
+        "answered": true,
+        "answer_summary": "Oui, il est indiqué pour chatons et chats adultes."
+      },
+      {
+        "priority": 6,
+        "question": "Le produit a-t-il un effet sédatif ou tranquillisant ?",
+        "answered": true,
+        "answer_summary": "Non, il n'a pas d'effet sédatif ni tranquillisant."
+      },
+      {
+        "priority": 7,
+        "question": "Combien de temps puis-je utiliser le même diffuseur ?",
+        "answered": true,
+        "answer_summary": "Le diffuseur doit être remplacé après 6 mois d'utilisation ou après 6 recharges."
+      },
+      {
+        "priority": 8,
+        "question": "Le produit est-il fabriqué en France ?",
+        "answered": true,
+        "answer_summary": "Oui, il est développé et fabriqué en France."
+      },
+      {
+        "priority": 9,
+        "question": "Le produit est-il inflammable ?",
+        "answered": true,
+        "answer_summary": "Non, il n'est pas inflammable."
+      },
+      {
+        "priority": 10,
+        "question": "Le produit peut-il être utilisé dans des pièces de grande taille ?",
+        "answered": true,
+        "answer_summary": "Le diffuseur convient pour des pièces jusqu'à 70 m²."
+      }
+    ]
+  },
+  "compliance": {
+    "allowed_claims": [
+      "soutient la gestion du stress",
+      "aide à réduire le marquage urinaire",
+      "contribue à diminuer les griffades",
+      "favorise le bien-être émotionnel du chat",
+      "peut aider à apaiser le chat lors d'événements stressants",
+      "conçu pour une utilisation continue jusqu'à 30 jours par recharge",
+      "formulé pour reproduire la phéromone faciale apaisante du chat"
+    ],
+    "forbidden_claims": [
+      "guérit",
+      "traite",
+      "élimine",
+      "100%",
+      "garanti",
+      "immédiat",
+      "miracle",
+      "sans risque",
+      "cliniquement prouvé"
+    ],
+    "mandatory_mentions": [
+      "CONSERVER HORS DE LA PORTÉE DES ENFANTS. Lire l’étiquette avant utilisation. Peut être mortel en cas d'ingestion et de pénétration dans les voies respiratoires. EN CAS D’INGESTION : Appeler immédiatement un CENTRE ANTIPOISON, un médecin.",
+      "Feliway Classic n’est pas un médicament vétérinaire. Si le chat présente des signes de pathologie, demandez conseil à un vétérinaire."
+    ],
+    "species_restrictions": [
+      "Usage réservé aux chats."
+    ],
+    "regulatory_notes": [
+      "Produit non médicamenteux, relevant de la catégorie des produits vétérinaires non médicamenteux ou compléments apaisants.",
+      "Ne pas présenter le produit comme un médicament ou un traitement curatif.",
+      "Respecter les mentions légales et précautions d'emploi.",
+      "Ne pas faire de promesses de guérison ou d'efficacité immédiate.",
+      "Mentionner clairement que le produit n'est pas un médicament vétérinaire."
+    ]
+  }
+}

@@ -1,0 +1,567 @@
+{
+  "brief": {
+    "product_summary": "Diffuseur électrique + recharge (48 ml) contenant un analogue synthétique de phéromone faciale féline, destiné à aider à apaiser les chats en situation de stress à la maison pendant ~30 jours.",
+    "target_species": [
+      "Chat"
+    ],
+    "target_profile": "Chaton et chat adulte, toute taille, en contexte de stress environnemental (changement, peur, marquage/griffades).",
+    "primary_benefit": "Aide à réduire les manifestations de stress chez le chat à la maison via diffusion d’un analogue de phéromone faciale féline.",
+    "secondary_benefits": [
+      "Aide à limiter le marquage urinaire",
+      "Aide à limiter les griffades sur le mobilier",
+      "Aide à gérer les réactions de peur en intérieur",
+      "Aide le chat à se sentir plus calme et confiant lors de changements (adoption, déménagement, etc.)",
+      "Solution non sédative (n’a pas d’effet sédatif / n’est pas un tranquillisant)",
+      "Diffusion continue jour et nuit, couverture annoncée jusqu’à 70 m², durée d’action ~30 jours"
+    ],
+    "use_cases": [
+      "Le chat urine en marquage dans le logement",
+      "Le chat griffe le mobilier (canapé, portes, tapis)",
+      "Préparer un déménagement ou une adoption (brancher 48 h avant si anticipable)",
+      "Arrivée d’un nouveau membre dans le foyer (bébé, conjoint, autre animal)",
+      "Bruits/travaux/événements perturbants à la maison",
+      "Séparation, absence, changement de routine",
+      "Gestion des réactions de peur en intérieur (cachettes, sursauts, évitement)"
+    ],
+    "key_differentiator": "Reproduction d’un « message apaisant » naturel (analogue de phéromone faciale féline) diffusé en continu via diffuseur, présenté comme inodore et perçu uniquement par les chats.",
+    "tone_angle": "reassuring",
+    "data_gaps": [
+      "Nature exacte des excipients (non détaillés)",
+      "Statut réglementaire précis (biocide/produit de bien-être) non explicitement indiqué, seulement « n’est pas un médicament vétérinaire »",
+      "Conditions exactes des études citées (protocoles, population, critères) non détaillées dans les données produit",
+      "Posologie/consommation exacte en ml/jour non fournie (seulement durée ~30 jours)",
+      "Compatibilités/contre-indications spécifiques (gestation, chat asthmatique, foyers multi-espèces) non précisées au-delà des avertissements généraux"
+    ],
+    "buyer_questions": [
+      {
+        "priority": 1,
+        "question": "À quoi sert FELIWAY Classic (diffuseur + recharge) ?",
+        "answered": true,
+        "answer_summary": "Aide à réduire les manifestations de stress chez le chaton et le chat adulte (ex. marquage urinaire, griffades, réactions de peur) en diffusant un analogue de phéromone faciale féline."
+      },
+      {
+        "priority": 2,
+        "question": "Combien de temps dure une recharge / le kit ?",
+        "answered": true,
+        "answer_summary": "Durée d’action d’environ 30 jours, pouvant varier selon la localisation et les flux d’air (aération/ventilation)."
+      },
+      {
+        "priority": 3,
+        "question": "Dans quelle pièce et comment l’utiliser pour être efficace ?",
+        "answered": true,
+        "answer_summary": "Brancher dans la pièce où le chat passe le plus de temps, laisser branché jour et nuit (24h/24). Si stress anticipable, brancher au moins 48 h avant."
+      },
+      {
+        "priority": 4,
+        "question": "Quelle surface le diffuseur couvre-t-il ?",
+        "answered": true,
+        "answer_summary": "Convient pour des pièces jusqu’à 70 m²."
+      },
+      {
+        "priority": 5,
+        "question": "Est-ce un médicament vétérinaire ou un tranquillisant/sédatif ?",
+        "answered": true,
+        "answer_summary": "Le produit indique : « n’est pas un médicament vétérinaire » et « n’a pas d’effet sédatif / n’est pas un tranquillisant »."
+      },
+      {
+        "priority": 6,
+        "question": "Quand faut-il remplacer le diffuseur ?",
+        "answered": true,
+        "answer_summary": "Le diffuseur doit être remplacé après 6 mois d’utilisation ou 6 recharges."
+      },
+      {
+        "priority": 7,
+        "question": "Quels sont les ingrédients et leur concentration ?",
+        "answered": true,
+        "answer_summary": "Fraction d’analogue structural des phéromones faciales de chat : 2% ; excipients q.s.p. 100 g ; sans additifs nutritionnels."
+      },
+      {
+        "priority": 8,
+        "question": "Quelles précautions de sécurité faut-il respecter à la maison ?",
+        "answered": true,
+        "answer_summary": "Conserver hors de portée des enfants, lire l’étiquette, danger en cas d’ingestion et pénétration dans les voies respiratoires ; en cas d’ingestion appeler un centre antipoison/un médecin."
+      },
+      {
+        "priority": 9,
+        "question": "Le produit fonctionne-t-il aussi pour le transport/voyage ?",
+        "answered": true,
+        "answer_summary": "Les textes mentionnent une diminution significative de manifestations de stress (vomissements, diarrhées, miaulements) lors du transport/voyage (sources citées)."
+      },
+      {
+        "priority": 10,
+        "question": "Est-ce fabriqué en France ?",
+        "answered": true,
+        "answer_summary": "Oui : mention « Développé et fabriqué en France » / « Made in France » ; pays d’origine : France."
+      }
+    ],
+    "formulation_analysis": {
+      "parsed_active_ingredients": [
+        {
+          "name": "Fraction d’analogue structural des phéromones faciales de chat",
+          "source_field": "Composition",
+          "quantity_or_context": "2%"
+        },
+        {
+          "name": "Excipients",
+          "source_field": "Composition",
+          "quantity_or_context": "q.s.p. 100 g"
+        },
+        {
+          "name": "Sans additifs",
+          "source_field": "Additifs nutritionnels",
+          "quantity_or_context": "Sans additifs"
+        }
+      ],
+      "inferred_functional_properties": [
+        {
+          "property": "Aide à l’apaisement / effet rassurant via signal phéromonal (message de sécurité)",
+          "supporting_ingredient": "Fraction d’analogue structural des phéromones faciales de chat",
+          "confidence": "medium"
+        }
+      ],
+      "text_field_mentions": [
+        {
+          "source_field": "META Description",
+          "excerpt": "\"reproduction synthétique de la phéromone faciale reconnue pour ses propriétés rassurantes\"",
+          "detected_property": "Propriétés rassurantes/réconfortantes (phéromone faciale synthétique)",
+          "already_in_structured_data": true
+        },
+        {
+          "source_field": "META Description",
+          "excerpt": "\"aide les chats à faire face aux situations stressantes\"",
+          "detected_property": "Aide à gérer les situations stressantes",
+          "already_in_structured_data": true
+        },
+        {
+          "source_field": "Argu 1",
+          "excerpt": "\"Réduit les principaux signes de stress : marquage urinaire, griffades\"",
+          "detected_property": "Réduction des signes de stress (marquage urinaire, griffades, peur)",
+          "already_in_structured_data": false
+        },
+        {
+          "source_field": "Argu 2",
+          "excerpt": "\"Efficacité scientifiquement démontrée\"",
+          "detected_property": "Allégation d’efficacité scientifiquement démontrée",
+          "already_in_structured_data": false
+        },
+        {
+          "source_field": "Argu 3",
+          "excerpt": "\"Action 30 jours\"",
+          "detected_property": "Durée d’action 30 jours",
+          "already_in_structured_data": false
+        },
+        {
+          "source_field": "Argu 4",
+          "excerpt": "\"Développé et fabriqué en France\"",
+          "detected_property": "Origine/fabrication France",
+          "already_in_structured_data": false
+        },
+        {
+          "source_field": "Argu 5",
+          "excerpt": "\"Facile à utiliser\"",
+          "detected_property": "Facilité d’utilisation",
+          "already_in_structured_data": false
+        },
+        {
+          "source_field": "Description courte (175 caractères)",
+          "excerpt": "\"Kit complet (diffuseur + recharge) - 30 jours - Fabriqué en France\"",
+          "detected_property": "Durée 30 jours + fabrication France",
+          "already_in_structured_data": false
+        },
+        {
+          "source_field": "Description du produit unique/site 400 caractères",
+          "excerpt": "\"aide à réduire les signes de stress chez le chaton et le chat adulte\"",
+          "detected_property": "Aide à réduire les signes de stress",
+          "already_in_structured_data": true
+        },
+        {
+          "source_field": "Description du produit unique/site 400 caractères",
+          "excerpt": "\"telles que : - le marquage urinaire ou les griffades\"",
+          "detected_property": "Cibles : marquage urinaire, griffades",
+          "already_in_structured_data": false
+        },
+        {
+          "source_field": "Description du produit unique/site 400 caractères",
+          "excerpt": "\"adoption, le déménagement, les bruits, l’arrivée d’un nouveau membre\"",
+          "detected_property": "Situations déclenchantes (changements/événements)",
+          "already_in_structured_data": false
+        },
+        {
+          "source_field": "Description du produit unique/site 400 caractères",
+          "excerpt": "\"Les chats marquent leur territoire en déposant des phéromones apaisantes\"",
+          "detected_property": "Mécanisme : marquage territorial par phéromones apaisantes",
+          "already_in_structured_data": false
+        },
+        {
+          "source_field": "Description du produit unique/site 400 caractères",
+          "excerpt": "\"messages naturels, invisibles et inodores\"",
+          "detected_property": "Messages invisibles/inodores (pour humains/animaux)",
+          "already_in_structured_data": false
+        },
+        {
+          "source_field": "Description du produit unique/site 400 caractères",
+          "excerpt": "\"reproduisent ces messages apaisants\"",
+          "detected_property": "Reproduction de messages apaisants (analogue phéromonal)",
+          "already_in_structured_data": true
+        },
+        {
+          "source_field": "Description du produit unique/site 400 caractères",
+          "excerpt": "\"aident les chats à se sentir plus calmes et confiants\"",
+          "detected_property": "Aide à se sentir plus calme et confiant",
+          "already_in_structured_data": true
+        },
+        {
+          "source_field": "Description du produit unique/site 400 caractères",
+          "excerpt": "\"Réduction des griffades chez 80% des chats après 7 jours\"",
+          "detected_property": "Allégation chiffrée : griffades 80% après 7 jours",
+          "already_in_structured_data": false
+        },
+        {
+          "source_field": "Description du produit unique/site 400 caractères",
+          "excerpt": "\"100% des chats apaisés dès le 1er jour\"",
+          "detected_property": "Allégation chiffrée : 100% apaisés dès J1 (déménagement)",
+          "already_in_structured_data": false
+        },
+        {
+          "source_field": "Description du produit unique/site 400 caractères",
+          "excerpt": "\"90% d’amélioration à 1 mois concernant le marquage urinaire\"",
+          "detected_property": "Allégation chiffrée : 90% amélioration à 1 mois (marquage)",
+          "already_in_structured_data": false
+        },
+        {
+          "source_field": "Description du produit unique/site 400 caractères",
+          "excerpt": "\"Diminution significative ... vomissements, diarrhées et miaulements lors du transport\"",
+          "detected_property": "Allégation : diminution de signes (vomissements/diarrhées/miaulements) en transport",
+          "already_in_structured_data": false
+        },
+        {
+          "source_field": "Description du produit unique/site 400 caractères",
+          "excerpt": "\"Sources : Gaultier et al., 1998 ; Pageat et al., 2003 ; Mills et al., 2001.\"",
+          "detected_property": "Références bibliographiques (preuves citées)",
+          "already_in_structured_data": false
+        },
+        {
+          "source_field": "Description courte 600 caractères",
+          "excerpt": "\"contient un analogue de la phéromone faciale féline\"",
+          "detected_property": "Ingrédient : analogue de phéromone faciale féline",
+          "already_in_structured_data": true
+        },
+        {
+          "source_field": "Description courte 600 caractères",
+          "excerpt": "\"solution pratique et naturelle ... message de sécurité, d’apaisement\"",
+          "detected_property": "Positionnement : message de sécurité/apaisement ; « naturelle »",
+          "already_in_structured_data": true
+        },
+        {
+          "source_field": "Description courte 600 caractères",
+          "excerpt": "\"réduction des manifestations de stress ... marquage urinaire ou les griffades\"",
+          "detected_property": "Réduction manifestations de stress (marquage/griffades)",
+          "already_in_structured_data": false
+        },
+        {
+          "source_field": "Description courte 600 caractères",
+          "excerpt": "\"n’a pas d’effet sédatif et n’est pas un tranquillisant\"",
+          "detected_property": "Non sédatif / non tranquillisant",
+          "already_in_structured_data": false
+        },
+        {
+          "source_field": "Description longue",
+          "excerpt": "\"aide à réduire les manifestations de stress\"",
+          "detected_property": "Aide à réduire les manifestations de stress",
+          "already_in_structured_data": true
+        },
+        {
+          "source_field": "Description longue",
+          "excerpt": "\"En cas de marquage urinaire ou  griffades\"",
+          "detected_property": "Cibles : marquage urinaire, griffades",
+          "already_in_structured_data": false
+        },
+        {
+          "source_field": "Description longue",
+          "excerpt": "\"adoption, déménagement, bruits, arrivée d'un nouveau membre\"",
+          "detected_property": "Situations déclenchantes (changements/événements)",
+          "already_in_structured_data": false
+        },
+        {
+          "source_field": "Description longue",
+          "excerpt": "\"durée d’action ... environ 30 jours\"",
+          "detected_property": "Durée d’action ~30 jours",
+          "already_in_structured_data": false
+        },
+        {
+          "source_field": "Description longue",
+          "excerpt": "\"le liquide peut s’évaporer plus rapidement\"",
+          "detected_property": "Variabilité d’évaporation selon flux d’air",
+          "already_in_structured_data": false
+        },
+        {
+          "source_field": "Description longue",
+          "excerpt": "\"remplacé après 6 mois d’utilisation ou 6 recharges\"",
+          "detected_property": "Remplacement diffuseur : 6 mois/6 recharges",
+          "already_in_structured_data": false
+        },
+        {
+          "source_field": "Description longue",
+          "excerpt": "\"Brancher ... dans la pièce où le chat passe le plus de temps\"",
+          "detected_property": "Mode d’emploi : pièce principale du chat",
+          "already_in_structured_data": false
+        },
+        {
+          "source_field": "Description longue",
+          "excerpt": "\"branché jour et nuit\"",
+          "detected_property": "Mode d’emploi : diffusion continue",
+          "already_in_structured_data": false
+        },
+        {
+          "source_field": "Description longue",
+          "excerpt": "\"convient pour des pièces jusqu’à 70 m²\"",
+          "detected_property": "Couverture : jusqu’à 70 m²",
+          "already_in_structured_data": false
+        },
+        {
+          "source_field": "Description longue",
+          "excerpt": "\"brancher ... au moins 48h avant\"",
+          "detected_property": "Anticipation : 48 h avant événement",
+          "already_in_structured_data": false
+        },
+        {
+          "source_field": "Description longue",
+          "excerpt": "\"messages naturels apaisants ... phéromones apaisantes pour chats\"",
+          "detected_property": "Mécanisme : messages apaisants/phéromones",
+          "already_in_structured_data": false
+        },
+        {
+          "source_field": "Description longue",
+          "excerpt": "\"inodores, indétectables par l’homme\"",
+          "detected_property": "Inodore/indétectable pour humains",
+          "already_in_structured_data": false
+        },
+        {
+          "source_field": "Description longue",
+          "excerpt": "\"reproduisent ces messages apaisants\"",
+          "detected_property": "Reproduction de messages apaisants (analogue)",
+          "already_in_structured_data": true
+        },
+        {
+          "source_field": "Description longue",
+          "excerpt": "\"aident les chats à se sentir apaisés et confiants\"",
+          "detected_property": "Aide à se sentir apaisé et confiant",
+          "already_in_structured_data": true
+        },
+        {
+          "source_field": "Description longue",
+          "excerpt": "\"Réduit les griffades chez 80% des chats après 7 jours\"",
+          "detected_property": "Allégation chiffrée : 80% après 7 jours",
+          "already_in_structured_data": false
+        },
+        {
+          "source_field": "Description longue",
+          "excerpt": "\"100% des chats apaisés dès le 1er jour\"",
+          "detected_property": "Allégation chiffrée : 100% dès J1",
+          "already_in_structured_data": false
+        },
+        {
+          "source_field": "Description longue",
+          "excerpt": "\"90% d’amélioration à 1 mois ... marquage urinaire\"",
+          "detected_property": "Allégation chiffrée : 90% à 1 mois (marquage)",
+          "already_in_structured_data": false
+        },
+        {
+          "source_field": "Description longue",
+          "excerpt": "\"Diminue significativement ... vomissements, diarrhées, miaulements\"",
+          "detected_property": "Allégation : diminution de signes en transport",
+          "already_in_structured_data": false
+        },
+        {
+          "source_field": "Description longue",
+          "excerpt": "\"Précautions d'utilisation CONSERVER HORS DE LA PORTÉE DES ENFANTS\"",
+          "detected_property": "Avertissement sécurité : hors de portée des enfants",
+          "already_in_structured_data": false
+        },
+        {
+          "source_field": "Description longue",
+          "excerpt": "\"Peut être mortel en cas d'ingestion\"",
+          "detected_property": "Danger : peut être mortel en cas d’ingestion/pénétration voies respiratoires",
+          "already_in_structured_data": false
+        },
+        {
+          "source_field": "Description longue",
+          "excerpt": "\"Feliway Classic n’est pas un médicament vétérinaire\"",
+          "detected_property": "Statut : non médicament vétérinaire",
+          "already_in_structured_data": false
+        },
+        {
+          "source_field": "Conseils d'utilisation institutionnels",
+          "excerpt": "\"durée d’action ... environ 30 jours\"",
+          "detected_property": "Durée d’action ~30 jours",
+          "already_in_structured_data": false
+        },
+        {
+          "source_field": "Conseils d'utilisation institutionnels",
+          "excerpt": "\"le liquide peut s’évaporer plus rapidement\"",
+          "detected_property": "Variabilité selon flux d’air",
+          "already_in_structured_data": false
+        },
+        {
+          "source_field": "Conseils d'utilisation institutionnels",
+          "excerpt": "\"remplacé après 6 mois d’utilisation ou 6 recharges\"",
+          "detected_property": "Remplacement diffuseur : 6 mois/6 recharges",
+          "already_in_structured_data": false
+        },
+        {
+          "source_field": "Conseils d'utilisation institutionnels",
+          "excerpt": "\"Pour contrôler les réactions de peur à l’intérieur\"",
+          "detected_property": "Cible : réactions de peur en intérieur",
+          "already_in_structured_data": false
+        },
+        {
+          "source_field": "Conseils d'utilisation institutionnels",
+          "excerpt": "\"Brancher ... dans la pièce où le chat passe le plus de temps\"",
+          "detected_property": "Mode d’emploi : pièce principale du chat",
+          "already_in_structured_data": false
+        },
+        {
+          "source_field": "Conseils d'utilisation institutionnels",
+          "excerpt": "\"branché jour et nuit\"",
+          "detected_property": "Mode d’emploi : diffusion continue",
+          "already_in_structured_data": false
+        },
+        {
+          "source_field": "Conseils d'utilisation institutionnels",
+          "excerpt": "\"convient pour des pièces jusqu’à 70 m²\"",
+          "detected_property": "Couverture : jusqu’à 70 m²",
+          "already_in_structured_data": false
+        },
+        {
+          "source_field": "Conseils d'utilisation institutionnels",
+          "excerpt": "\"brancher ... au moins 48h avant\"",
+          "detected_property": "Anticipation : 48 h avant événement",
+          "already_in_structured_data": false
+        },
+        {
+          "source_field": "Conseils d'utilisation uniques (SEO)",
+          "excerpt": "\"reste efficace pendant environ 30 jours\"",
+          "detected_property": "Durée d’action ~30 jours",
+          "already_in_structured_data": false
+        },
+        {
+          "source_field": "Conseils d'utilisation uniques (SEO)",
+          "excerpt": "\"durée d’action peut être réduite ... courants d’air\"",
+          "detected_property": "Variabilité selon courants d’air",
+          "already_in_structured_data": false
+        },
+        {
+          "source_field": "Conseils d'utilisation uniques (SEO)",
+          "excerpt": "\"remplacé après 6 mois ... ou ... 6 recharges\"",
+          "detected_property": "Remplacement diffuseur : 6 mois/6 recharges",
+          "already_in_structured_data": false
+        },
+        {
+          "source_field": "Conseils d'utilisation uniques (SEO)",
+          "excerpt": "\"Branchez ... dans la pièce où le chat passe le plus de temps\"",
+          "detected_property": "Mode d’emploi : pièce principale du chat",
+          "already_in_structured_data": false
+        },
+        {
+          "source_field": "Conseils d'utilisation uniques (SEO)",
+          "excerpt": "\"allumé 24h/24\"",
+          "detected_property": "Mode d’emploi : 24h/24",
+          "already_in_structured_data": false
+        },
+        {
+          "source_field": "Conseils d'utilisation uniques (SEO)",
+          "excerpt": "\"pièces allant jusqu’à 70 m²\"",
+          "detected_property": "Couverture : jusqu’à 70 m²",
+          "already_in_structured_data": false
+        },
+        {
+          "source_field": "Conseils d'utilisation uniques (SEO)",
+          "excerpt": "\"brancher ... au moins 48h avant\"",
+          "detected_property": "Anticipation : 48 h avant événement",
+          "already_in_structured_data": false
+        },
+        {
+          "source_field": "Contre-indication, avertissements, mentions obligatoires",
+          "excerpt": "\"CONSERVER HORS DE LA PORTÉE DES ENFANTS.\"",
+          "detected_property": "Avertissement sécurité : hors de portée des enfants",
+          "already_in_structured_data": false
+        },
+        {
+          "source_field": "Contre-indication, avertissements, mentions obligatoires",
+          "excerpt": "\"Lire l’étiquette avant utilisation.\"",
+          "detected_property": "Avertissement : lire l’étiquette",
+          "already_in_structured_data": false
+        },
+        {
+          "source_field": "Contre-indication, avertissements, mentions obligatoires",
+          "excerpt": "\"Peut être mortel en cas d'ingestion\"",
+          "detected_property": "Danger : peut être mortel en cas d’ingestion/pénétration voies respiratoires",
+          "already_in_structured_data": false
+        },
+        {
+          "source_field": "Contre-indication, avertissements, mentions obligatoires",
+          "excerpt": "\"EN CAS D’INGESTION : Appeler immédiatement un CENTRE ANTIPOISON\"",
+          "detected_property": "Conduite à tenir : centre antipoison/médecin",
+          "already_in_structured_data": false
+        },
+        {
+          "source_field": "Contre-indication, avertissements, mentions obligatoires",
+          "excerpt": "\"n’est pas un médicament vétérinaire\"",
+          "detected_property": "Statut : non médicament vétérinaire",
+          "already_in_structured_data": false
+        },
+        {
+          "source_field": "Contre-indication, avertissements, mentions obligatoires",
+          "excerpt": "\"Si le chat présente des signes de pathologie, demandez conseil\"",
+          "detected_property": "Avertissement : consulter un vétérinaire si signes de pathologie",
+          "already_in_structured_data": false
+        }
+      ],
+      "unsupported_claims_risk": [
+        "Soutien articulaire / mobilité",
+        "Soutien digestif (hors mention contextuelle transport) comme bénéfice général",
+        "Traitement/guérison de maladies (anxiété pathologique, cystite, dermatite, etc.)",
+        "Effet sédatif/somnifère",
+        "Efficacité sur l’agressivité entre chats (non explicitement revendiqué comme bénéfice dans les textes fournis)",
+        "Action sur parasites (puces/tiques)",
+        "Effet sur l’apprentissage/éducation (propreté) en tant que tel",
+        "Hypoallergénique / sans allergènes",
+        "Sans danger / sans risque",
+        "Efficacité garantie / résultats immédiats universels"
+      ]
+    }
+  },
+  "compliance": {
+    "allowed_claims": [
+      "Aide à réduire les manifestations/signes de stress chez le chat",
+      "Contribue à apaiser le chat et à le rassurer dans son environnement",
+      "Aide à limiter le marquage urinaire et les griffades liés au stress",
+      "Aide à gérer les réactions de peur en intérieur",
+      "Diffusion continue, durée d’action d’environ 30 jours (variable selon courants d’air)",
+      "Convient pour des pièces jusqu’à 70 m²",
+      "À brancher dans la pièce où le chat passe le plus de temps ; à laisser branché jour et nuit ; à brancher 48 h avant si l’événement est anticipable",
+      "N’a pas d’effet sédatif / n’est pas un tranquillisant (tel que formulé dans les données)",
+      "N’est pas un médicament vétérinaire (mention produit)",
+      "Développé et fabriqué en France / Made in France (si repris tel quel)"
+    ],
+    "forbidden_claims": [
+      "Guérit/traite/élimine une maladie ou un trouble médical (ex. anxiété, cystite, troubles digestifs)",
+      "Allégations absolues : 100%, garanti, immédiat, miracle, sans risque",
+      "\"Cliniquement prouvé\" (non fourni comme certification vérifiable)",
+      "Présenter comme médicament vétérinaire",
+      "Étendre les bénéfices à d’autres espèces que le chat",
+      "Alléguer une composition non fournie (huiles essentielles, plantes, etc.)"
+    ],
+    "mandatory_mentions": [
+      "CONSERVER HORS DE LA PORTÉE DES ENFANTS. Lire l’étiquette avant utilisation. Peut être mortel en cas d'ingestion et de pénétration dans les voies respiratoires. EN CAS D’INGESTION : Appeler immédiatement un CENTRE ANTIPOISON, un médecin.",
+      "Feliway Classic n’est pas un médicament vétérinaire. Si le chat présente des signes de pathologie, demandez conseil à un vétérinaire."
+    ],
+    "species_restrictions": [
+      "Usage destiné au chat (chaton et chat adulte) uniquement ; ne pas revendiquer pour autres espèces."
+    ],
+    "regulatory_notes": [
+      "Le produit se positionne comme solution de bien-être/comportement via analogue de phéromone ; les données indiquent explicitement « n’est pas un médicament vétérinaire » : la communication doit rester dans le registre 'aide à/soutient' et éviter toute revendication thérapeutique.",
+      "Les allégations chiffrées (80%, 90%, 100%, délais) sont présentes dans les textes : si utilisées, elles doivent être reprises avec prudence, fidèlement, avec leur contexte/sources, et sans termes interdits (garanti, immédiat, 100% universel)."
+    ]
+  }
+}

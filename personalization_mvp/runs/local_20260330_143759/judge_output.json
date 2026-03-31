@@ -1,0 +1,42 @@
+{
+  "seo_improvement_ratio": 0.64,
+  "channel_alignment_grade": "B",
+  "grounding_alignment_score": 8.6,
+  "channel_alignment_why_2_lines": [
+    "Contenu global clair, orienté e-commerce, avec langage « aide à / contribue à » et bons détails d’usage (30 jours, 70 m², 48 h, 6 mois).",
+    "Légères faiblesses SEO/conversion (marque CEVA absente, « anti-stress » un peu catégorique) et une mention « Made in France » non sourcée dans les diff rows."
+  ],
+  "general_remarks": [
+    "Remplacer « anti-stress » (trop catégorique) par « aide à apaiser / aide à réduire les manifestations de stress » dans titres/meta pour rester pleinement conforme.",
+    "Réintégrer le terme de marque « CEVA » dans META Title ou le titre produit si c’est bien l’attendu SEO/filtre marque sur le site (présent dans l’ancien).",
+    "Éviter/justifier « Made in France » uniquement si la donnée d’origine est disponible dans votre PIM ; sinon le retirer des champs marketing (Argu/Longue).",
+    "Ajouter un bénéfice clé manquant dans les Argus : réactions de peur/épisodes de changement (actuellement Argus focalisés sur kit/durée).",
+    "Optimiser le slug en retirant les stop-words et en gardant 4–6 tokens principaux (marque + type + espèce + volume) pour éviter la longueur inutile.",
+    "Harmoniser la casse/accents des mots-clés (phéromones, bien-être, déménagement) et limiter les variantes redondantes pour éviter le stuffing."
+  ],
+  "per_field_remarks": {
+    "Titre produit": "Bon intitulé e-commerce (kit + 48 ml) mais « anti-stress » est un peu absolu, préférer « aide à apaiser ».",
+    "Titre court du produit (60 caractères max)": "Court et lisible, mais reformuler « anti-stress » en langage support (« aide à réduire le stress »).",
+    "Slug": "Slug riche mais trop long ; conserver marque+type+chat+48ml et supprimer le reste.",
+    "META Title": "Amélioration SEO (espèce+type+durée) mais la marque « CEVA » a disparu vs ancien.",
+    "META Description": "Claire, bénéfices + durée, ton conforme ; CTA OK sans surpromesse.",
+    "Description courte (...) 175 caractères": "Inchangé et informatif, mais conserve « anti-stress » (formulation catégorique).",
+    "Description du produit unique/site 400 caractères": "Bonne synthèse fidèle (phéromone, usages, marquage/griffades) sans chiffres interdits.",
+    "Description courte 600 caractères": "Très complète et bien cadrée (2%, 30 jours, 70 m², jour/nuit, non sédatif) avec langage prudent.",
+    "Description longue": "Structure scan-friendly et mentions obligatoires présentes ; « Made in France » à garder seulement si sourcé dans vos données.",
+    "Conseils d'utilisation uniques (SEO)": "Inchangé et correct ; « pour un résultat optimal » peut être adouci (« pour une efficacité constante ») pour éviter l’absolu.",
+    "Mots clés": "Bon enrichissement (déménagement, adaptation) ; corriger accents et éviter termes potentiellement médicaux comme « chat anxieux » si non cadré.",
+    "Argu 1": "Factuel (kit+48 ml) mais peu orienté bénéfice ; ajouter apaisement/changements ou stress domestique.",
+    "Argu 2": "Conforme et utile (marquage/griffades liés au stress) avec langage « aide à ».",
+    "Argu 3": "Très bon point de conformité (« non tranquillisant ») directement issu du brief.",
+    "Argu 4": "Solide (30 jours variable + 70 m²) et conforme, bon argument de choix.",
+    "Argu 5": "« Made in France » est acceptable seulement si la preuve est bien disponible dans le référentiel produit ; sinon à retirer."
+  },
+  "score_breakdown": {
+    "title_and_meta": 0.74,
+    "keyword_usage": 0.7,
+    "clarity_and_readability": 0.84,
+    "compliance_safety": 0.86,
+    "channel_fit": 0.8
+  }
+}

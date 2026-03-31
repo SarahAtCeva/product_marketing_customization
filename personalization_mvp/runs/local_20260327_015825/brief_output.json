@@ -1,0 +1,96 @@
+{
+  "product_summary": "FELIWAY Classic D+R est un kit complet (diffuseur + recharge 48 ml) destiné à aider à réduire les manifestations de stress chez le chat via un analogue synthétique de phéromones faciales félines, avec une durée d’action annoncée d’environ 30 jours.",
+  "target_species": [
+    "Chat"
+  ],
+  "target_profile": "Chaton et chat adulte, toute taille, vivant en intérieur (diffuseur pour une pièce jusqu’à 70 m²) et exposé à des situations stressantes (changements d’environnement, peurs, marquage/griffades).",
+  "primary_benefit": "Aide à réduire les principaux signes de stress chez le chat (ex. marquage urinaire, griffades, réactions de peur).",
+  "secondary_benefits": [
+    "Message apaisant via analogue de phéromone faciale féline (inodore pour l’humain)",
+    "Durée d’action d’environ 30 jours (variable selon aération/flux d’air)",
+    "Utilisation continue recommandée jour et nuit",
+    "Convient pour des pièces jusqu’à 70 m²",
+    "Diffuseur à remplacer après 6 mois d’utilisation ou 6 recharges",
+    "Fabriqué en France"
+  ],
+  "use_cases": [
+    "Un chat urine en marquant (spraying) dans la maison : brancher le diffuseur dans la pièce où il passe le plus de temps, en continu.",
+    "Le chat griffe le mobilier après un changement (nouveau canapé, réaménagement) : utilisation du diffuseur pour aider à réduire les griffades liées au stress.",
+    "Déménagement prévu : brancher le diffuseur au moins 48 h avant l’événement si possible, puis le laisser jour et nuit.",
+    "Arrivée d’un nouveau membre dans le foyer (bébé, colocataire) ou adoption : mise en place du diffuseur dans la pièce principale pour aider le chat à s’adapter.",
+    "Bruits/événements perturbants (travaux, fêtes, orages) : utilisation continue dans la zone de vie du chat pour aider à gérer les réactions de peur à l’intérieur.",
+    "Période de séparation ou changement de routine (absence, deuil) : diffusion continue pour soutenir l’apaisement à la maison."
+  ],
+  "key_differentiator": "Diffuseur d’ambiance basé sur un analogue structural de phéromones faciales de chat (2%), avec recommandations d’usage (24h/24, 70 m², anticipation 48 h) et données d’efficacité citées avec sources bibliographiques.",
+  "tone_angle": "educational",
+  "data_gaps": [
+    "Conditions précises d’utilisation électrique/sécurité du diffuseur (compatibilité prises, consommation, consignes de placement détaillées) non précisées.",
+    "Informations de compatibilité avec d’autres produits (médicaments, compléments, autres diffuseurs) non fournies.",
+    "Effets indésirables possibles chez le chat (ou chez l’humain) non décrits au-delà des avertissements en cas d’ingestion.",
+    "Âge minimum exact pour ‘chaton’ non précisé.",
+    "Détails sur le contenu exact du kit (présence du diffuseur + 1 recharge confirmée, mais pas de notice/éléments inclus listés).",
+    "Prix, nombre d’unités/recharges additionnelles et coût par mois non fournis."
+  ],
+  "buyer_questions": [
+    {
+      "priority": 1,
+      "question": "Dans quels problèmes précis ce diffuseur aide-t-il (marquage urinaire, griffades, peur) ?",
+      "answered": true,
+      "answer_summary": "Il est indiqué qu’il aide à réduire les signes de stress tels que marquage urinaire, griffades sur le mobilier et réactions de peur."
+    },
+    {
+      "priority": 2,
+      "question": "Combien de temps dure une recharge et combien de temps le kit est-il efficace ?",
+      "answered": true,
+      "answer_summary": "La durée d’action est donnée comme d’environ 30 jours, avec évaporation potentiellement plus rapide selon aération/flux d’air."
+    },
+    {
+      "priority": 3,
+      "question": "Comment l’utiliser concrètement (où le brancher, combien de temps par jour, surface couverte) ?",
+      "answered": true,
+      "answer_summary": "Il faut le brancher dans la pièce où le chat passe le plus de temps, le laisser jour et nuit, et il convient pour des pièces jusqu’à 70 m²."
+    },
+    {
+      "priority": 4,
+      "question": "Quelle est la composition exacte (ingrédient actif et concentration) ?",
+      "answered": true,
+      "answer_summary": "La composition mentionne une fraction d’analogue structural des phéromones faciales de chat à 2% (excipients q.s.p.)."
+    },
+    {
+      "priority": 5,
+      "question": "Est-ce adapté aux chatons et aux chats adultes, et à toutes tailles ?",
+      "answered": true,
+      "answer_summary": "L’espèce est le chat, taille toute taille, et le texte mentionne chaton et chat adulte."
+    },
+    {
+      "priority": 6,
+      "question": "Y a-t-il des précautions ou risques de sécurité (enfants, ingestion, statut médicament) ?",
+      "answered": true,
+      "answer_summary": "Avertissements fournis (hors de portée des enfants, danger en cas d’ingestion) et mention que ce n’est pas un médicament vétérinaire."
+    },
+    {
+      "priority": 7,
+      "question": "Quand faut-il commencer avant un événement stressant (déménagement, arrivée d’un nouveau membre) ?",
+      "answered": true,
+      "answer_summary": "Il est recommandé de brancher le diffuseur au moins 48 h avant si l’événement peut être anticipé."
+    },
+    {
+      "priority": 8,
+      "question": "Quand faut-il remplacer le diffuseur lui-même ?",
+      "answered": true,
+      "answer_summary": "Le diffuseur doit être remplacé après 6 mois d’utilisation ou 6 recharges."
+    },
+    {
+      "priority": 9,
+      "question": "Est-ce compatible avec d’autres traitements/produits anti-stress ou médicaments ?",
+      "answered": false,
+      "answer_summary": "Information absente des données produit."
+    },
+    {
+      "priority": 10,
+      "question": "Quel est le prix et le coût mensuel (kit + recharges) ?",
+      "answered": false,
+      "answer_summary": "Information absente des données produit."
+    }
+  ]
+}

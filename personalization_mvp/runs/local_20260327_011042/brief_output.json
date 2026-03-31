@@ -1,0 +1,29 @@
+{
+  "product_summary": "Feliway Classic est un diffuseur anti-stress pour chats qui reproduit une phéromone faciale apaisante afin de réduire les signes de stress tels que le marquage urinaire et les griffades. Ce pack économique contient 3 recharges de 48 ml chacune, offrant environ 30 jours d'action par recharge.",
+  "target_species": [
+    "chat"
+  ],
+  "target_profile": "Chats de toute taille, incluant chatons et chats adultes, confrontés à des situations stressantes ou des troubles du comportement liés au stress.",
+  "primary_benefit": "Réduction scientifiquement démontrée des principaux signes de stress chez le chat, notamment le marquage urinaire et les griffades.",
+  "secondary_benefits": [
+    "Action continue pendant environ 30 jours par recharge",
+    "Facile à utiliser avec un diffuseur électrique",
+    "Produit développé et fabriqué en France",
+    "N'a pas d'effet sédatif ni tranquillisant",
+    "Convient pour des pièces jusqu'à 70 m²"
+  ],
+  "use_cases": [
+    "Gestion du stress lors d'un déménagement ou changement d'environnement",
+    "Réduction du marquage urinaire et des griffades sur le mobilier",
+    "Apaisement lors de l'arrivée d'un nouveau membre dans la famille (humain ou animal)",
+    "Diminution des réactions de peur et du stress liés aux bruits ou séparations",
+    "Préparation à un événement stressant anticipé en branchant le diffuseur 48h avant"
+  ],
+  "key_differentiator": "Produit à base d'un analogue synthétique de la phéromone faciale féline, avec efficacité prouvée scientifiquement et fabriqué en France, offrant une solution naturelle et non médicamenteuse pour apaiser le chat.",
+  "tone_angle": "educational",
+  "data_gaps": [
+    "Durée exacte d'utilisation recommandée selon le type de stress",
+    "Informations précises sur les ingrédients excipients",
+    "Détails sur la compatibilité avec d'autres traitements ou produits vétérinaires"
+  ]
+}

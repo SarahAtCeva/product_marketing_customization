@@ -1,0 +1,93 @@
+{
+  "product_summary": "FELIWAY Classic D+R est un kit complet (diffuseur + recharge 48ml) conçu pour réduire le stress chez le chat en diffusant un analogue synthétique de phéromones faciales apaisantes.",
+  "target_species": [
+    "chat"
+  ],
+  "target_profile": "Chats de toute taille, chatons et chats adultes, confrontés à des situations stressantes ou manifestant des signes de stress comportemental.",
+  "primary_benefit": "Réduction efficace des principaux signes de stress chez le chat, notamment le marquage urinaire et les griffades.",
+  "secondary_benefits": [
+    "Action apaisante sans effet sédatif ni tranquillisant",
+    "Efficacité scientifiquement démontrée",
+    "Facile à utiliser",
+    "Convient pour pièces jusqu'à 70 m²",
+    "Fabriqué en France"
+  ],
+  "use_cases": [
+    "Réduire le marquage urinaire et les griffades indésirables",
+    "Apaiser le chat lors d'un déménagement ou changement d'environnement",
+    "Gérer le stress lié à l'arrivée d'un nouveau membre dans la famille",
+    "Atténuer les réactions de peur dues aux bruits ou séparations",
+    "Préparer le chat à un événement stressant en anticipant l'utilisation 48h avant"
+  ],
+  "key_differentiator": "Produit vétérinaire non médicamenteux reproduisant un analogue de phéromone faciale féline, avec efficacité prouvée scientifiquement et fabrication française.",
+  "tone_angle": "educational",
+  "data_gaps": [
+    "Durée précise recommandée du traitement selon le type de stress",
+    "Informations détaillées sur la composition exacte au-delà du pourcentage de phéromone",
+    "Prix et formats disponibles",
+    "Compatibilité avec d'autres traitements ou produits vétérinaires",
+    "Effets secondaires éventuels ou contre-indications spécifiques au chat"
+  ],
+  "buyer_questions": [
+    {
+      "priority": 1,
+      "question": "Ce produit est-il efficace pour réduire le stress et les comportements associés chez le chat ?",
+      "answered": true,
+      "answer_summary": "Oui, son efficacité est scientifiquement démontrée pour réduire griffades, marquage urinaire et autres signes de stress."
+    },
+    {
+      "priority": 2,
+      "question": "Comment utiliser le diffuseur et la recharge pour un résultat optimal ?",
+      "answered": true,
+      "answer_summary": "Brancher le diffuseur dans la pièce principale du chat, allumé 24h/24, remplacer la recharge tous les 30 jours environ."
+    },
+    {
+      "priority": 3,
+      "question": "Ce produit est-il sûr pour mon chat et ma famille ?",
+      "answered": true,
+      "answer_summary": "Il faut conserver hors de portée des enfants, éviter ingestion et inhalation, et consulter un vétérinaire en cas de pathologie."
+    },
+    {
+      "priority": 4,
+      "question": "Pour quels types de stress ou situations ce produit est-il recommandé ?",
+      "answered": true,
+      "answer_summary": "Stress lié au marquage urinaire, griffades, déménagement, arrivée d'un nouveau membre, bruits, séparations, décès."
+    },
+    {
+      "priority": 5,
+      "question": "Ce produit convient-il à tous les âges et tailles de chats ?",
+      "answered": true,
+      "answer_summary": "Oui, il est indiqué pour chats de toute taille, chatons et adultes."
+    },
+    {
+      "priority": 6,
+      "question": "Quelle est la durée d'action du diffuseur et combien de temps dure un traitement ?",
+      "answered": true,
+      "answer_summary": "Durée d'action d'environ 30 jours par recharge, diffuseur à remplacer après 6 mois ou 6 recharges."
+    },
+    {
+      "priority": 7,
+      "question": "Quelle est la composition exacte du produit ?",
+      "answered": true,
+      "answer_summary": "Contient 2% d'analogue structural des phéromones faciales de chat, excipients à 100g."
+    },
+    {
+      "priority": 8,
+      "question": "Le produit est-il fabriqué en France et possède-t-il une certification ?",
+      "answered": true,
+      "answer_summary": "Oui, il est développé, fabriqué en France et certifié Made in France."
+    },
+    {
+      "priority": 9,
+      "question": "Peut-on utiliser ce produit en même temps que d'autres traitements vétérinaires ?",
+      "answered": false,
+      "answer_summary": "Information absente des données produit."
+    },
+    {
+      "priority": 10,
+      "question": "Quels formats et prix sont disponibles pour ce produit ?",
+      "answered": false,
+      "answer_summary": "Information absente des données produit."
+    }
+  ]
+}

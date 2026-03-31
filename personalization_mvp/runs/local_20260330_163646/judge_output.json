@@ -1,0 +1,42 @@
+{
+  "seo_improvement_ratio": 0.65,
+  "channel_alignment_grade": "B",
+  "grounding_alignment_score": 7,
+  "channel_alignment_why_2_lines": [
+    "Le contenu est rassurant et clair, avec un bon équilibre entre information vétérinaire et usage pratique.",
+    "Quelques allégations manquent de sourçage rigoureux ou utilisent des termes un peu trop affirmatifs."
+  ],
+  "general_remarks": [
+    "Éviter le terme '100%' qui est un claim interdit par les règles de conformité.",
+    "Mettre en avant explicitement les précautions obligatoires concernant l'usage et la conservation.",
+    "Renforcer le lien entre les claims principaux et les preuves issues du brief/formulation.",
+    "Clarifier la mention « efficacité scientifiquement démontrée » pour éviter les abus.",
+    "Préférer un vocabulaire plus nuancé et éviter les affirmations absolues.",
+    "Veiller à une cohérence entre les conseils d’usage et les bénéfices annoncés."
+  ],
+  "per_field_remarks": {
+    "Titre produit": "Titre plus complet mais un peu long avec ajout 'diffuseur et recharge'.",
+    "Titre court du produit (60 caractères max)": "Titre court fluide mais a supprimé 'pour' entre 'Anti-stress' et 'chat'.",
+    "Slug": "Slug plus SEO-friendly et inclut 'anti-stress-chat-kit-complet'.",
+    "META Title": "META Title amélioré, plus descriptif et engageant.",
+    "META Description": "Description plus orientée bénéfices mais contient un call-to-action direct.",
+    "Description courte (...) 175 caractères": "Description courte inchangée, conforme et claire.",
+    "Description du produit unique/site 400 caractères": "Contenu clarifié, synthétique mais perd des détails clés scientifiques.",
+    "Description courte 600 caractères": "Bonne synthèse, mentionne non-médicament et usage, reste claire.",
+    "Description longue": "Description longue détaillée et bien structurée, conforme au brief.",
+    "Conseils d'utilisation uniques (SEO)": "Conseils maintenus pertinents, très clairs et détaillés.",
+    "Mots clés": "Mots clés naturels et pertinents pour le référencement.",
+    "Argu 1": "Argument 1 clair et conforme, précise bien les signes de stress.",
+    "Argu 2": "Argument 2 trop affirmatif sur 'efficacité scientifiquement démontrée'.",
+    "Argu 3": "Argument 3 très conforme, mentionne bien 'action 30 jours'.",
+    "Argu 4": "Argument 4 conforme, souligne fabrication française.",
+    "Argu 5": "Argument 5 simple, clair et adapté."
+  },
+  "score_breakdown": {
+    "title_and_meta": 0.7,
+    "keyword_usage": 0.7,
+    "clarity_and_readability": 0.8,
+    "compliance_safety": 0.5,
+    "channel_fit": 0.7
+  }
+}

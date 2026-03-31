@@ -1,0 +1,42 @@
+{
+  "seo_improvement_ratio": 0.62,
+  "channel_alignment_grade": "B",
+  "grounding_alignment_score": 7.5,
+  "channel_alignment_why_2_lines": [
+    "Format plus orienté marketplace (bénéfices + données d’usage 30 jours/70 m²/non sédatif) et mots-clés plus ciblés.",
+    "Mais plusieurs champs « META/Slug » peu utiles sur Amazon et une donnée « composition 2% » non étayée par l’ancien contenu."
+  ],
+  "general_remarks": [
+    "Supprimer/neutraliser les champs non-Amazon (META Title/Description, Slug) ou les reconvertir en contenu fiche (bullet points + description) pour mieux coller au canal.",
+    "Éviter d’ajouter des informations non présentes dans l’ancien texte/diff (ex. « 2% ») sauf si une source produit est fournie.",
+    "Conserver les preuves/sources quand elles existent : l’ancien contenait des études et chiffres d’efficacité, la version générée les a retirés (perte de crédibilité/SEO).",
+    "Réduire la répétition « aide à réduire les manifestations de stress… » en variant les formulations tout en gardant les mots-clés principaux.",
+    "Ajouter des éléments d’achat Amazon qui manquent (contenu exact du kit, compatibilité recharges, durée d’utilisation recommandée, avertissements électriques) sans sur-promettre.",
+    "Uniformiser la terminologie et la conformité : préférer « contribue à/apaisement » et éviter « anti-stress » trop frontal dans les titres si possible (garder en keywords)."
+  ],
+  "per_field_remarks": {
+    "Titre produit": "Meilleure lisibilité et ajout de « diffuseur + recharge »/« ~30 jours », mais « anti-stress » reste une promesse forte à nuancer.",
+    "Titre court du produit (60 caractères max)": "Court et clair, mais manque l’info « kit complet » présente avant et utile à l’achat.",
+    "Slug": "Slug plus descriptif, mais ce champ est peu pertinent Amazon et ajoute de la redondance SEO.",
+    "META Title": "Plus riche en mots-clés, mais champ non applicable Amazon et répétition « anti-stress/apaisant ».",
+    "META Description": "Ajoute usage jour/nuit et durée ~30 jours, mais « découvrez le kit » est plus site e-commerce que marketplace.",
+    "Description courte (...) 175 caractères": "Inchangée et solide (kit complet, 30 jours, fabriqué en France), bonne conformité.",
+    "Description du produit unique/site 400 caractères": "Bon résumé orienté bénéfices, mais suppression des éléments de preuve et ajout de termes (« analogue structural ») peu utiles shopper.",
+    "Description courte 600 caractères": "Amélioration nette (situations d’usage + 70 m² + variabilité), globalement conforme et scannable.",
+    "Description longue": "Structure en sections + puces très adaptée, mais « composition 2% » n’est pas sourcée dans l’ancien contenu (risque d’invention).",
+    "Conseils d'utilisation uniques (SEO)": "Inchangés et complets (30 jours, 48 h avant, 24h/24, 70 m²), bon pour la conformité.",
+    "Mots clés": "Mieux ciblés intention d’achat et cas d’usage, mais certains termes pourraient être condensés pour éviter la longue traîne redondante.",
+    "Argu 1": "Bon focus sur le contenu du kit/48 ml, mais perd le bénéfice direct « signes de stress » qui était en Argu 1 avant.",
+    "Argu 2": "Formulation « aide à réduire » conforme et reprend les signes clés (marquage/griffades/peur).",
+    "Argu 3": "Précision utile sur variabilité (aération/flux d’air), améliore l’honnêteté produit.",
+    "Argu 4": "« 70 m² + jour/nuit » très pertinent Amazon, mais « fabriqué en France » a disparu (différence vs ancien).",
+    "Argu 5": "Très bon garde-fou conformité (non sédatif/pas médicament), à conserver tel quel."
+  },
+  "score_breakdown": {
+    "title_and_meta": 0.6,
+    "keyword_usage": 0.72,
+    "clarity_and_readability": 0.83,
+    "compliance_safety": 0.74,
+    "channel_fit": 0.62
+  }
+}

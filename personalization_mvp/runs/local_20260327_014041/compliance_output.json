@@ -1,0 +1,45 @@
+{
+  "allowed_claims": [
+    "soutient la réduction des signes de stress chez le chat",
+    "aide à diminuer le marquage urinaire et les griffades",
+    "contribue à apaiser le chat en cas de changement d'environnement",
+    "favorise le bien-être émotionnel du chat",
+    "peut aider à gérer le stress lié aux déménagements, bruits, séparations ou arrivée d'un nouveau membre",
+    "formulé pour une utilisation chez les chats de toute taille, chatons et adultes",
+    "action apaisante sans effet sédatif ni tranquillisant",
+    "efficacité scientifiquement démontrée dans la réduction des manifestations de stress",
+    "facile à utiliser, adapté pour pièces jusqu'à 70 m²",
+    "conçu pour diffuser un analogue synthétique de phéromones faciales apaisantes"
+  ],
+  "forbidden_claims": [
+    "guérit le stress ou les troubles comportementaux",
+    "traite les maladies ou pathologies",
+    "élimine le stress de façon immédiate ou garantie",
+    "effet miracle ou 100% efficace",
+    "sans risque d'effets secondaires",
+    "cliniquement prouvé sans certification vérifiable",
+    "médicament vétérinaire",
+    "tranquillisant ou sédatif"
+  ],
+  "mandatory_mentions": [
+    "CONSERVER HORS DE LA PORTÉE DES ENFANTS.",
+    "Lire l’étiquette avant utilisation.",
+    "Peut être mortel en cas d'ingestion et de pénétration dans les voies respiratoires.",
+    "EN CAS D’INGESTION : Appeler immédiatement un CENTRE ANTIPOISON, un médecin.",
+    "Feliway Classic n’est pas un médicament vétérinaire.",
+    "Si le chat présente des signes de pathologie, demandez conseil à un vétérinaire."
+  ],
+  "species_restrictions": [
+    "Usage réservé aux chats.",
+    "Indiqué pour chats de toute taille, chatons et adultes."
+  ],
+  "regulatory_notes": [
+    "Produit vétérinaire non médicamenteux reproduisant un analogue de phéromone faciale féline.",
+    "Catégorie réglementaire : produit vétérinaire non médicamenteux (pas un médicament).",
+    "Ne pas faire de revendications thérapeutiques ou curatives.",
+    "Respecter les mentions légales et précautions d'emploi.",
+    "Ne pas substituer à un traitement vétérinaire en cas de maladie.",
+    "Diffusion continue recommandée pour une efficacité optimale.",
+    "Durée d'action d'environ 30 jours par recharge, diffuseur à remplacer après 6 mois ou 6 recharges."
+  ]
+}

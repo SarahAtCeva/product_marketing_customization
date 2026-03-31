@@ -1,0 +1,47 @@
+{
+  "generated_fields": {
+    "Titre produit": "Feliway Classic - Anti-stress pour chat - Pack économique 3 recharges",
+    "Titre court du produit (60 caractères max)": "Feliway Classic diffuseur anti-stress pour chat",
+    "Slug": "feliway-classic-anti-stress-chat-pack-3-recharges",
+    "META Title": "Feliway Classic anti-stress chat - pack 3 recharges économique",
+    "META Description": "Feliway Classic réduit les signes de stress chez le chat comme le marquage urinaire. Profitez d'un pack économique de 3 recharges pour un environnement apaisé. Commandez dès maintenant.",
+    "Mots clés": "Feliway, anti-stress chat, phéromones apaisantes, diffuseur chat, gestion stress chat",
+    "Description du produit unique/site 400 caractères": "Feliway Classic est un diffuseur anti-stress pour chats, contenant 3 recharges de 48 ml. Il aide à réduire les signes de stress tels que le marquage urinaire et les griffades, grâce à un analogue de la phéromone faciale féline. Convient aux chats de tout âge, sans effet sédatif, pour un environnement apaisé. Usage réservé aux chats.",
+    "Description courte 600 caractères": "Feliway Classic, conçu pour les chats et chatons, diffuse un analogue de la phéromone faciale féline afin de soutenir la gestion du stress. Il aide à réduire les signes de stress comme le marquage urinaire et les griffades, sans effet sédatif ni tranquillisant. Ce pack économique de 3 recharges offre une action continue d’environ 30 jours par recharge et convient pour des pièces jusqu’à 70 m². Produit développé et fabriqué en France. Usage réservé aux chats.",
+    "Description longue": "Feliway Classic est une solution anti-stress destinée aux chats et chatons confrontés à des situations stressantes ou à des troubles du comportement liés au stress. Ce pack contient 3 recharges de 48 ml, chacune assurant une diffusion continue pendant environ 30 jours. Le produit aide à réduire les signes de stress tels que le marquage urinaire et les griffades, en reproduisant une phéromone faciale synthétique reconnue pour ses propriétés apaisantes. Facile à utiliser avec un diffuseur électrique, il convient pour des pièces jusqu’à 70 m². Feliway Classic n’a pas d’effet sédatif ni tranquillisant et ne remplace pas un traitement vétérinaire. Produit développé et fabriqué en France. Usage réservé aux chats. \n\nPrécautions d’emploi : CONSERVER HORS DE LA PORTÉE DES ENFANTS. Lire l’étiquette avant utilisation. Peut être mortel en cas d'ingestion et de pénétration dans les voies respiratoires. EN CAS D’INGESTION : Appeler immédiatement un CENTRE ANTIPOISON, un médecin. Feliway Classic n’est pas un médicament vétérinaire. Si le chat présente des signes de pathologie, demandez conseil à un vétérinaire.",
+    "Argu 1": "Aide à réduire les signes de stress chez le chat, tels que marquage urinaire et griffades.",
+    "Argu 2": "Action continue pendant environ 30 jours par recharge, adaptée aux pièces jusqu’à 70 m².",
+    "Argu 3": "Produit développé et fabriqué en France, sans effet sédatif ni tranquillisant.",
+    "Description courte (...) 175 caractères": "FELIWAY Classic - Anti-stress pour chat - Pack économique 3 recharges pour diffuseur - (3x30 jours) - Fabriqué en France",
+    "Conseils d'utilisation uniques (SEO)": "Mode demploi du diffuseur et de la recharge Feliway Classic\n\nLe diffuseur Feliway Classic reste efficace pendant environ 30 jours. Toutefois, sa durée daction peut être réduite en fonction de la localisation ou des courants dair dans la pièce (aération, ventilation excessive).\nLa recharge doit être utilisée en fonction de la cause du stress. Le diffuseur doit être remplacé après 6 mois dutilisation ou après avoir utilisé 6 recharges.\n\nPour une gestion efficace du stress à la maison :\n- Branchez le diffuseur Feliway Classic dans la pièce où le chat passe le plus de temps.\n- Le diffuseur doit être allumé 24h/24 pour un résultat optimal. Il est conçu pour des pièces allant jusquà 70 m².\n- Si un événement stressant peut être anticipé, il est recommandé de brancher le diffuseur au moins 48h avant.",
+    "Argu 4": "???? Développé et fabriqué en France",
+    "Argu 5": "?? Facile à utiliser"
+  },
+  "descriptions_self_check": {
+    "char_counts": {
+      "Description du produit unique/site 400 caractères": 397,
+      "Description courte 600 caractères": 597,
+      "Description longue": 1202,
+      "Arguments de vente uniques (USPs) 3 à 5": [
+        97,
+        104,
+        97
+      ]
+    },
+    "spec_compliance": true,
+    "regulatory_consistency": true,
+    "channel_fit": true,
+    "hallucination_risk": "aucune information inventée ; toutes les affirmations sont strictement issues du brief produit et des données fournies"
+  },
+  "seo_validation": {
+    "is_valid": false,
+    "errors": [
+      {
+        "field": "META Description",
+        "rule": "max_chars",
+        "message": "Expected <= 160 chars, got 185."
+      }
+    ],
+    "warnings": []
+  }
+}

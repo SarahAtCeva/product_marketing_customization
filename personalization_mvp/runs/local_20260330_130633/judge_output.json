@@ -1,0 +1,42 @@
+{
+  "seo_improvement_ratio": 0.62,
+  "channel_alignment_grade": "B",
+  "grounding_alignment_score": 8.7,
+  "channel_alignment_why_2_lines": [
+    "Format global plus “marketplace” (bénéfices en puces, termes de recherche, infos d’usage clés) et suppression de plusieurs allégations chiffrées interdites.",
+    "Quelques écarts Amazon/compliance restent (CTA « découvrez-le », “anti-stress” répété, Meta/Slug peu utiles sur Amazon, origine France non reprise)."
+  ],
+  "general_remarks": [
+    "Remplacer les formulations marketing type CTA (« découvrez-le ») par des informations produit factuelles (Amazon).",
+    "Éviter la répétition du terme « anti-stress » et varier avec « aide à apaiser / réduire les manifestations de stress » (meilleure conformité + lisibilité).",
+    "Réintégrer « Fabriqué en France » uniquement si c’est bien une info source/validée pour ce SKU, car elle est présente dans l’ancien champ 175 caractères mais absente des nouveaux arguments.",
+    "Ajouter un bénéfice comportemental manquant dans les Argus (réactions de peur) pour couvrir les cas d’usage clés du brief, sans chiffres ni garanties.",
+    "Optimiser le slug/les meta champs si export web, mais pour Amazon prioriser un titre + 5 bullets + description; éviter les éléments SEO web redondants.",
+    "Conserver systématiquement les mentions obligatoires de sécurité (ingestion/aspiration, enfants, antipoison, non médicament) partout où le canal l’exige—ici c’est bon en description longue, à ne pas perdre en déclinaisons courtes."
+  ],
+  "per_field_remarks": {
+    "Titre produit": "Bon titre Amazon avec kit + durée, mais « anti-stress » est un raccourci à remplacer idéalement par « aide à apaiser » pour rester factuel.",
+    "Titre court du produit (60 caractères max)": "Clair et scannable, mais encore « anti-stress » (préférer « aide à apaiser »).",
+    "Slug": "Slug riche en mots-clés mais très long et plutôt web; peu pertinent pour Amazon et peut paraître spammy.",
+    "META Title": "Meta plus descriptif que l’ancien, mais champ non prioritaire Amazon; éviter la sur-optimisation répétitive.",
+    "META Description": "Contenu globalement conforme, mais CTA « découvrez-le » est inutile/non Amazon et peut être retiré.",
+    "Description courte (...) 175 caractères": "Non modifiée; contient « Fabriqué en France » (ok si vrai/validé) et reste très “tagline”.",
+    "Description du produit unique/site 400 caractères": "Bonne synthèse et suppression des chiffres interdits; manque toutefois des infos clés (70 m², 30 jours, 24h/24) présentes ailleurs.",
+    "Description courte 600 caractères": "Très alignée brief (phéromone, 24h/24, ~30 jours, perçu par chats) et sans surpromesse; bon niveau de prudence.",
+    "Description longue": "Excellente structure Amazon, inclut 2% et mentions obligatoires; seule réserve: « pour un résultat optimal » peut suggérer performance, garder factuel.",
+    "Conseils d'utilisation uniques (SEO)": "Inchangé et conforme (30 jours, 24h/24, 70 m², 48h avant); veiller à l’encodage des apostrophes.",
+    "Mots clés": "Bon enrichissement (déménagement, adoption, peur), mais corriger accents (phéromones/bien-être) et éviter doublons.",
+    "Argu 1": "Argument factuel produit + diffusion continue, bien; ajouter éventuellement la notion « jour et nuit/24h/24 » explicitement (déjà implicite).",
+    "Argu 2": "Bon bénéfice principal conforme (aide à réduire/limiter), pas de chiffres; formulation ok.",
+    "Argu 3": "Très bon différenciant « perçu uniquement par les chats », conforme au brief.",
+    "Argu 4": "Conforme et prudent (variation selon aération); bon remplacement des anciennes claims.",
+    "Argu 5": "Info couverture 70 m² utile et conforme; penser à ajouter « Fabriqué en France » ailleurs si c’est un atout validé."
+  },
+  "score_breakdown": {
+    "title_and_meta": 0.75,
+    "keyword_usage": 0.7,
+    "clarity_and_readability": 0.85,
+    "compliance_safety": 0.9,
+    "channel_fit": 0.72
+  }
+}

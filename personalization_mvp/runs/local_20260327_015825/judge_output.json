@@ -1,0 +1,42 @@
+{
+  "seo_improvement_ratio": 0.62,
+  "channel_alignment_grade": "B",
+  "grounding_alignment_score": 7.5,
+  "channel_alignment_why_2_lines": [
+    "Ton global plus factuel et orienté usage (jour/nuit, 70 m², 30 jours, remplacement 6 mois) cohérent avec une page conseil vétérinaire.",
+    "Mais perte d’éléments de preuve présents avant (études/%) et ajout d’un détail de composition « 2% » non sourcé dans l’ancien."
+  ],
+  "general_remarks": [
+    "Réintroduire des preuves uniquement quand elles sont fournies : la version générée supprime toutes les références/sources et chiffres d’efficacité présents dans l’ancienne description longue.",
+    "Éviter d’ajouter des informations non présentes dans l’ancien (ex. composition « 2% ; excipients… ») sauf si elles viennent de la fiche produit officielle.",
+    "Harmoniser le branding/notation : « FELIWAY Classic » vs « Feliway Classic » vs « D+R » (non expliqué) pour éviter confusion et requêtes SEO dispersées.",
+    "Optimiser la META description avec un bénéfice + 1-2 situations d’usage (déménagement, nouvel arrivant) présentes dans l’ancien, sans surpromesse.",
+    "Améliorer la liste de mots-clés en français avec accents (phéromones) et élargir prudemment (déménagement, multi-chat) sans bourrage.",
+    "Conserver les atouts différenciants déjà fournis (Fabriqué en France, non sédatif / pas tranquillisant) qui rassurent et améliorent la conformité."
+  ],
+  "per_field_remarks": {
+    "Titre produit": "Bon ajout de « diffuseur » et « kit complet 30 jours », mais standardiser la casse de la marque (FELIWAY/Feliway).",
+    "Titre court du produit (60 caractères max)": "Clair et SEO, mais manque « kit complet » (diffuseur + recharge) qui était l’info d’achat clé.",
+    "Slug": "Slug riche et pertinent, mais très long; envisager une version plus courte sans perdre « feliway-classic-diffuseur-chat-30-jours ».",
+    "META Title": "Mieux aligné requête (diffuseur anti-stress chat) que l’ancien, tout en restant sobre.",
+    "META Description": "Plus orientée bénéfice/usage que l’ancien, mais retire l’explication « phéromone faciale » qui justifiait l’action.",
+    "Description courte (...) 175 caractères": "Inchangée et complète, mais pourrait refléter l’écriture harmonisée (Feliway vs FELIWAY) si la charte le permet.",
+    "Description du produit unique/site 400 caractères": "Bonne synthèse et très pratique, mais supprime tout le contexte (situations) et les preuves scientifiques de l’ancien.",
+    "Description courte 600 caractères": "Améliore l’usage (30 jours, 70 m²) et le mécanisme, mais n’indique plus « pas sédatif/pas tranquillisant » présent avant.",
+    "Description longue": "Structure plus scan-friendly et précautions conservées, mais ajout non sourcé de composition « 2% » et suppression des études chiffrées/citations.",
+    "Conseils d'utilisation uniques (SEO)": "Identique à l’ancien (OK), mais corriger les caractères typographiques (apostrophes) et éviter « résultat optimal » trop promesse.",
+    "Mots clés": "Ciblage plus intentionnel, mais fautes/absence d’accents (« pheromones », « liees ») et couverture sémantique plus étroite qu’avant.",
+    "Argu 1": "Bon argument d’offre (kit 48 ml), mais il remplace la promesse principale; inverser pour mettre le bénéfice en premier.",
+    "Argu 2": "Conforme (« aide à limiter ») et reprend les signes de stress, mais perd « efficacité scientifiquement démontrée » de l’ancien.",
+    "Argu 3": "Très utile et concret (jour/nuit, 70 m²), bon pour conversion et conformité.",
+    "Argu 4": "Précision pertinente (variabilité selon aération), mais l’ancien « fabriqué en France » serait plus différenciant ici.",
+    "Argu 5": "Info pratique claire (remplacement après 6 mois/6 recharges), bonne réduction du SAV."
+  },
+  "score_breakdown": {
+    "title_and_meta": 0.74,
+    "keyword_usage": 0.55,
+    "clarity_and_readability": 0.82,
+    "compliance_safety": 0.78,
+    "channel_fit": 0.7
+  }
+}

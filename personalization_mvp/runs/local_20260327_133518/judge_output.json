@@ -1,0 +1,42 @@
+{
+  "seo_improvement_ratio": 0.72,
+  "channel_alignment_grade": "B",
+  "grounding_alignment_score": 8.8,
+  "channel_alignment_why_2_lines": [
+    "Contenu globalement clair, orienté e-commerce, avec bénéfices/usage et mentions « aide à » conformes au canal revendeur.",
+    "Quelques points SEO/format (titres longs, slug très long) et une mention d’origine potentiellement non sourcée dans certains champs à sécuriser."
+  ],
+  "general_remarks": [
+    "Raccourcir et normaliser les titres (H1/META) en plaçant « Kit diffuseur + recharge 48 ml » et « 30 jours / 70 m² » sans répétitions ni mots superflus.",
+    "Raccourcir le slug (éviter la sur-longueur) en gardant marque + produit + type (ex. feliway-classic-diffuseur-recharge-chat).",
+    "Éviter le terme « anti-stress » (trop promesse) au profit de « aide à réduire les manifestations de stress » dans titres/META quand possible.",
+    "Sécuriser la mention « Développé et fabriqué en France » : ne la garder que si elle est bien confirmée par les données produit (sinon utiliser « Fabriqué en France » ou retirer).",
+    "Ajouter systématiquement (au moins sur la page longue) les mentions obligatoires de sécurité et statut non-médicament (déjà présentes en Description longue, à conserver).",
+    "Optimiser la liste de mots-clés : ajouter l’intention « kit diffuseur recharge 48 ml » et garder les accents (phéromones, bien‑être) pour cohérence FR."
+  ],
+  "per_field_remarks": {
+    "Titre produit": "Plus riche en mots-clés mais trop long et « anti-stress » est plus risqué que « aide à réduire les manifestations de stress ».",
+    "Titre court du produit (60 caractères max)": "Court et clair, mais « apaisant » gagnerait à être formulé en « aide à apaiser » pour rester mesuré.",
+    "Slug": "Très descriptif mais excessivement long ; à raccourcir pour une meilleure lisibilité/SEO.",
+    "META Title": "Bonne structure marque+espèce+type, mais « anti-stress » peut être remplacé par une formulation d’aide/soutien.",
+    "META Description": "Bonne reprise des usages (marquage/griffades/peurs) et durée ~30 jours ; CTA OK sans sur-promesse.",
+    "Description courte (...) 175 caractères": "Inchangée et pertinente, mais conserve « Anti-stress » (à envisager en « aide à apaiser »).",
+    "Description du produit unique/site 400 caractères": "Nettoyage positif (suppression des %/allégations fortes) et bien aligné au brief (48 ml, 30 jours, 70 m²).",
+    "Description courte 600 caractères": "Très complète et bien « aidant » ; la mention « présenté comme inodore » doit rester attribuée au texte produit (pas comme fait scientifique).",
+    "Description longue": "Très bonne structure et intègre composition + mentions obligatoires ; vérifier la cohérence de l’origine France selon preuve produit.",
+    "Conseils d'utilisation uniques (SEO)": "Inchangé et conforme (30 jours, 24h/24, 70 m², 48h avant) ; garder tel quel.",
+    "Mots clés": "Meilleure ciblage longue traîne, mais corriger accents/orthographe (phéromones, bien‑être) et ajouter « kit/recharge 48 ml ».",
+    "Argu 1": "Différenciant pertinent et conforme (phéromones perçues par les chats), bon remplacement de l’ancien wording.",
+    "Argu 2": "Bénéfice principal correctement formulé en « aide à réduire », conforme et concret.",
+    "Argu 3": "Met bien en avant usage continu + 70 m² ; ajouter éventuellement « jusqu’à » pour prudence.",
+    "Argu 4": "Allégation durée ~30 jours bien cadrée avec variabilité ; mention 48 ml utile et conforme au brief.",
+    "Argu 5": "Argument origine attractif mais à sécuriser (ne pas inventer si non prouvé sur la fiche source)."
+  },
+  "score_breakdown": {
+    "title_and_meta": 0.74,
+    "keyword_usage": 0.78,
+    "clarity_and_readability": 0.83,
+    "compliance_safety": 0.86,
+    "channel_fit": 0.8
+  }
+}

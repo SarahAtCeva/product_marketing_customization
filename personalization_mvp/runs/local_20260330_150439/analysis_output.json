@@ -1,0 +1,208 @@
+{
+  "brief": {
+    "product_summary": "Feliway Optimum est un kit complet diffuseur et recharge de phéromones félines analogues, conçu pour apaiser les chats et réduire les signes de stress tels que marquage urinaire, griffades, conflits et réactions de peur.",
+    "target_species": [
+      "Chat"
+    ],
+    "target_profile": "Chats de toute taille et âge, notamment ceux exposés à des situations stressantes (changement d'environnement, cohabitation, visites vétérinaires).",
+    "primary_benefit": "Réduction des principaux signes de stress chez le chat grâce à un complexe de phéromones apaisantes.",
+    "secondary_benefits": [
+      "Favorise une cohabitation harmonieuse entre chats",
+      "Aide à réduire les comportements indésirables liés au stress",
+      "Formule innovante et brevetée",
+      "Efficacité visible dès 7 jours d'utilisation",
+      "Facile à utiliser"
+    ],
+    "use_cases": [
+      "Déménagement ou changement d'environnement",
+      "Arrivée d'un nouveau chat ou d'un bébé",
+      "Travaux de rénovation dans la maison",
+      "Consultations vétérinaires ou hospitalisations",
+      "Gestion des conflits entre chats",
+      "Réduction du marquage urinaire et griffades"
+    ],
+    "key_differentiator": "Complexe unique d'analogues de phéromones félines breveté, fruit de la recherche Feliway, avec efficacité scientifiquement démontrée et approuvée par 93% des utilisateurs.",
+    "tone_angle": "reassuring",
+    "data_gaps": [
+      "Quantité précise de phéromones dans la recharge (seulement 2% de complexe d'analogues mentionné)",
+      "Durée exacte d'efficacité variable selon conditions",
+      "Détails sur la composition précise des analogues de phéromones"
+    ],
+    "buyer_questions": [
+      {
+        "priority": 1,
+        "question": "Ce produit est-il sûr pour tous les chats, y compris les chatons ?",
+        "answered": true,
+        "answer_summary": "Convient à tous les chats quel que soit leur âge."
+      },
+      {
+        "priority": 2,
+        "question": "Comment utiliser le diffuseur et quelle est sa durée d'action ?",
+        "answered": true,
+        "answer_summary": "Brancher dans la pièce principale, laisser branché jour et nuit, durée d'action environ 30 jours."
+      },
+      {
+        "priority": 3,
+        "question": "Quels signes de stress ce produit aide-t-il à réduire ?",
+        "answered": true,
+        "answer_summary": "Marquage urinaire, griffades, réactions de peur, conflits entre chats, léchage excessif, perte d'appétit."
+      },
+      {
+        "priority": 4,
+        "question": "Ce produit est-il un médicament vétérinaire ?",
+        "answered": true,
+        "answer_summary": "Non, ce n'est pas un médicament vétérinaire."
+      },
+      {
+        "priority": 5,
+        "question": "Y a-t-il des précautions d'utilisation ou contre-indications ?",
+        "answered": true,
+        "answer_summary": "Ne pas couvrir le diffuseur, tenir hors de portée des enfants, ne pas toucher le dispositif en marche, danger en cas d'ingestion."
+      },
+      {
+        "priority": 6,
+        "question": "Quelle est la composition exacte du produit ?",
+        "answered": true,
+        "answer_summary": "Complexe d'analogues de phéromones félines 2%, hydrocarbure isoparaffinique 48 ml."
+      },
+      {
+        "priority": 7,
+        "question": "Ce produit est-il fabriqué en France ?",
+        "answered": true,
+        "answer_summary": "Oui, développé et fabriqué en France."
+      },
+      {
+        "priority": 8,
+        "question": "Quelle est l'efficacité prouvée de ce produit ?",
+        "answered": true,
+        "answer_summary": "Efficacité scientifiquement démontrée, 93% d'approbation utilisateurs, résultats visibles dès 7 jours."
+      },
+      {
+        "priority": 9,
+        "question": "Le produit est-il inflammable ?",
+        "answered": true,
+        "answer_summary": "Non, le produit n'est pas inflammable."
+      }
+    ],
+    "existing_arguments": [
+      {
+        "field": "Argu 1",
+        "content": "?? Réduit les principaux signes de stress : marquage urinaire, griffades sur le mobilier, réactions de peur, conflits et tensions entre chats, léchage excessif, perte d'appétit."
+      },
+      {
+        "field": "Argu 2",
+        "content": "?????Efficacité scientifiquement démontrée"
+      },
+      {
+        "field": "Argu 3",
+        "content": "?? Approuvé par 93% des utilisateurs"
+      },
+      {
+        "field": "Argu 4",
+        "content": "???? Développé et fabriqué en France"
+      },
+      {
+        "field": "Argu 5",
+        "content": "?? Facile à utiliser"
+      }
+    ],
+    "explanation_of_the_concept_innovation": "Le produit utilise un complexe breveté d'analogues de phéromones félines, reproduisant les marqueurs apaisants naturels des chats, pour induire un sentiment de sécurité et réduire les comportements liés au stress sans perturber les besoins naturels du chat.",
+    "formulation_analysis": {
+      "parsed_active_ingredients": [
+        {
+          "name": "Complexe danalogues de phéromones félines (FPhC)",
+          "source_field": "Composition",
+          "quantity_or_context": "2 %"
+        },
+        {
+          "name": "Hydrocarbure isoparaffinique",
+          "source_field": "Composition",
+          "quantity_or_context": "48 ml"
+        }
+      ],
+      "inferred_functional_properties": [
+        {
+          "property": "action apaisante, réduction du stress",
+          "supporting_ingredient": "Complexe danalogues de phéromones félines (FPhC)",
+          "confidence": "high"
+        }
+      ],
+      "text_field_mentions": [
+        {
+          "source_field": "Titre produit",
+          "excerpt": "Complexe de phéromones apaisantes pour une sérénité renforcée",
+          "detected_property": "action apaisante, réduction du stress",
+          "already_in_structured_data": true
+        },
+        {
+          "source_field": "Argu 1",
+          "excerpt": "Réduit les principaux signes de stress : marquage urinaire, griffades sur le mobilier",
+          "detected_property": "réduction des signes de stress",
+          "already_in_structured_data": false
+        },
+        {
+          "source_field": "Description longue",
+          "excerpt": "Feliway Optimum doit son efficacité renforcée à lassociation unique de plusieurs analogues de phéromones félines",
+          "detected_property": "complexe breveté d'analogues de phéromones",
+          "already_in_structured_data": true
+        },
+        {
+          "source_field": "Description longue",
+          "excerpt": "aide à réduire les comportements indésirables liés au stress sans empêcher le chat dexprimer ses besoins naturels",
+          "detected_property": "réduction des comportements liés au stress",
+          "already_in_structured_data": false
+        },
+        {
+          "source_field": "Conseils d'utilisation uniques (SEO)",
+          "excerpt": "Chaque recharge agit environ 30 jours, selon la localisation, la température de la pièce",
+          "detected_property": "durée d'action variable",
+          "already_in_structured_data": false
+        }
+      ],
+      "unsupported_claims_risk": [
+        "guérit le stress",
+        "traite les maladies",
+        "effet immédiat",
+        "garanti",
+        "sans risque",
+        "cliniquement prouvé"
+      ]
+    }
+  },
+  "compliance": {
+    "allowed_claims": [
+      "soutient",
+      "aide à",
+      "contribue à",
+      "favorise",
+      "peut aider",
+      "conçu pour",
+      "formulé pour"
+    ],
+    "forbidden_claims": [
+      "guérit",
+      "traite",
+      "élimine",
+      "100%",
+      "garanti",
+      "immédiat",
+      "miracle",
+      "sans risque",
+      "cliniquement prouvé"
+    ],
+    "mandatory_mentions": [
+      "CONSERVER HORS DE LA PORTÉE DES ENFANTS. Ne pas couvrir. Vérifier que votre voltage est identique à celui indiqué sur le diffuseur. Ne pas mettre en contact des objets métalliques avec le dispositif lorsque celui-ci est branché. Ne pas toucher le dispositif avec des mains mouillées lorsque celui-ci est branché. Ne pas toucher le dispositif avec les mains pendant lutilisation et immédiatement après utilisation. Le dispositif électrique ne doit être utilisé quavec ce liquide à évaporer. Lutilisation dautres substances peut augmenter les risques toxiques ou le caractère inflammable du produit. Les surfaces du dispositif présentent une température élevée qui favorise la diffusion des substances actives. Ces surfaces ne doivent pas être touchées lorsque le dispositif est en marche.",
+      "DANGER. Peut être mortel en cas d'ingestion et de pénétration dans les voies respiratoires.",
+      "Tenir hors de portée des enfants. Lire létiquette avant utilisation. EN CAS DINGESTION: Appeler immédiatement un CENTRE ANTIPOISON, un médecin. NE PAS faire vomir. Éliminer le contenu/récipient en accord avec les réglementations locales et nationales",
+      "Feliway Optimum nest pas un médicament vétérinaire. Si le chat présente des signes de pathologie, demandez conseil à un vétérinaire."
+    ],
+    "species_restrictions": [
+      "Chat"
+    ],
+    "regulatory_notes": [
+      "Produit non médicament vétérinaire, catégorie complémentaire ou produit vétérinaire non médicamenteux.",
+      "Respecter les mentions légales et précautions d'emploi.",
+      "Ne pas faire de promesses thérapeutiques interdites."
+    ]
+  }
+}

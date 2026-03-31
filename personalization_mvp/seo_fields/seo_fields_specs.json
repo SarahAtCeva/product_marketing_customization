@@ -1,0 +1,76 @@
+{
+  "version": "1.0.0",
+  "purpose": "SEO field specifications for French e-commerce pet health products",
+  "language": "fr",
+  "compliance_rules": [
+    "Éviter les allégations médicales (guérit, 100%, garanti, immédiat, miracle)",
+    "Langue naturelle, pas de keyword stuffing",
+    "Le titre produit doit commencer par le nom de marque",
+    "Le titre court ne doit pas mentionner le volume ni le poids (ml, cl, l, g, kg)"
+  ],
+  "fields": {
+    "Titre produit": {
+      "min_chars": 10,
+      "max_chars": 120,
+      "description": "Titre complet du produit commençant par le nom de marque.",
+      "rules": [
+        "Commencer par la marque",
+        "Inclure le type/mot clé du titre original",
+        "Inclure le format du contenu/emballage",
+        "Utiliser des '-' comme séparateur",
+        "Pas de caractères spéciaux excessifs"
+      ]
+    },
+    "Titre court du produit (60 caractères max)": {
+      "min_chars": 5,
+      "max_chars": 60,
+      "description": "Titre court sans volume ni poids, reprend le début du titre (Gamme + type produit )",
+      "rules": [
+        "Pas de ml, g, kg, cl, l",
+        "Nom de marque inclus",
+        "Concis et mémorisable"
+      ]
+    },
+    "Slug": {
+      "min_chars": 5,
+      "max_chars": 120,
+      "description": "Slug URL en minuscules avec tirets, sans accents.",
+      "rules": [
+        "Minuscules uniquement",
+        "Tirets entre mots",
+        "Pas d'accents ni de caractères spéciaux"
+      ]
+    },
+    "META Title": {
+      "min_chars": 30,
+      "max_chars": 70,
+      "description": "Balise title SEO optimisée pour les moteurs de recherche.",
+      "rules": [
+        "Inclure marque et mot-clé principal",
+        "Utiliser des '-' comme séparateur",
+        "Tout ce qui permet de caractériser le produit",
+        "Lisible et naturel",
+        "Pas de keyword stuffing"
+      ]
+    },
+    "META Description": {
+      "min_chars": 100,
+      "max_chars": 160,
+      "description": "Description méta pour les moteurs de recherche, minimum 2 phrases.",
+      "rules": [
+        "Minimum 2 phrases complètes",
+        "Inclure un appel à l'action doux",
+        "Pas d'allégations médicales"
+      ]
+    },
+    "Mots clés": {
+      "description": "Liste de mots-clés pertinents séparés par des virgules.",
+      "rules": [
+        "Minimum 10 mots-clés",
+        "Maximum 3 mots par expression",
+        "Pertinents au produit,au besoin d'achat , à l'espèce et à la catégorie",
+        "Séparés par des virgules"
+      ]
+    }
+  }
+}
