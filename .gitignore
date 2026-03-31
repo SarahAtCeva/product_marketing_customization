@@ -1,0 +1,55 @@
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Secrets
+.env
+.env.local
+.env.*.local
+*.env
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# Pipeline run artifacts
+personalization_mvp/runs/
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+*.Zone.Identifier
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Streamlit secrets
+.streamlit/secrets.toml
+*/.streamlit/secrets.toml
+
+# Scratch / dev notes
+personalization_mvp/saved.txt
+personalization_mvp/revue_*.tex
+
+# Sample / test data files
+personalization_mvp/*.csv
