@@ -1,16 +1,16 @@
 # Product Marketing Customization
 Ce pipeline a pour but de prendre en entrée des données produits + proposition de champs marketing et de générer un output contenant la personalisation de ces champs , tout en restant compliance-aware et en boostant l'adaptation à l'audience marketing . Il est basé sur des LLMs.
 
-## What it does
+## Comment ça marche ?
 
-The system runs a 6-stage pipeline per product:
+Le système est un enchainement de 6 étapes expliquées comme :
 
-1. **Extract** — parse product data from a CSV matrix (EAN, brand, species, existing descriptions)
-2. **Analyze** — build a product brief and determine compliance boundaries (what claims are legally permissible)
-3. **Generate** — produce descriptions and SEO fields conditioned on channel + expertise profile
-4. **Validate** — check all fields against character limits, required fields, and compliance rules
-5. **Judge** — LLM-based quality assessment (alignment, compliance, formatting scores)
-6. **Refine** — use judge feedback to improve weak fields
+1. **Extract** — Extraction des informations d'un produit depuis la matrice produit (EAN, brand, species, existing descriptions)
+2. **Analyze** — Construction d'une contextualisation du produit et analyse des limites compliance relatives en amont (what claims are legally permissible)
+3. **Generate** — Génération des descriptions et des champs (SEO) conditionés sur le canal de vente  + le profil d'expertise des utilisateurs.
+4. **Validate** — Vérification des outputs de la génération par rapport aux spécifités de longueur max autorisée , de règles de Compliance + autres règles de rédactions préférables
+5. **Judge** — Evaluation de la qualité en utilisant llm as a judge (alignment, compliance, formatting scores)
+6. **Refine** — Intégration de l'évaluation de l'étape précédente pour une regénération afin d'améliorer la sortie finale.
 
 Output is a set of ready-to-use marketing fields for a given channel/expertise combination.
 
