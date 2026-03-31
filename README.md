@@ -1,6 +1,5 @@
 # Product Marketing Customization
-
-AI-powered product description generator for French-language animal health e-commerce. Built for Ceva, this pipeline takes raw product data and outputs channel-specific, compliance-aware marketing copy using OpenAI LLMs.
+Ce pipeline a pour but de prendre en entrée des données produits + proposition de champs marketing et de générer un output contenant la personalisation de ces champs , tout en restant compliance-aware et en boostant l'adaptation à l'audience marketing . Il est basé sur des LLMs.
 
 ## What it does
 
