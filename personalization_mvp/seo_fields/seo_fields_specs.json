@@ -1,5 +1,5 @@
 {
-  "version": "1.0.0",
+  "version": "1.1.0",
   "purpose": "SEO field specifications for French e-commerce pet health products",
   "language": "fr",
   "compliance_rules": [
@@ -19,17 +19,19 @@
         "Inclure le format du contenu/emballage",
         "Utiliser des '-' comme séparateur",
         "Pas de caractères spéciaux excessifs"
-      ]
+      ],
+      "writing_guidance": "Structure recommandée : [Marque] [Gamme] - [Type produit] - [Espèce] - [Format/Contenu]. Conserver tout élément distinctif du titre original (chiffres, durée d'action, technologie) car ils portent des mots-clés de longue traîne. Ne pas reformuler au point de perdre l'intention de recherche d'origine."
     },
     "Titre court du produit (60 caractères max)": {
       "min_chars": 5,
       "max_chars": 60,
-      "description": "Titre court sans volume ni poids, reprend le début du titre (Gamme + type produit )",
+      "description": "Titre court sans volume ni poids, reprend le début du titre (Gamme + type produit).",
       "rules": [
         "Pas de ml, g, kg, cl, l",
         "Nom de marque inclus",
         "Concis et mémorisable"
-      ]
+      ],
+      "writing_guidance": "Reprendre [Marque] + [Gamme ou type produit] uniquement. Supprimer le format/volume. Ce titre apparaît dans les listes produits — il doit être lisible en un coup d'œil. Pas d'ajout d'information absente du titre complet."
     },
     "Slug": {
       "min_chars": 5,
@@ -39,7 +41,8 @@
         "Minuscules uniquement",
         "Tirets entre mots",
         "Pas d'accents ni de caractères spéciaux"
-      ]
+      ],
+      "writing_guidance": "Dériver du titre produit : conserver marque, gamme, type produit, espèce et format si court. Supprimer les mots vides (de, le, la, pour, avec). Résultat : slug court, descriptif, stable dans le temps. Éviter les slugs trop génériques (ex: 'complement-chien') ou trop longs (>80 chars)."
     },
     "META Title": {
       "min_chars": 30,
@@ -51,26 +54,29 @@
         "Tout ce qui permet de caractériser le produit",
         "Lisible et naturel",
         "Pas de keyword stuffing"
-      ]
+      ],
+      "writing_guidance": "Structure recommandée : [Marque] [Type produit] [Espèce] - [Bénéfice principal court]. Le bénéfice doit être formulé en langage naturel de recherche, pas en slogan. Prioriser ce qu'un propriétaire d'animal taperait dans Google. Rester dans les 60-65 chars pour éviter la troncature dans les SERPs."
     },
     "META Description": {
       "min_chars": 100,
       "max_chars": 160,
-      "description": "Description méta pour les moteurs de recherche, minimum 2 phrases.",
+      "description": "Description méta pour les moteurs de recherche ne dépassant pas 160 caractères.",
       "rules": [
         "Minimum 2 phrases complètes",
         "Inclure un appel à l'action doux",
         "Pas d'allégations médicales"
-      ]
+      ],
+      "writing_guidance": "Phrase 1 (~90 chars) : ce que fait le produit + pour qui, en langage bénéfice. Phrase 2 (~60 chars) : appel à l'action doux et rassurant ('Découvrez', 'Commandez', 'Disponible en livraison rapide'). Ne pas répéter le META Title mot pour mot. Éviter les formules génériques ('Produit de qualité pour votre animal')."
     },
     "Mots clés": {
       "description": "Liste de mots-clés pertinents séparés par des virgules.",
       "rules": [
-        "Minimum 10 mots-clés",
+        "Minimum 15 mots-clés pour positionner le produit et renforcer le branding",
         "Maximum 3 mots par expression",
-        "Pertinents au produit,au besoin d'achat , à l'espèce et à la catégorie",
+        "Pertinents au produit, au besoin d'achat, à l'espèce et à la catégorie",
         "Séparés par des virgules"
-      ]
+      ],
+      "writing_guidance": "Construire la liste en 4 catégories : (1) Marque et gamme — nom de marque seul, nom de gamme seul, combinaison. (2) Type produit + espèce — 'complément articulaire chien', 'soin peau chat'. (3) Besoin / symptôme — 'chien raideur articulaire', 'chat peau sensible'. (4) Longue traîne — 'complément articulaire chien grande race', 'soutien mobilité chien senior'. Pas de doublons. Pas d'expressions de plus de 3 mots."
     }
   }
 }

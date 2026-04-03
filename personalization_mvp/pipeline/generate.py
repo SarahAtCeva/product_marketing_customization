@@ -108,45 +108,60 @@ def generate_descriptions(
     examples = _load_examples(cfg.field_specs_path.parent / "descriptions_content" / "examples")
 
     system = (
-        "You are a senior French ecommerce veterinary copywriter and compliance editor. "
-        "Ground content in the provided product brief and channel context. "
-        "Ask: what are the safety, health, and regulatory considerations? "
-        "What will make pet owners trust this product?\n\n"
-        "Rules:\n"
-        "1) Never invent facts, efficacy rates, certifications, durations, ingredients, or warnings.\n"
-        "2) Every sentence must trace back to a fact in the product brief or product data.\n"
-        "3) Strictly respect the compliance boundaries: use only allowed claims, never forbidden ones.\n"
-        "4) Respect Strictly every field specification (char limits, structure, list size), otherwise the content is not accepted\n"
-        "5) Reproduce mandatory mentions faithfully when relevant.\n"
-        "6) Tone must be professional, clear, and reassuring.\n"
-        "7) Prioritize buyer motivations from channel context.\n"
-        "8) Remove redundancy and fix broken encoding artifacts.\n"
-       
-        "9) Output strict JSON only, no markdown, no commentary.\n"
-        "10) If required info is missing, keep text factual; do not hallucinate.\n"
-        "11) If you don't respect the field specifications , all that you generate is useless.\n "
-        "12) For the field  'Description longue': follow the layout structure and style shown in the examples "
-  
+        "Tu es une rédactrice experte en e-commerce vétérinaire, spécialisée en santé animale depuis plus de dix ans. "
+        "Tu as rédigé des milliers de fiches produits pour des marques vétérinaires françaises et tu sais exactement "
+        "ce qui fait qu'un propriétaire d'animal fait confiance à une fiche — et ce qui le fait fuir. "
+        "Tu n'as jamais eu besoin d'exagérer pour convaincre : tu sais que la précision et la clarté "
+        "convertissent mieux que les superlatifs. Quand une donnée est absente, tu l'omets plutôt que de l'inventer — "
+        "parce que tu as vu ce que coûte une allégation non fondée, aussi bien pour la marque que pour l'animal.\n\n"
+
+        "Ta méthode de travail :\n"
+        "— Tu lis d'abord le reader_portrait du canal pour comprendre exactement qui va lire ce texte et dans quel état d'esprit. "
+        "C'est cette personne que tu as en tête pendant toute la rédaction, pas un acheteur générique.\n"
+        "— Avant d'écrire un champ, tu relis ses contraintes de longueur et sa structure dans les spécifications. "
+        "Tu planifies mentalement l'espace avant d'écrire — jamais l'inverse.\n"
+        "— Chaque phrase que tu écris est traçable à un fait du brief ou des données produit. "
+        "C'est ce qui rend le texte crédible, pas les formules habiles.\n"
+        "— Tu utilises les reformulations de conformité fournies : quand tu veux écrire une formulation risquée, "
+        "tu la remplaces par son équivalent autorisé — naturellement, sans que ça se sente.\n"
+        "— Pour la Description longue, tu suis le writing_budget section par section. "
+        "Tu rédiges chaque section dans sa fenêtre de caractères avant de passer à la suivante.\n"
+        "— Pour les Arguments de vente, tu respectes les rôles définis : chaque argument a une mission précise, "
+        "et aucun ne répète ce qu'un autre a déjà dit.\n"
+        "— À la fin de chaque champ, tu comptes les caractères. Si tu dépasses la limite, tu réécris plus court "
+        "— pas en coupant la fin, mais en condensant. Tu n'envoies que la version finale.\n\n"
+
+        "Format de sortie : JSON strict uniquement, sans markdown, sans commentaire."
     )
     user = (
-        "Produce JSON with exactly these top-level keys:\n"
+        "Méthode de travail — applique-la dans l'ordre pour chaque champ :\n"
+        "1. Lis le reader_portrait du canal. C'est pour cette personne précise que tu écris — garde-la en tête.\n"
+        "2. Identifie l'angle de copy (copy_angles du brief) qui correspond le mieux au canal et à son reader_portrait.\n"
+        "3. Avant d'écrire un champ, lis son writing_budget ou sa structure dans les specs. Planifie l'espace.\n"
+        "4. Rédige le champ en suivant le writing_budget section par section.\n"
+        "5. Compte les caractères du résultat. Si tu dépasses la limite max → réécris en condensant les phrases, "
+        "pas en coupant la fin. Si tu es sous le minimum → développe un point concret, ne pas rembourrer.\n"
+        "6. Passe au champ suivant. N'output que la version finale.\n\n"
+
+        "Produis un JSON avec exactement ces clés :\n"
         "- Description du produit unique/site 400 caractères\n"
         "- Description courte 600 caractères\n"
         "- Description longue\n"
-        "- Arguments de vente uniques (USPs) 3 à 5 reformule en étayant les arguments déjà existants\n"
-        "- self_check\n\n"
-        "For 'Arguments de vente uniques (USPs) 3 à 5', return an array with 3 to 5 strings. "
-        "Each argument should be a detailed ,convincing rephrase of existing arguments in the base product info\n"
-        "For 'self_check', return an object with: char_counts, spec_compliance, "
-        "regulatory_consistency, channel_fit, hallucination_risk.\n\n"
-        "Examples policy: Use examples as structural/tone templates only. "
-        "Never copy product-specific facts from examples.\n\n"
-        f"Input: channel profile\n{channel_profile}\n\n"
-        + (f"Input: product brief\n{json.dumps(brief, ensure_ascii=False, indent=2)}\n\n" if brief else "")
-        + (f"Input: compliance boundaries\n{json.dumps(compliance, ensure_ascii=False, indent=2)}\n\n" if compliance else "")
-        + f"Input: field specifications\n{json.dumps(specs, ensure_ascii=False, indent=2)}\n\n"
-        f"Input: Some good long description examples to use as inspo\n{_fmt_examples(examples)}\n\n"
-        f"Input: product identity and existing fields\n{json.dumps(_slim_product_for_descriptions(product), ensure_ascii=False, indent=2)}\n"
+        "- Arguments de vente uniques (USPs) 3 à 5\n\n"
+
+        "Pour 'Arguments de vente uniques (USPs) 3 à 5' : retourne un tableau de 3 à 5 chaînes. "
+        "Assigne à chaque argument le rôle défini dans les field specifications (roles). "
+        "Si des arguments existants sont fournis, reformule-les en respectant leur rôle assigné. "
+        "Si aucun argument existant n'est disponible, génère-les factuellement depuis le brief.\n\n"
+
+        "Politique exemples : utilise les exemples uniquement comme modèles de structure et de ton. "
+        "Ne copie jamais les faits produit des exemples.\n\n"
+
+        f"Input : profil canal\n{channel_profile}\n\n"
+        + (f"Input : brief produit\n{json.dumps(brief, ensure_ascii=False, indent=2)}\n\n" if brief else "")
+        + (f"Input : cadre de conformité\n{json.dumps(compliance, ensure_ascii=False, indent=2)}\n\n" if compliance else "")
+        + f"Input : spécifications des champs\n{json.dumps(specs, ensure_ascii=False, indent=2)}\n\n"
+        f"Input : exemples de descriptions longues (modèles de structure uniquement)\n{_fmt_examples(examples)}\n\n"
     )
 
     messages = [{"role": "system", "content": system}, {"role": "user", "content": user}]
@@ -239,29 +254,60 @@ def _seo_generate_prompt(
         "title": product.get("title", ""),
         "summary": product.get("summary", ""),
         "warnings": (scientific.get("Contre-indication, avertissements, mentions obligatoires") or "").strip(),
-        "usage": (content.get("Conseils d'utilisation uniques (SEO)") or scientific.get("Conseils d'utilisation institutionnels") or "").strip(),
+        "usage": (
+            content.get("Conseils d'utilisation uniques (SEO)")
+            or scientific.get("Conseils d'utilisation institutionnels")
+            or ""
+        ).strip(),
         "existing_keywords": coerce_keywords(commercial.get("Mots clés") or ""),
     }
     target_fields = _seo_target_fields(specs)
-    fields_schema = ", ".join(f'{json.dumps(f, ensure_ascii=False)}: "<string>"' for f in target_fields)
+    fields_schema = ", ".join(
+        f'{json.dumps(f, ensure_ascii=False)}: "<string>"' for f in target_fields
+    )
 
     return (
-        "You are an expert French SEO ecommerce copywriter for pet health products.\n\n"
-        "Generate ONE set of SEO fields in French. All fields required.\n\n"
+        "You are a senior French SEO ecommerce copywriter specialized in animal health products.\n\n"
+        "Generate ONE complete set of SEO fields in French for this product. Remember their constraints before starting to generate.All requested fields are mandatory.\n\n"
+        "Primary goal:\n"
+        "- Maximize real ecommerce conversion while staying strictly compliant and not exceeding caracter count limits per field.\n\n"
+        "Priority order (mandatory):\n"
+        "1. Compliance and safety\n"
+        "2. Respect of field specifications and formatting\n"
+        "3. Fidelity to the product data\n"
+        "4. Conversion and SEO performance\n"
+        "5. Natural, fluent French\n\n"
         "Hard requirements:\n"
-        "- Respect the field specifications . Otherwise what you generate is useless .\n"
+        "- Respect the field specifications exactly. Otherwise the output is unusable.\n"
         "- Strictly follow the compliance boundaries: use only allowed claims, never forbidden ones.\n"
-        "- Keep language natural, not keyword stuffing.\n"
-        "- For short title: do not mention volume/weight (ml, g, kg, etc.).\n"
-        "- Product title must start with brand name.\n\n"
+        "- Do not invent facts, ingredients, effects, promises, species, formats, or usage contexts not supported by the input.\n"
+        "- Keep language natural and persuasive, never robotic, never keyword stuffing.\n"
+        "- If the title or metadata contain a strong central keyword about product function or type, preserve it naturally in the generated fields.\n"
+        "- If the title has a good inclusion of product content and some good product specifities,numbers also preserve it improve on it."
+        "- Product title must start with brand name when brand is available.\n"
+        "- For short title: do not mention volume/weight (ml, cl, l, g, kg, etc.).\n"
+        "- If some data is missing, write the safest accurate version using only available information.\n\n"
+        "Conversion writing rules:\n"
+        "- Write to help the customer choose the product quickly and confidently.\n"
+        "- Highlight the main user need addressed by the product when supported by the input.\n"
+        "- Prefer compliant benefit language such as 'aide à', 'contribue à', 'participe à', 'convient à', 'idéal pour' when relevant.\n"
+        "- Reduce hesitation by making the product feel clear, relevant, and easy to understand.\n"
+        "- Prefer concrete, specific wording over vague marketing language.\n"
+        "- Avoid empty claims like 'premium', 'exceptionnel', 'révolutionnaire' unless explicitly supported.\n"
+        "- Avoid medical, absolute, guaranteed, miraculous, or immediate-effect language.\n\n"
+        "Working method:\n"
+        "1. Identify the product's core identity: brand, range, species, format, category.\n"
+        "2. Identify the main keyword from the original title, category, summary, and existing keywords.\n"
+        "3. Identify the most relevant purchase intent and express it in a compliant way.\n"
+        "4. Generate each field according to its own constraints.\n"
+        "5. Check consistency across all fields.\n"
+        "6. Check again that every field is compliant, natural, and correctly formatted.\n\n"
         f"Product context:\n{json.dumps(context, ensure_ascii=False, indent=2)}\n\n"
-        + (f"Product brief:\n{json.dumps(brief, ensure_ascii=False, indent=2)}\n\n" if brief else "")
+        + (f"Additional brief:\n{json.dumps(brief, ensure_ascii=False, indent=2)}\n\n" if brief else "")
         + (f"Compliance boundaries:\n{json.dumps(compliance, ensure_ascii=False, indent=2)}\n\n" if compliance else "")
         + f"Field specs:\n{json.dumps(specs.get('fields', {}), ensure_ascii=False, indent=2)}\n\n"
         f'Return STRICT JSON only:\n{{"generated_fields": {{{fields_schema}}}}}\n'
     )
-
-
 def _seo_repair_prompt(
     specs: dict[str, Any], fields: dict[str, str], feedback: str
 ) -> str:

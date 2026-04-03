@@ -21,7 +21,9 @@ class PipelineConfig:
     channel_tone_path: Path
     descriptions_specs_path: Path
     seo_specs_path: Path
+    analyze_specs_path: Path
     prompt_debug: bool = False
+    enable_retry: bool = True
 
     def save_prompt_debug(self, name: str, data: dict[str, Any]) -> None:
         """Write a prompt record to prompts_debug/<name>.json when --prompt_debug is set."""
@@ -44,6 +46,7 @@ class PipelineConfig:
             "channel_tone_path",
             "descriptions_specs_path",
             "seo_specs_path",
+            "analyze_specs_path",
         ):
             path: Path = getattr(self, attr)
             if not path.exists():

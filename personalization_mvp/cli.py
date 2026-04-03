@@ -26,6 +26,7 @@ def parse_args() -> argparse.Namespace:
     p.add_argument("--channel-tone", default=str(ROOT / "channel_tone_specifications.json"))
     p.add_argument("--description-specs", default=str(ROOT / "descriptions_content" / "description_specs.json"))
     p.add_argument("--seo-specs", default=str(ROOT / "seo_fields" / "seo_fields_specs.json"))
+    p.add_argument("--analyze-specs", default=str(ROOT / "analyze_specs.json"))
     p.add_argument("--prompt_debug", action="store_true", help="Save all LLM prompts to prompts_debug/ in the run directory")
     return p.parse_args()
 
@@ -70,6 +71,7 @@ def main() -> None:
         channel_tone_path=_resolve(args.channel_tone),
         descriptions_specs_path=_resolve(args.description_specs),
         seo_specs_path=_resolve(args.seo_specs),
+        analyze_specs_path=_resolve(args.analyze_specs),
         prompt_debug=args.prompt_debug,
     )
 

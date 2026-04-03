@@ -83,10 +83,15 @@ def run_pipeline(cfg: PipelineConfig, on_event: EventCallback = None) -> RunResu
     _emit(on_event, {"type": "log", "message": f"[judge] Grade: {judgment.get('channel_alignment_grade')}."})
 
     _emit(on_event, {"type": "stage", "stage": "retry"})
-    _emit(on_event, {"type": "log", "message": "[retry] Applying judge feedback to changed fields..."})
-    final = retry_fields(diff, judgment, cfg, brief, compliance)
-    _write(cfg.out_dir / "retry_output.json", final)
-    _emit(on_event, {"type": "log", "message": "[retry] Done."})
+    if cfg.enable_retry:
+        _emit(on_event, {"type": "log", "message": "[retry] Applying judge feedback to changed fields..."})
+        final = retry_fields(diff, judgment, cfg, brief, compliance)
+        _write(cfg.out_dir / "retry_output.json", final)
+        _emit(on_event, {"type": "log", "message": "[retry] Done."})
+    else:
+        _emit(on_event, {"type": "log", "message": "[retry] Skipped (disabled)."})
+        final = {"generated_fields": generated["generated_fields"]}
+        _write(cfg.out_dir / "retry_output.json", final)
 
     artifacts: dict[str, str] = {
         "input": str(cfg.out_dir / "input_product_index.json"),
