@@ -1,5 +1,5 @@
 {
-  "version": "1.0.0",
+  "version": "1.1.0",
   "purpose": "Specifications for generating product description content fields",
   "language": "fr",
   "compliance_rules": [
@@ -9,28 +9,116 @@
     "Adopter un ton professionnel, factuel et rassurant.",
     "Ne pas copier les exemples fournis mot pour mot ; les utiliser uniquement comme modèles de structure et de ton."
   ],
+  "compliance_reformulations": [
+    {
+      "instead_of": "guérit / traite / élimine",
+      "say": "aide à maintenir / contribue à / soutient",
+      "reason": "Action de soutien uniquement — pas d’action thérapeutique revendiquée"
+    },
+    {
+      "instead_of": "résultats garantis / efficacité prouvée à 100 %",
+      "say": "formulé pour une action progressive / conçu pour soutenir sur la durée",
+      "reason": "Aucune étude temporelle nommée — toute promesse de résultat chiffré est interdite"
+    },
+    {
+      "instead_of": "action immédiate / dès la première prise",
+      "say": "à intégrer dans une routine quotidienne / pour un soutien régulier",
+      "reason": "Délai d’action non documenté dans les données produit"
+    },
+    {
+      "instead_of": "sans risque / sans danger / totalement sûr",
+      "say": "à utiliser selon les recommandations / consulter un vétérinaire en cas de doute",
+      "reason": "Toute affirmation absolue de sécurité est interdite — renvoyer aux précautions"
+    },
+    {
+      "instead_of": "cliniquement prouvé / scientifiquement démontré (sans étude nommée)",
+      "say": "formulé à base d’actifs reconnus / avec des ingrédients documentés",
+      "reason": "Sans étude nommée et vérifiable, aucune affirmation de preuve clinique n’est autorisée"
+    }
+  ],
   "fields": {
     "Description du produit unique/site 400 caractères": {
       "max_chars": 400,
       "min_chars": 200,
       "purpose": "Description courte et unique pour la fiche produit e-commerce. Elle doit capter l’attention et résumer le bénéfice principal.",
       "structure": "1 à 2 phrases présentant le produit, son usage principal et l’espèce cible si pertinent",
-      "tone": "Factuel, rassurant, orienté bénéfice"
+      "tone": "Factuel, rassurant, orienté bénéfice",
+      "writing_budget": [
+        {
+          "sentence": 1,
+          "budget_chars": 190,
+          "job": "Bénéfice principal + pour qui. Commencer par ce que le produit fait, pas par ce qu’il est. Verbe actif, espèce et profil si connu."
+        },
+        {
+          "sentence": 2,
+          "budget_chars": 180,
+          "job": "Différenciateur ou contexte d’usage concret. Ancré dans la formulation ou le profil produit. Pas de répétition de la phrase 1."
+        }
+      ]
     },
     "Description courte 600 caractères": {
       "max_chars": 600,
       "min_chars": 300,
       "purpose": "Description de taille moyenne pour les pages catégories ou les résumés produits, sans dépasser 600 caractères.",
       "structure": "2 à 3 phrases incluant le bénéfice principal, l’espèce cible et les points clés du produit.",
-      "tone": "Clair, professionnel, convaincant"
+      "tone": "Clair, professionnel, convaincant",
+      "writing_budget": [
+        {
+          "sentence": 1,
+          "budget_chars": 200,
+          "job": "Bénéfice principal + espèce et profil cible. Formuler comme le ressentirait un propriétaire, pas comme une fiche technique."
+        },
+        {
+          "sentence": 2,
+          "budget_chars": 200,
+          "job": "Ingrédient clé ou mécanisme d’action. Expliquer simplement pourquoi le produit fonctionne, sans jargon."
+        },
+        {
+          "sentence": 3,
+          "budget_chars": 150,
+          "job": "Déclencheur d’usage ou situation d’achat concrète. Le moment où un propriétaire d’animal chercherait ce produit."
+        }
+      ]
     },
     "Description longue": {
       "max_chars": 2000,
       "min_chars": 1500,
       "purpose": "Description complète pour la fiche produit, pensée pour une lecture fluide, agréable et structurée ne devant pas dépasser 2000 caractères.",
       "structure": "Organiser le contenu comme une fiche e-commerce éditoriale en sections. Commencer par un intertitre d’accroche orienté bénéfice ou usage (« Pourquoi choisir/utiliser [Nom du produit] ? »). Ajouter un court paragraphe d’ouverture qui résume la promesse du produit. Enchaîner avec une liste brève de situations d’usage ou de bénéfices concrets. Ajouter ensuite un intertitre explicatif (« Comment fonctionne [Nom du produit] ? ») suivi d’un paragraphe expliquant simplement le principe actif, la technologie ou le mécanisme. Si utile, ajouter un mini-bloc pédagogique ou comparatif. Terminer par des rubriques séparées lorsque les données existent : Emballage, Composition, Mode d’emploi, Résumé court des Précautions / conseils en 2 phrases. Dans le mode d’emploi, privilégier des instructions courtes en liste.",
-      "tone": "Non redondant, rassurant, expert mais accessible ,pour les précautions d'usage sois  très concis et bref",
-      "template_example": ""
+      "tone": "Non redondant, rassurant, expert mais accessible. Pour les précautions d’usage, être très concis et bref.",
+      "template_example": "",
+      "writing_budget": [
+        {
+          "section": "§1 Accroche (intertitre + paragraphe)",
+          "budget_chars": 300,
+          "job": "Intertitre orienté bénéfice (‘Pourquoi choisir [Produit] ?’). Paragraphe d’ouverture : situation du propriétaire. Faire ressentir le problème ou le besoin avant de vendre la solution."
+        },
+        {
+          "section": "§2 Réponse produit",
+          "budget_chars": 350,
+          "job": "Ce que fait le produit, ancré dans la formulation. Bénéfice principal + bénéfices secondaires. Pas de claims au-delà du cadre compliance. Liste courte de situations d’usage si pertinent."
+        },
+        {
+          "section": "§3 Mode d’action (intertitre + paragraphe)",
+          "budget_chars": 300,
+          "job": "Intertitre explicatif (‘Comment fonctionne [Produit] ?’). Ingrédient ou mécanisme clé en langage simple. Uniquement si les données le supportent clairement — sinon omettre."
+        },
+        {
+          "section": "§4 Pour qui",
+          "budget_chars": 200,
+          "job": "Espèce, âge, condition, format. Restrictions verbatim si pertinentes pour la sécurité. Concis."
+        },
+        {
+          "section": "§5 Mode d’emploi",
+          "budget_chars": 250,
+          "job": "Comment administrer, dosage, fréquence. Privilégier une liste courte d’instructions. Pas de répétition des précautions."
+        },
+        {
+          "section": "§6 Précautions (si nécessaire)",
+          "budget_chars": 150,
+          "job": "Maximum 2 phrases. Uniquement les précautions ayant un impact réel sur la sécurité. Pas de liste exhaustive."
+        }
+      ]
     },
     "Arguments de vente uniques (USPs) 3 à 5": {
       "count_min": 3,
@@ -38,7 +126,39 @@
       "chars_per_arg_max": 150,
       "purpose": "Points de différenciation clés pour convaincre l’acheteur.",
       "structure": "Reformuler de manière professionnelle et adaptée les arguments existants du produit.",
-      "tone": "Direct, percutant, orienté bénéfice"
+      "tone": "Direct, percutant, orienté bénéfice",
+      "roles": [
+        {
+          "position": 1,
+          "role": "Bénéfice principal",
+          "job": "Le ‘pourquoi acheter ce produit’. Un bénéfice concret formulé avec un verbe actif. Ancré dans la formulation ou le brief.",
+          "example": "Soutient la mobilité articulaire pour un confort quotidien retrouvé"
+        },
+        {
+          "position": 2,
+          "role": "Preuve formulaire",
+          "job": "Ce qui justifie le bénéfice — ingrédient actif, mécanisme ou technologie. Pas de claim clinique sans étude nommée.",
+          "example": "Formulé avec de la glucosamine et de la chondroïtine, actifs reconnus pour le soutien articulaire"
+        },
+        {
+          "position": 3,
+          "role": "Adéquation / pertinence",
+          "job": "Pour qui, précisément. Profil animal ou situation d’usage. Répondre à la question : ‘Est-ce fait pour mon animal ?’",
+          "example": "Adapté aux chiens de grande race à partir de 7 ans ou à activité physique soutenue"
+        },
+        {
+          "position": 4,
+          "role": "Usage / praticité",
+          "job": "Format, facilité d’administration, palatabilité, fréquence. Ce qui rend le produit simple à utiliser au quotidien.",
+          "example": "Comprimés palatables — administration facile, acceptés sans forcer"
+        },
+        {
+          "position": 5,
+          "role": "Signal de confiance (optionnel)",
+          "job": "Recommandation vétérinaire, catégorie réglementaire, ancienneté de la marque. Uniquement si les données le supportent.",
+          "example": "Complément alimentaire vétérinaire — formulé selon les standards diététiques"
+        }
+      ]
     }
   }
 }

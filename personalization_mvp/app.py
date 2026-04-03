@@ -204,6 +204,7 @@ def start_run() -> None:
         channel_tone_path=ROOT_DIR / "channel_tone_specifications.json",
         descriptions_specs_path=ROOT_DIR / "descriptions_content" / "description_specs.json",
         seo_specs_path=ROOT_DIR / "seo_fields" / "seo_fields_specs.json",
+        analyze_specs_path=ROOT_DIR / "analyze_specs.json",
     )
 
     q: queue.Queue = queue.Queue()

@@ -12,6 +12,13 @@
       "language": "fr",
       "audience": "Pet owners buying from a reseller ecommerce site",
       "content_objective": "Clear, compliant, conversion-oriented product pages",
+      "reader_portrait": {
+        "profile": "Propriétaire d'animal de compagnie, 30–55 ans, qui compare plusieurs produits d'une même catégorie. Il ou elle a trouvé la fiche via une recherche Google ou un comparateur. Pas nécessairement expert(e) en santé animale — cherche à faire le bon choix sans se tromper.",
+        "mindset_at_purchase": "En mode comparaison : il ou elle lit plusieurs fiches en parallèle et cherche ce qui différencie ce produit. La confiance est à construire rapidement — si la fiche est vague ou sonne comme du marketing générique, il ou elle passe à la suivante.",
+        "what_makes_them_choose": "Une fiche qui répond directement à sa situation ('pour les chiens de grande race à partir de 7 ans'), un bénéfice formulé clairement, et des informations pratiques (format, administration, dosage) faciles à trouver.",
+        "what_makes_them_leave": "Promesses excessives, jargon technique sans explication, absence de précisions sur l'espèce ou l'âge, ou une description identique à dix autres produits de la catégorie.",
+        "write_for_them_by": "Aller droit au but dès la première phrase. Répondre implicitement à 'est-ce le bon produit pour mon animal ?' avant même qu'il ou elle pose la question. Préférer la clarté à l'emphase."
+      },
       "seo_rules": {
         "keyword_density": "natural",
         "prioritize_terms": [
@@ -41,6 +48,13 @@
       "language": "fr",
       "audience": "Pet owners seeking veterinary-guided products with strong value for money",
       "content_objective": "Trust-first, compliant product pages that combine veterinary clarity, practical usage, and conversion",
+      "reader_portrait": {
+        "profile": "Propriétaire attaché(e) à la santé de son animal, souvent orienté(e) par un vétérinaire ou à la suite d'une consultation. 35–60 ans, cherche des produits sérieux avec une légitimité médicale ou scientifique. Prêt(e) à investir si la confiance est là.",
+        "mindset_at_purchase": "En mode réassurance : il ou elle a déjà une intention d'achat mais veut confirmer que ce produit est le bon. La question implicite est 'puis-je faire confiance à ce produit pour mon animal ?' — pas 'qu'est-ce que c'est ?'.",
+        "what_makes_them_choose": "Un discours qui sonne comme celui d'un professionnel de santé animale : précis, mesuré, sans excès marketing. Des informations concrètes sur la formulation, les restrictions d'usage, et les précautions. Une tonalité qui respecte son intelligence.",
+        "what_makes_them_leave": "Les superlatifs creux ('le meilleur', 'révolutionnaire'), les promesses de résultats sans nuance, et les fiches qui évitent les précautions d'emploi — signes que le produit n'est pas sérieux.",
+        "write_for_them_by": "Écrire comme un vétérinaire qui explique à un propriétaire attentif. Nommer les ingrédients clés. Mentionner les restrictions avec précision. Ne pas survendre — la sobriété est perçue comme une marque de sérieux."
+      },
       "output_behavior": {
         "prefer_practical_usage_guidance": true,
         "favor_reassurance_over_hype": true,
@@ -76,6 +90,13 @@
       "language": "fr",
       "audience": "Marketplace shoppers",
       "content_objective": "Fast-scanning, compliant marketplace listings",
+      "reader_portrait": {
+        "profile": "Acheteur ou acheteuse sur marketplace, habitué(e) à scanner rapidement les fiches. Souvent attiré(e) par les avis, le prix et la livraison avant même de lire la description. Moins fidèle à une marque — il ou elle compare plusieurs vendeurs pour le même besoin.",
+        "mindset_at_purchase": "En mode efficacité : il ou elle veut comprendre en 10 secondes si ce produit correspond à son besoin. Lit le titre, regarde les bullet points, survole la description longue seulement en cas de doute. La décision se prend vite ou pas du tout.",
+        "what_makes_them_choose": "Un titre produit précis qui correspond exactement à sa recherche, des arguments de vente courts et percutants en bullet points, et des informations pratiques immédiatement visibles (espèce, format, usage).",
+        "what_makes_them_leave": "Les descriptions longues sans structure, le jargon médical non expliqué, les bullet points vagues ('produit de qualité', 'bien pour votre animal'), et tout ce qui force à chercher l'information au lieu de la trouver au premier regard.",
+        "write_for_them_by": "Chaque argument doit tenir en une lecture de 3 secondes. Commencer par le bénéfice, pas par l'ingrédient. Structurer pour le scan : bénéfice → preuve → pour qui. Zéro filler, zéro répétition entre les arguments."
+      },
       "output_behavior": {
         "prefer_bullet_style_arguments": true,
         "ignore_website_meta_fields_when_not_applicable": true

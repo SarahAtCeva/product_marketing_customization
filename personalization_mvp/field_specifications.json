@@ -93,35 +93,40 @@
       "description": "Premier argument de vente (USP).",
       "min_chars": 10,
       "max_chars": 200,
-      "required": true
+      "required": true,
+      "role": "Bénéfice principal — le 'pourquoi acheter'. Un bénéfice concret avec verbe actif, ancré dans la formulation ou le brief. Ex : 'Soutient la mobilité articulaire pour un confort quotidien retrouvé'"
     },
     "Argu 2": {
       "label": "Argument de vente 2",
       "description": "Deuxième argument de vente (USP).",
       "min_chars": 10,
       "max_chars": 200,
-      "required": true
+      "required": true,
+      "role": "Preuve formulaire — ce qui justifie le bénéfice. Ingrédient actif, mécanisme ou technologie. Pas de claim clinique sans étude nommée. Ex : 'Formulé avec de la glucosamine et de la chondroïtine, actifs reconnus pour le soutien articulaire'"
     },
     "Argu 3": {
       "label": "Argument de vente 3",
       "description": "Troisième argument de vente (USP).",
       "min_chars": 10,
       "max_chars": 200,
-      "required": true
+      "required": true,
+      "role": "Adéquation / pertinence — pour qui, précisément. Répondre à : 'Est-ce fait pour mon animal ?' avec profil, âge, condition ou situation d'usage. Ex : 'Adapté aux chiens de grande race à partir de 7 ans ou à activité physique soutenue'"
     },
     "Argu 4": {
       "label": "Argument de vente 4",
       "description": "Quatrième argument de vente (USP, optionnel).",
       "min_chars": 10,
       "max_chars": 200,
-      "required": false
+      "required": false,
+      "role": "Usage / praticité — ce qui rend le produit simple à utiliser au quotidien. Format, palatabilité, fréquence d'administration. Ex : 'Comprimés palatables — administration facile, acceptés sans forcer'"
     },
     "Argu 5": {
       "label": "Argument de vente 5",
       "description": "Cinquième argument de vente (USP, optionnel).",
       "min_chars": 10,
       "max_chars": 200,
-      "required": false
+      "required": false,
+      "role": "Signal de confiance — recommandation vétérinaire, catégorie réglementaire ou ancienneté de la marque. Uniquement si les données le supportent explicitement. Ex : 'Complément alimentaire vétérinaire — formulé selon les standards diététiques'"
     }
   }
 }

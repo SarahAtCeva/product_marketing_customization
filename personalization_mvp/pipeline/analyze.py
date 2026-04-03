@@ -48,178 +48,25 @@ _SYSTEM = (
 )
 
 
-def build_prompt(product_json: str) -> str:
+def build_prompt(product_json: str, specs: dict[str, Any]) -> str:
+    steps = specs.get("steps", {})
+    steps_text = ""
+    for key in ("etape_1", "etape_2", "etape_3", "etape_4"):
+        step = steps.get(key, {})
+        objectif = step.get("objectif", "")
+        rules = step.get("critical_rules", [])
+        label = key.replace("etape_", "ÉTAPE ").upper()
+        steps_text += f"━━━ {label} ━━━\n"
+        steps_text += f"Objectif : {objectif}\n"
+        for rule in rules:
+            steps_text += f"• {rule}\n"
+        steps_text += "\n"
+
     return (
-        "Analyse le produit de santé animale ci-dessous. Suis les 4 étapes dans l'ordre strict.\n"
-        "Chaque étape alimente la suivante — ne saute rien.\n\n"
-
-        "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n"
-        "ÉTAPE 1 · ANALYSE DE LA FORMULATION\n"
-        "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n"
-        "Objectif : construire une carte complète de ce que le produit CONTIENT et de ce que "
-        "sa formulation PERMET LÉGITIMEMENT de revendiquer.\n\n"
-
-        "A) CHAMPS STRUCTURÉS (Composition, Additifs nutritionnels, Constituants analytiques)\n"
-        "   → parsed_active_ingredients : un ingrédient = une entrée. "
-        "Inclus le dosage exact s'il est présent, sinon 'non précisé'.\n"
-        "   → inferred_functional_properties : pour chaque ingrédient, dérive les propriétés "
-        "fonctionnelles DOCUMENTÉES (pas spéculatives). "
-        "Cite l'ingrédient qui justifie chaque propriété. "
-        "Utilise un langage orienté bénéfice concret, pas des labels génériques.\n"
-        "     Exemple BON  : 'soutien de la fonction articulaire chez le chien âgé' (glucosamine, high)\n"
-        "     Exemple FAIBLE : 'action apaisante' (sans préciser sur quoi, ni quel ingrédient)\n\n"
-
-        "B) CHAMPS TEXTE — scanne EXHAUSTIVEMENT tous les champs paragraphe :\n"
-        "   Désignation, Description courte, Description longue, Description 400 car., "
-        "Description 600 car., En savoir plus, Argu 1–5, Conseils d'utilisation, "
-        "Titre produit, et tout autre champ textuel présent.\n"
-        "   → text_field_mentions : une entrée par mention trouvée. Ne filtre pas, ne résume pas. "
-        "Indique si l'info est déjà couverte par les champs structurés (already_in_structured_data).\n"
-        "   ATTENTION : les meilleurs arguments de vente sont souvent cachés dans des champs "
-        "secondaires. Ne les rate pas.\n\n"
-
-        "C) → unsupported_claims_risk : liste les propriétés/bénéfices qui n'apparaissent "
-        "NI dans la formulation NI dans aucun texte. "
-        "Le générateur ne devra JAMAIS les mentionner.\n\n"
-
-        "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n"
-        "ÉTAPE 2 · CLAIMS D'EFFICACITÉ, PREUVES & RETOURS UTILISATEURS\n"
-        "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n"
-        "Objectif : inventorier TOUT ce que les données disent sur l'efficacité du produit, "
-        "avec quel niveau de preuve, pour que le générateur sache exactement "
-        "ce qu'il peut affirmer et comment le formuler.\n\n"
-
-        "A) efficacy_claims\n"
-        "   • explicit_claims : toute affirmation directe d'efficacité, verbatim. "
-        "Classe par strength (strong/moderate/weak). "
-        "Sépare mentalement les claims du FABRICANT vs ceux rapportant une EXPÉRIENCE UTILISATEUR, "
-        "et reflète cette distinction dans le champ source_field.\n"
-        "   • implicit_claims : efficacité suggérée indirectement (nom du produit évocateur, "
-        "mention d'ingrédient dans un contexte d'efficacité, positionnement marketing). "
-        "Explique ton raisonnement dans 'reasoning'.\n"
-        "   • quantified_claims : tout claim avec chiffre, %, durée, résultat mesurable. "
-        "Ce sont les plus puissants en copy — sois exhaustif.\n"
-        "   • claim_language_markers : chaque mot/expression signalant un niveau d'efficacité, "
-        "dans TOUS les champs. Catégorise : proof_language, speed_language, "
-        "strength_language, outcome_language, hedging_language.\n\n"
-
-        "B) scientific_evidence\n"
-        "   • studies_mentioned : TOUTE mention d'étude, essai, test, recherche, validation. "
-        "Sois particulièrement attentif à distinguer :\n"
-        "     - étude nommée et vérifiable (is_named=true, verifiable)\n"
-        "     - référence institutionnelle sans étude précise (partially_verifiable)\n"
-        "     - assertion générique 'cliniquement prouvé' sans source (unverifiable)\n"
-        "   • proof_assertions : affirmations de preuve SANS étude citée. "
-        "Évalue si elles sont substantiated, partially_substantiated, ou unsubstantiated "
-        "en croisant avec studies_mentioned.\n"
-        "   • evidence_quality_summary : 1–3 phrases. Sois direct et utile pour le générateur. "
-        "Exemple : 'Une seule étude terrain nommée (Étude X, 2021) portant sur la palatabilité. "
-        "Aucune preuve clinique d'efficacité thérapeutique. "
-        "Le copy peut citer le taux de satisfaction mais pas revendiquer une action médicale.'\n\n"
-
-        "C) user_feedback\n"
-        "   • Scanne TOUS les champs texte pour des avis, témoignages, notes, retours clients.\n"
-        "   • ATTENTION : ne confonds PAS le discours marketing du fabricant avec de vrais retours "
-        "utilisateurs. 'Nos clients adorent ce produit' dans un Argu ≠ un vrai témoignage.\n"
-        "   • Si aucun retour trouvé : found=false, entries=[], "
-        "sentiment_summary='Aucun retour utilisateur trouvé dans les données produit.'\n\n"
-
-        "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n"
-        "ÉTAPE 3 · BRIEF CRÉATIF PRODUIT\n"
-        "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n"
-        "Objectif : fournir au générateur une vision claire, actionnable et orientée conversion "
-        "du produit.\n\n"
-
-        "• product_summary : 1–2 phrases factuelles. Dis ce que c'est, pour qui, et ce que ça fait. "
-        "Pas de flou marketing.\n"
-        "  BON  : 'Complément alimentaire en comprimés pour chiens adultes, à base de glucosamine "
-        "et chondroïtine, formulé pour soutenir la mobilité articulaire.'\n"
-        "  FAIBLE : 'Produit innovant pour le bien-être de votre compagnon.'\n\n"
-
-        "• target_species, target_profile : sois aussi spécifique que les données le permettent. "
-        "'Chien adulte de grande race (>25 kg) à activité physique soutenue' "
-        "> 'Chien'.\n\n"
-
-        "• primary_benefit : le bénéfice n°1, formulé comme un pet owner le ressentirait. "
-        "Ancré dans les résultats de l'Étape 1 — pas inventé.\n"
-        "• secondary_benefits : bénéfices additionnels, chacun en phrase courte et concrète.\n\n"
-
-        "• use_cases : 4–6 situations CONCRÈTES de la vie d'un propriétaire d'animal. "
-        "Pense aux déclencheurs d'achat réels :\n"
-        "  - Le vétérinaire a recommandé un soutien articulaire après un bilan\n"
-        "  - Le chien montre des signes de raideur au lever le matin\n"
-        "  - Transition alimentaire après une sensibilité digestive\n"
-        "  PAS : 'Pour les chiens qui ont besoin de soutien' (trop vague)\n\n"
-
-        "• key_differentiator : ce qui distingue CE produit de sa catégorie générique. "
-        "Si rien de distinctif n'apparaît dans les données, écris-le honnêtement.\n\n"
-
-        "• tone_angle : choisis parmi clinical / reassuring / educational / conversion "
-        "et justifie brièvement dans la valeur (ex : 'reassuring — produit post-chirurgie, "
-        "le propriétaire cherche une solution fiable et douce').\n\n"
-
-        "• existing_arguments : copie VERBATIM le contenu des champs Argu 1–5 présents "
-        "dans les données. Ignore les champs vides.\n\n"
-
-        "• explanation_of_the_concept_innovation : si le produit repose sur une idée médicale "
-        "ou une innovation (technologie de libération, brevet, formule exclusive…), "
-        "explique-la clairement. Sinon, indique 'Aucune innovation spécifique identifiée.'\n\n"
-
-        "• data_gaps : liste TOUTES les informations manquantes ou trop vagues. "
-        "Le générateur utilisera cette liste pour éviter d'inventer. "
-        "Sois spécifique : 'Dosage de la glucosamine non précisé' "
-        "> 'Informations manquantes sur la composition'.\n\n"
-
-        "• buyer_questions : 6–10 questions prioritaires qu'un acheteur poserait VRAIMENT. "
-        "Pense au parcours d'achat :\n"
-        "  - Phase recherche : 'Est-ce adapté à mon chien de 14 ans avec de l'arthrose ?'\n"
-        "  - Phase comparaison : 'Quelle différence avec [catégorie concurrente] ?'\n"
-        "  - Phase décision : 'Combien de temps avant de voir des résultats ?'\n"
-        "  - Phase utilisation : 'Mon chien peut-il le prendre avec son traitement actuel ?'\n"
-        "Pour chaque question : answered=true UNIQUEMENT si la réponse est clairement "
-        "dans les données. Sinon answered=false et answer_summary='Information absente "
-        "des données produit.'\n\n"
-
-        "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n"
-        "ÉTAPE 4 · CADRE DE CONFORMITÉ RÉGLEMENTAIRE\n"
-        "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n"
-        "Objectif : poser les garde-fous que le générateur ne pourra PAS franchir. "
-        "Ce que tu autorises ici, il L'UTILISERA. Ce que tu interdis, il l'évitera. "
-        "Sois précis.\n\n"
-
-        "• allowed_claims : formulations SÛRES, prêtes à l'emploi. "
-        "Préfère les tournures avec 'soutient', 'aide à', 'contribue à', 'favorise', "
-        "'conçu pour', 'formulé pour'.\n"
-        "• forbidden_claims : formulations INTERDITES. "
-        "Inclus systématiquement : 'guérit', 'traite', 'élimine', '100%', 'garanti', "
-        "'immédiat', 'miracle', 'sans risque'. "
-        "Ajoute toute formulation spécifique au produit qui serait trompeuse.\n"
-        "• mandatory_mentions : avertissements, contre-indications, mentions légales "
-        "à reproduire VERBATIM.\n"
-        "• species_restrictions : restrictions d'espèce, d'âge, de poids, d'état.\n"
-        "• regulatory_notes : catégorie réglementaire du produit et implications "
-        "pour le copy (ex : 'Aliment complémentaire — ne peut pas revendiquer "
-        "d'action thérapeutique').\n\n"
-
-        "• efficacy_claim_compliance :\n"
-        "  → safe_efficacy_formulations : formulations d'efficacité autorisées "
-        "VU LE NIVEAU DE PREUVE identifié en Étape 2. "
-        "Sois cohérent : si aucune étude nommée n'existe, 'efficacité prouvée' "
-        "ne peut PAS être safe.\n"
-        "  → forbidden_efficacy_formulations : formulations interdites car "
-        "le niveau de preuve est insuffisant. Sois explicite sur POURQUOI "
-        "c'est interdit (aide le générateur à comprendre la logique).\n"
-        "  → study_citation_rules : règles précises pour citer les études dans le copy. "
-        "Exemples :\n"
-        "    - 'L'étude X (2021) peut être citée avec le résultat Y.'\n"
-        "    - 'Le test consommateur peut être cité comme donnée de satisfaction, "
-        "PAS comme preuve clinique.'\n"
-        "    - 'Aucune étude nommée → interdiction absolue de \"scientifiquement prouvé\" "
-        "ou \"cliniquement testé\".'\n\n"
-
-        "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n"
-        "DONNÉES PRODUIT\n"
-        "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n"
+        "Analyse le produit de santé animale ci-dessous. "
+        "Suis les 4 étapes dans l'ordre strict — chaque étape alimente la suivante.\n\n"
+        f"{steps_text}"
+        "━━━ DONNÉES PRODUIT ━━━\n"
         f"{product_json}\n"
     )
 
@@ -238,6 +85,7 @@ _BRIEF_SCHEMA = {
         "tone_angle",
         "data_gaps",
         "buyer_questions",
+        "copy_angles",
         "formulation_analysis",
         "existing_arguments",
         "explanation_of_the_concept_innovation",
@@ -552,6 +400,38 @@ _BRIEF_SCHEMA = {
                 },
             },
         },
+        "copy_angles": {
+            "type": "array",
+            "description": (
+                "2–3 ready-to-use copy angles derived from formulation + tone_angle + primary_benefit. "
+                "Written in copywriter language, not analyst language. "
+                "The generator picks the angle matching the channel's reader portrait."
+            ),
+            "items": {
+                "type": "object",
+                "additionalProperties": False,
+                "required": ["angle", "hook", "grounded_in", "tone"],
+                "properties": {
+                    "angle": {
+                        "type": "string",
+                        "description": "Short name for the angle (e.g. 'Le chien qui vieillit bien').",
+                    },
+                    "hook": {
+                        "type": "string",
+                        "description": "Opening sentence written as the reader would feel it — not a product claim.",
+                    },
+                    "grounded_in": {
+                        "type": "string",
+                        "description": "The brief fact or formulation element that justifies this angle.",
+                    },
+                    "tone": {
+                        "type": "string",
+                        "enum": ["clinical", "reassuring", "educational", "conversion"],
+                        "description": "Recommended tone for this angle.",
+                    },
+                },
+            },
+        },
         "user_feedback": {
             "type": "object",
             "additionalProperties": False,
@@ -598,14 +478,13 @@ _COMPLIANCE_SCHEMA = {
             "description": "Forbidden formulations including guérit, traite, élimine, 100%, garanti, etc.",
         },
         "mandatory_mentions": {
-            "type": "array",
-            "items": {"type": "string"},
-            "description": "Warnings, contraindications, and legal notices to reproduce verbatim.",
+            "type": "string",
+            "description": "Short paragraph (max 3 sentences) synthesizing the most important warnings, contraindications, and legal notices — only those with real safety or legal copy implications.",
         },
         "species_restrictions": {
             "type": "array",
             "items": {"type": "string"},
-            "description": "Species, age, weight, or condition restrictions.",
+            "description": "All species, age, weight, and condition restrictions — complete and verbatim, nothing omitted.",
         },
         "regulatory_notes": {
             "type": "string",
@@ -653,7 +532,9 @@ def analyze(product: dict[str, Any], cfg: PipelineConfig) -> dict[str, Any]:
     Single LLM call combining product intelligence brief + compliance boundary check.
     Returns {"brief": {...}, "compliance": {...}}.
     """
-    prompt = build_prompt(json.dumps(product, ensure_ascii=False, indent=2))
+    with cfg.analyze_specs_path.open("r", encoding="utf-8") as f:
+        specs = json.load(f)
+    prompt = build_prompt(json.dumps(product, ensure_ascii=False, indent=2), specs)
     messages = [{"role": "system", "content": _SYSTEM}, {"role": "user", "content": prompt}]
     cfg.save_prompt_debug("analyze", {"model": cfg.reasoning_model, "temperature": 0.1, "messages": messages})
 
