@@ -100,16 +100,7 @@ source start_jupyter.sh
 
 ## CSV format
 
-The input CSV must include at minimum:
-
-| Column | Description |
-|--------|-------------|
-| `EAN` | Product barcode |
-| `Marque` | Brand name |
-| `Designation` | Product name/designation |
-
-Additional columns (existing descriptions, species, warnings, etc.) are extracted automatically.
-
+The input CSV must stay the same.
 ## Output
 
 Each run writes a timestamped folder under `runs/local_YYYYMMDD_HHMMSS/`:
@@ -129,6 +120,6 @@ The pipeline uses three OpenAI models with different roles:
 
 | Role | Default | Purpose |
 |------|---------|---------|
-| `--generation-model` | `gpt-4.1` | Content generation |
+| `--generation-model` | `gpt-5.2` | Content generation |
 | `--reasoning-model` | `gpt-4.1-mini` | Analysis and judging |
 | `--audit-model` | `gpt-4.1-nano` | Validation checks |
