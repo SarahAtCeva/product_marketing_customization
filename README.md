@@ -91,12 +91,7 @@ python cli.py \
 
 `--index` is the zero-based row index of the product in the CSV. Add `--prompt_debug` to save raw prompts alongside outputs.
 
-### Jupyter (exploration)
 
-```bash
-cd personalization_mvp
-source start_jupyter.sh
-```
 
 ## CSV format
 
