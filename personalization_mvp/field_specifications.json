@@ -68,7 +68,7 @@
     },
     "Description longue": {
       "label": "Description longue",
-      "description": "Description complète pour la fiche produit.",
+      "description": "Description complète pour la fiche produit , ne doit pas dépasser 2000 caractères.",
       "min_chars": 400,
       "max_chars": 2000,
       "required": true,

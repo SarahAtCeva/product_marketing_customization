@@ -48,6 +48,7 @@ def initialize_state() -> None:
         "events_queue": None,
         "runner_thread": None,
         "run_dir": None,
+        "enable_retry": True,
     }
     for key, val in defaults.items():
         if key not in st.session_state:
@@ -198,6 +199,7 @@ def start_run() -> None:
         reasoning_model=st.session_state.get("reasoning_model", "gpt-4.1-mini"),
         audit_model=st.session_state.get("audit_model", "gpt-4.1-nano"),
         out_dir=run_dir,
+        enable_retry=st.session_state.get("enable_retry", True),
         field_specs_path=ROOT_DIR / "field_specifications.json",
         channel_tone_path=ROOT_DIR / "channel_tone_specifications.json",
         descriptions_specs_path=ROOT_DIR / "descriptions_content" / "description_specs.json",
@@ -500,6 +502,7 @@ def main() -> None:
             st.text_input("Generation Model", key="generation_model", help="Descriptions + retry (e.g. gpt-4.1)")
             st.text_input("Reasoning Model", key="reasoning_model", help="SEO + judge (e.g. gpt-4.1-mini)")
             st.text_input("Audit Model", key="audit_model", help="Consistency check (e.g. gpt-4.1-nano)")
+            st.checkbox("Enable Retry", key="enable_retry", help="Apply judge feedback to rewrite changed fields")
 
             processing = st.session_state.get("pipeline_status") == "processing"
             st.button(
@@ -520,6 +523,13 @@ def main() -> None:
                     st.download_button("Download Updated CSV", data=out_bytes, file_name=new_name, mime="text/csv", use_container_width=True)
                 except Exception as exc:
                     st.error(f"Download build failed: {exc}")
+
+                diff_data = st.session_state.get("results", {}).get("diff")
+                if diff_data is not None:
+                    diff_bytes = json.dumps(diff_data, ensure_ascii=False, indent=2).encode("utf-8")
+                    original_name = st.session_state.get("uploaded_filename") or "matrix.csv"
+                    diff_name = original_name.rsplit(".", 1)[0] + "_diff.json"
+                    st.download_button("Download Diff JSON", data=diff_bytes, file_name=diff_name, mime="application/json", use_container_width=True)
 
     status = st.session_state.get("pipeline_status")
     if status == "idle":

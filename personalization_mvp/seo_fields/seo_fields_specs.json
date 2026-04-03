@@ -56,7 +56,7 @@
     "META Description": {
       "min_chars": 100,
       "max_chars": 160,
-      "description": "Description méta pour les moteurs de recherche, minimum 2 phrases.",
+      "description": "Description méta pour les moteurs de recherche ne dépassant pas 160 caractères.",
       "rules": [
         "Minimum 2 phrases complètes",
         "Inclure un appel à l'action doux",
@@ -66,7 +66,7 @@
     "Mots clés": {
       "description": "Liste de mots-clés pertinents séparés par des virgules.",
       "rules": [
-        "Minimum 10 mots-clés",
+        "Minimum 15 mots-clés pour positionner le produit et renforcer le branding",
         "Maximum 3 mots par expression",
         "Pertinents au produit,au besoin d'achat , à l'espèce et à la catégorie",
         "Séparés par des virgules"

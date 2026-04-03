@@ -22,6 +22,7 @@ class PipelineConfig:
     descriptions_specs_path: Path
     seo_specs_path: Path
     prompt_debug: bool = False
+    enable_retry: bool = True
 
     def save_prompt_debug(self, name: str, data: dict[str, Any]) -> None:
         """Write a prompt record to prompts_debug/<name>.json when --prompt_debug is set."""
